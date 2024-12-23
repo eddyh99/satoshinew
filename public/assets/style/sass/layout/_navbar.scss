@@ -1,0 +1,142 @@
+/*----------------------------------------------------------
+    File Name  : _navbar.scss
+    Desc       : File ini merupakan styling untuk navbar Homepage
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Navbar Homepage
+ *
+ */
+
+
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+
+/*----------------------------------------------------------
+1. Navbar Homepage Start
+------------------------------------------------------------*/ 
+.navbar {
+    // background-color: rgba(217, 217, 217, 0.15);
+    background-color: rgba(9, 9, 9, 0.75);;
+    position: absolute;
+    top: 0;
+    z-index: 999; 
+    width: 100%;
+
+    .navbar-logo {
+        @include mix.flex-tengah;
+
+        .logo {
+            height: 50px;
+            
+            @include mix.md {
+                height: 80px;
+            }
+
+        }
+
+        .logo-text {
+            text-align: center;
+            color: var.$text-white-satoshi;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin-left: 1rem;
+            display: none;
+
+            @include mix.xss {
+                display: inline-block;
+            }
+            
+
+            span {
+                color: var.$text-primary-satoshi;
+            }
+        }
+    }
+
+    .navbar-nav {
+
+        @include mix.flex-tengah;
+
+        .nav-item {
+            .nav-link {
+                color: var.$text-white-satoshi;
+                // text-decoration: underline;
+                font-size: 14px;
+
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    
+    .openbtn {
+        background: var.$text-primary-satoshi;
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .openbtn span {
+        position: absolute;
+        background: #fff;
+        display: inline-block;
+        border-radius: 3px;
+        right: 14px;
+        height: 3px;
+        transition: all .4s;
+        &:nth-of-type(1) {
+            top: 13px;
+            width: 45%;
+        }
+        &:nth-of-type(2) {
+            top: 21px;
+            width: 35%;
+        }
+        &:nth-of-type(3) {
+            top: 29px;
+            width: 20%;
+        }
+    }
+    
+    .openbtn.active span{
+        &:nth-of-type(1) {
+            width: 45%;
+            top: 16px;
+            left: 12px;
+            transform: translateY(6px) rotate(-135deg);
+        }
+        &:nth-of-type(2) {
+            opacity: 0;
+        }
+        &:nth-of-type(3) {
+            width: 45%;
+            top: 28px;
+            left: 12px;
+            transform: translateY(-6px) rotate(135deg);
+        }
+    }
+
+}
+
+/*----------------------------------------------------------
+1. Navbar Homepage End
+------------------------------------------------------------*/ 
+
+
+

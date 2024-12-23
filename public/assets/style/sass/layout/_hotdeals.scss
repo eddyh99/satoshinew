@@ -1,0 +1,136 @@
+/*----------------------------------------------------------
+    File Name  : _hotdeals.scss
+    Desc       : File ini merupakan styling untuk hotdelas page
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * //semua//
+ *
+ */
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+
+
+ /*----------------------------------------------------------
+1. Banner Hotdeals Start
+------------------------------------------------------------*/ 
+
+
+    .wrapper-text {
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.7)
+    }
+
+
+ /*----------------------------------------------------------
+  Banner Hotdeals End
+------------------------------------------------------------*/ 
+
+
+ /*----------------------------------------------------------
+2. Account Activation Hotdeals Start
+------------------------------------------------------------*/ 
+.account-activation-hotdeals {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .benefit-activation {
+        background-color: var.$bg-primary-satoshi;
+        @include mix.flex-tengah-vertical;
+        text-align: center;
+        padding: 40px 0;
+    }
+    
+    .refferal-program {
+        background: black;
+        @include mix.flex-tengah-vertical;
+        text-align: center;
+        flex-grow: 1;
+
+        h2 {
+            color: var.$text-primary-satoshi;
+            font-weight: bold;
+        }
+    }
+}
+
+ /*----------------------------------------------------------
+    Account Activation Hotdeals End
+------------------------------------------------------------*/ 
+
+ /*----------------------------------------------------------
+3. Become Hotdeals Start
+------------------------------------------------------------*/ 
+.become-hotdeals {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../img/51.png');
+    background-size: cover;
+    @include mix.flex-tengah-vertical;
+
+    .wrapper-become-hotdeals {
+        @include mix.flex-tengah-vertical;
+        text-align: center;
+        height: calc(100% - 10rem);
+        width: calc(100% - 10rem); 
+        margin: 5rem; // Margin di semua sisi
+        background-color: rgba(0, 0, 0, 0.5);
+
+        h2 {
+            color: var.$text-primary-satoshi;
+            font-weight: bold;
+        }
+    }
+}
+
+ /*----------------------------------------------------------
+  Become Hotdeals StEndart
+------------------------------------------------------------*/ 
+
+ /*----------------------------------------------------------
+4. Sharing Hotdeals Start
+------------------------------------------------------------*/ 
+
+.sharing-hotdeals {
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(28, 28, 28, 1);
+    padding: 1rem 0;
+    h2 {
+        margin: 20px 0;
+        color: var.$text-primary-satoshi;
+    }
+
+    .wrapper-sharing-hotdeals {
+        margin: 3rem 1rem;
+        video {
+            width: 100%; /* Video tidak akan lebih besar dari kontainer */
+            height: 100%;
+            object-fit: cover;
+            display: block; /* Menghapus spasi tambahan di bawah elemen video */
+            margin: 0 auto; /* Untuk memusatkan video di dalam kolom */
+        }
+
+        .list-benefits {
+            font-size: 20px;
+            text-align: start;
+            color: var.$text-primary-satoshi;
+            
+            li {
+                list-style-type: disc;
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
+}
+
+ /*----------------------------------------------------------
+    Sharing Hotdeals End
+------------------------------------------------------------*/ 

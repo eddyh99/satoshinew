@@ -1,0 +1,630 @@
+.price-input:disabled{
+    background-color:#FFFFFF;
+}
+
+.logo-signin {
+    width: 200px;
+    height: auto;
+}
+
+.logo-text-login {
+    margin-top: 1rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.logo-sidebar-admin {
+    width: auto !important;
+    height: 45px !important;
+}
+
+.btn-sendmessage {
+    width: 12rem;
+    margin: 0.2rem;
+    border: transparent;
+    background-color: #1A73E8;
+    border: 2px solid #063573;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.form-control-dark {
+    border: 2px solid #BFA573;
+    background-color: transparent;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: #FFFFFF;
+
+}
+
+.dash-signal-preview {
+    border: 2px solid #B48B3D;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.dash-signal-preview .dash-referral label {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.dash-signal-preview .dash-referral {
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-signal-preview .dash-referral .btn-primary {
+    width: 6rem;
+}
+
+.dash-signal-preview .title-signal-preview {
+    padding: 1rem;
+    border-bottom: 2px solid #B48B3D;
+}
+
+.dash-signal-preview .title-signal-preview h4{
+    color: #FFFFFF;
+}
+
+
+.dash-signal-preview .main-signal-preview .date {
+    padding: 0.5rem;
+}
+
+.dash-signal-preview .main-signal-preview .insturctions .instructions-title {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.dash-signal-preview .main-signal-preview .insturctions .box-insturctions {
+    background-color: #0E7304;
+    padding: 0.8rem 1rem;
+    width: 20rem;
+    border-radius: 5px;
+}
+
+.dash-signal-preview .main-signal-preview .insturctions .box-insturctions h4 {
+    color: #BFA573;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.dash-signal-preview .main-signal-preview .insturctions .box-insturctions span {
+    color: #BFA573;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.dash-signal-preview .main-signal-preview .signal-preview{
+    width: 100%;
+    margin: 2rem 0rem;
+}
+
+.dash-signal-preview .main-signal-preview .signal-preview .all-buy .wrapper-buy .buy ,
+.dash-signal-preview .main-signal-preview .signal-preview .all-sell .wrapper-sell .sell {
+    padding: 0.5rem 2rem;
+}
+
+.dash-signal-preview .main-signal-preview .signal-preview .all-buy .wrapper-buy .buy .buy-title .buy-text,
+.dash-signal-preview .main-signal-preview .signal-preview .all-sell .wrapper-sell .sell .sell-title .sell-text {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.dash-signal-preview .main-signal-preview .signal-preview .all-buy .wrapper-buy .buy .buy-title .buy-date,
+.dash-signal-preview .main-signal-preview .signal-preview .all-sell .wrapper-sell .sell .sell-title .sell-date {
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+
+.dash-signal-preview .main-signal-preview .signal-preview .all-buy .wrapper-buy .buy input,
+.dash-signal-preview .main-signal-preview .signal-preview .all-sell .wrapper-sell .sell input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    stroke: none;
+}
+
+.dash-statistics {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dash-statistics .statistics{
+    width: 20%;
+    padding: 0rem 1rem;
+}
+
+.send-signals {
+    border: 2px solid #B48B3D;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.send-signals .title-signal-preview {
+    padding: 1rem;
+    border-bottom: 2px solid #B48B3D;
+}
+
+.send-signals .main-send-signal .insturctions .instructions-title {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.send-signals .main-send-signal .insturctions .box-insturctions {
+    background-color: #343434;
+    padding: 0.8rem 1rem;
+    width: 20rem;
+    border-radius: 5px;
+}
+
+.send-signals .main-send-signal .insturctions .box-insturctions h4 {
+    color: #BFA573;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.send-signals .main-send-signal .insturctions .box-insturctions span {
+    color: #BFA573;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.send-signals .main-send-signal .signal-preview{
+    width: 100%;
+    margin: 2rem 0rem;
+}
+
+.send-signals .main-send-signal .signal-preview .all-buy .wrapper-buy .buy ,
+.send-signals .main-send-signal .signal-preview .all-sell .wrapper-sell .sell {
+    padding: 0.5rem 2rem;
+}
+
+.send-signals .main-send-signal .signal-preview .all-buy .wrapper-buy .buy .buy-title .buy-text,
+.send-signals .main-send-signal .signal-preview .all-sell .wrapper-sell .sell .sell-title .sell-text {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.send-signals .main-send-signal .signal-preview .all-buy .wrapper-buy .buy .buy-title .buy-date,
+.send-signals .main-send-signal .signal-preview .all-sell .wrapper-sell .sell .sell-title .sell-date {
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.send-signals .main-send-signal .signal-preview .all-buy .wrapper-buy .buy input,
+.send-signals .main-send-signal .signal-preview .all-sell .wrapper-sell .sell input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    stroke: none;
+    margin-right: 10px;
+}
+
+.send-signals .main-send-signal .signal-preview .all-buy .wrapper-buy .buy .inside-buy,
+.send-signals .main-send-signal .signal-preview .all-sell .wrapper-sell .sell .inside-sell {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.wrapper-message-email {
+    border: 2px solid #B48B3D;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.btn {
+    color: #FFFFFF !important;
+}
+
+.dropdown-menu {
+    background-color: #343434;
+}
+
+.wrapper-message-subject {
+    border: 2px solid #B48B3D;
+    border-bottom: transparent;
+}
+
+.wrapper-message-subject .bg-subject {
+    padding: 0.5rem 5rem 0.5rem 1rem;
+    background-color: #B48B3D;
+    color: #FFFFFF;
+}
+
+.wrapper-message-subject input {
+    width: 100%;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding-left: 1rem;
+}
+
+.note-editable {
+    color: #B48B3D !important;
+}
+
+.history-table-message{
+    margin-top: 2rem;
+}
+
+.table {
+    color: #FFFFFF;
+}
+
+.table thead th {
+    border-bottom: none;
+}
+
+.table td {
+    border-top: 1px solid #BFA573;
+}
+
+.table th {
+    border-top: none;
+}
+
+#table_message_wrapper {
+    border: 2px solid #B48B3D;
+}
+
+#table_message_filter, #table_message_length {
+    display:  none;
+}
+
+#table_message_length {
+    padding: 0.5rem;
+}
+
+#table_message_length select{
+    padding: 0.2rem;
+}
+
+#table_message_paginate,#table_message_info {
+    padding: 1rem;
+    color: #FFFFFF;
+}
+
+
+.dash-table-totalmember {
+    border: 2px solid #BFA573;
+    /* padding: 1rem; */
+    border-radius: 20px 20px 0px 0px;
+}
+
+.thead_totalmember {
+    background-color: #BFA573;
+    color: #000000;
+}
+
+#table_totalmember_wrapper {
+    border: none;
+}
+
+#table_totalmember_length {
+    display:  none;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    color: #FFFFFF;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    border: 2px solid #BFA573;
+    background-color: #2a2a2a;
+    color: #FFFFFF;
+}
+
+#table_totalmember_length {
+    padding: 0.5rem;
+}
+
+#table_totalmember_length select{
+    padding: 0.2rem;
+}
+
+#table_totalmember_paginate,#table_totalmember_info {
+    padding: 1rem;
+    color: #FFFFFF;
+}
+
+.dataTables_scrollHeadInner {
+    width: 100% !important;
+}
+
+div.dataTables_scrollHead table.dataTable {
+    width: 100% !important;
+}
+
+.iq-card-body .active {
+    width: 100%;
+    height: 5px;
+    border-radius: 9999px;
+    background-color: #0E7304;
+}
+
+.iq-card-body .disable {
+    width: 100%;
+    height: 5px;
+    border-radius: 9999px;
+    background-color: transparent;
+}
+
+.dash-table-freemember {
+    border: 2px solid #BFA573;
+    /* padding: 1rem; */
+    border-radius: 20px 20px 0px 0px;
+}
+
+.thead_freemember {
+    background-color: #BFA573;
+    color: #000000;
+}
+
+#table_freemember_wrapper {
+    border: none;
+}
+
+#table_freemember_length {
+    display:  none;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    color: #FFFFFF;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    border: 2px solid #BFA573;
+    background-color: #2a2a2a;
+    color: #FFFFFF;
+}
+
+#table_freemember_length {
+    padding: 0.5rem;
+}
+
+#table_freemember_length select{
+    padding: 0.2rem;
+}
+
+#table_freemember_paginate,#table_freemember_info {
+    padding: 1rem;
+    color: #FFFFFF;
+}
+
+.dash-detailmember {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin-top: 3rem;
+}
+
+.dash-detailmember > div {
+    padding: 8px 20px;
+    border: 1px solid #8a6d3b;
+    display: flex;
+    align-items: center;
+    margin: 0rem 0.3rem;
+}
+
+.dash-detailmember .header {
+    grid-column: span 2;
+    font-weight: bold;
+    background-color: #1E1E1E;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+.dash-detailmember .label {
+    font-weight: bold;
+    justify-content: flex-start;
+    color: #FFFFFF;
+}
+
+.dash-detailmember .value {
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.dash-detailmember .value .upgrade-btn{
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dash-detailmember .value .upgrade-btn:disabled{
+    background-color: #575757;
+    color: black;
+    border: none;
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.icon-pass-login {
+    font-size: 28px;
+    position: absolute;
+    display: block;
+    right: 20px;
+    bottom: 7px;
+}
+
+.modal-content.upgrade-member {
+    background: linear-gradient(107deg, #B48B3D 49.51%, #BFA573 100%) !important;
+}
+
+.modal-content.upgrade-member .modal-header {
+    border-bottom: none !important;
+}
+
+.modal-content.upgrade-member .modal-body {
+    padding: 0rem 1rem !important;
+}
+
+.modal-content.upgrade-member .modal-body .btn-modal-upgrade{
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #B48B3D 0%, #BFA573 100%);
+    padding: 0rem 1rem;
+}
+
+.modal-content.upgrade-member .modal-body p{
+    color: #000000;
+}
+
+.modal-content.upgrade-member .modal-body h4{
+    color: #000000;
+    font-weight: 700;
+}
+
+.dash-table-referralmember {
+    border: 2px solid #BFA573;
+    /* padding: 1rem; */
+    border-radius: 20px 20px 0px 0px;
+}
+
+.thead_referralmember {
+    background-color: #BFA573;
+    color: #000000;
+}
+
+#table_referralmember_wrapper {
+    border: none;
+}
+
+#table_referralmember_length {
+    display:  none;
+}
+
+#table_referralmember_length {
+    padding: 0.5rem;
+}
+
+#table_referralmember_length select{
+    padding: 0.2rem;
+}
+
+#table_referralmember_paginate,#table_referralmember_info {
+    padding: 1rem;
+    color: #FFFFFF;
+}
+
+.form-addreferral {
+    width: 100%;
+}
+
+.form-addreferral .wrapper-addreferral{
+    width: 100%;
+    margin: 2rem 0rem;
+}
+
+.form-addreferral .wrapper-addreferral label{
+    color: #FFFFFF;
+}
+
+.form-addreferral .wrapper-addreferral input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #BFA573;
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.upgrade-btn{
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.upgrade-btn[disabled]{
+    background-color: #575757;
+    color: black;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-danger[disabled]{
+    background-color: #575757;
+    color: black;
+    border: none;
+}
+
+.cancel-btn{
+    background-color: #FF0000;
+    color: black;
+    border: none;
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn[disabled]{
+    background-color: #575757;
+    color: black;
+    border: none;
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* RESPONSIVE */
+@media(max-width:1699px) {}
+@media(max-width:1450px) {}
+@media(max-width:1400px) {}
+@media(min-width:1300px) {}
+@media(max-width:1399px) {}
+@media(max-width:1299px) {}
+
+@media(max-width:1199px) {
+    .dash-statistics .statistics{
+        width: 30%;
+    }
+}
+
+@media(max-width:979px) {}
+@media(max-width:991px) {}
+@media(max-width:767px) {}
+@media(max-width:580px) {
+    .dash-statistics .statistics{
+        width: 50%;
+    }
+}
+@media(max-width:479px) {}
+@media(max-width:359px) {}

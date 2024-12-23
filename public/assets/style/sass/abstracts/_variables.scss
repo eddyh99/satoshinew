@@ -1,0 +1,87 @@
+    /*----------------------------------------------------------
+    File Name  : _variables.scss
+    Desc       : File ini merupakan file untuk membuat variable CSS 
+                 yang nanti akan digunakan secara berulang-ulang
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Font Family
+ * 2. Color Text
+ * 3. Color Background
+ * 4. Media Query
+ *
+ */
+
+
+/*----------------------------------------------------------
+1. Font Family Start
+------------------------------------------------------------*/ 
+$f-inter: 'Inter', sans-serif !default;
+$f-odor: 'Odor Mean Chey', serif !default;
+$f-lato: 'Lato', sans-serif !default;
+$f-noto: 'Noto Serif', serif !default;
+/*----------------------------------------------------------
+1. Font Family End
+------------------------------------------------------------*/ 
+
+
+
+
+/*----------------------------------------------------------
+2. Color text Start
+------------------------------------------------------------*/ 
+$text-white-satoshi: #FFFFFF !default;
+$text-primary-satoshi: #BFA573 !default;
+$text-black-satoshi: #1E1E1E !default;
+$text-black-100-satoshi: #383734 !default;
+$text-secondary-satoshi: #6A625B !default;
+$text-secondary-100-satoshi: #E8D9BD !default;
+$text-secondary-200-satoshi: #A0714A !default;
+$text-hand-satoshi: #2F1A07 !default;
+/*----------------------------------------------------------
+2. Color Text End
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+3. Color background Start
+------------------------------------------------------------*/ 
+$bg-black-satoshi: #1E1E1E;
+$bg-white-satoshi: #FFFFFF;
+$bg-primary-satoshi: #BFA573;
+$bg-primary-100-satoshi: #CCB78F;
+$bg-primary-200-satoshi: #D3C19E;
+$bg-primary-300-satoshi: #C6B39F;
+$bg-primary-400-satoshi: #C5A571;
+$bg-primary-500-satoshi: #C9B6A2;
+$bg-primary-600-satoshi: #E8D9BD;
+$bg-primary-700-satoshi: #E2D6BF;
+
+/*----------------------------------------------------------
+3. Color background End
+------------------------------------------------------------*/ 
+
+
+
+/*----------------------------------------------------------
+4. Breakpoints Start
+------------------------------------------------------------*/ 
+$screen-375: 375px;
+$screen-425: 425px;
+$screen-567: 567px;
+$screen-599: 599px;
+$screen-768: 768px;
+$screen-992: 992px;
+$screen-1024: 1024px;
+$screen-1200: 1200px;
+$screen-1280: 1280px;
+$screen-1400: 1400px;
+$screen-1500: 1500px;
+
+/*----------------------------------------------------------
+4. Breakpoints End
+------------------------------------------------------------*/ 
+

@@ -1,0 +1,35 @@
+/*----------------------------------------------------------
+    File Name  : _footer.scss
+    Desc       : File ini merupakan styling untuk Footer Homepage
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1 Footer
+ *
+ */
+
+
+ 
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+
+/*----------------------------------------------------------
+1. Footer
+------------------------------------------------------------*/ 
+
+
+.footer {
+    background-color: black;
+
+    .logo-footer {
+        display: flex; /* Gunakan flex untuk logo */
+        justify-content: center; /* Pusatkan logo secara horizontal */
+        align-items: center; /* Pusatkan logo secara vertikal */
+        flex-direction: column; /* Logo dalam satu kolom */
+        gap: 10px; /* Jarak antar logo */
+    }
+}
