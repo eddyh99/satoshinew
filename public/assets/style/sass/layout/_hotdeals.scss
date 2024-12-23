@@ -103,6 +103,7 @@
     background-color: rgba(28, 28, 28, 1);
     padding: 1rem 0;
     h2 {
+        font-weight: bold;
         margin: 20px 0;
         color: var.$text-primary-satoshi;
     }
@@ -133,4 +134,168 @@
 
  /*----------------------------------------------------------
     Sharing Hotdeals End
+------------------------------------------------------------*/ 
+
+ /*----------------------------------------------------------
+5. Why Hotdeals Start
+------------------------------------------------------------*/ 
+
+.why-hotdeals {
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to right, rgb(31, 30, 30), rgb(148, 144, 144));
+    padding: 1rem 0;
+
+    h2 {
+        font-weight: bold;
+        color: white;
+        margin: 2rem;
+    }
+
+    .wrapper-why-hotdeals {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('../../img/bg-why-hotdeals.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include mix.flex-tengah-vertical;
+        height: 100%;
+
+        .row {
+            width: 100%;
+            display: flex; /* Menggunakan Flexbox */
+            justify-content: center; /* Memusatkan row */
+            align-items: stretch; /* Membuat tinggi card seragam */
+            gap: 1rem; /* Menambahkan jarak antar card */
+        }
+
+        .col {
+            color: black;
+            flex: 1; /* Membuat kolom fleksibel */
+            width: 100%;
+        }
+
+        .card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Mengatur agar konten tersebar */
+            height: 100%; /* Membuat tinggi card fleksibel */
+            background-color: var.$bg-primary-satoshi;
+        }
+    }
+}
+
+
+ /*----------------------------------------------------------
+   Why Hotdeals Start
+------------------------------------------------------------*/ 
+
+ /*----------------------------------------------------------
+6. Credit Hotdeals Start
+------------------------------------------------------------*/ 
+.credit-hotdeals {
+    height: 100vh;
+    color: white;
+
+    .credit-timeline {
+        background-color: var.$bg-primary-satoshi;
+        height: 60%;
+        position: relative; /* Untuk mendukung elemen absolut */
+
+        .credit-list {
+            color: rgba(255, 228, 64, 1);
+
+            li {
+                list-style-type: disc;
+                list-style-position: inside;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .credit-image {
+            position: absolute;
+            top: 0; /* Pastikan gambar mulai dari atas container */
+            right: 0;
+            height: auto; /* Biarkan tinggi gambar menyesuaikan proporsinya */
+            width: 70%; /* Tetapkan lebar sebagai setengah dari container */
+            object-fit: contain; /* Gambar akan dipasang tanpa terpotong */
+            object-position: top; /* Memastikan bagian atas gambar terlihat */
+            z-index: 1; /* Supaya tetap berada di belakang teks */
+        }
+    }
+
+    .download-app {
+        @include mix.flex-tengah-vertical;
+        text-align: center;
+        background-color: black;
+        height: 40%;
+        padding: 2rem;
+
+        .download-button {
+            @include mix.flex-tengah;
+            gap: 2rem;
+
+            a img {
+                max-width: 120px; /* Ukuran maksimal tombol */
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1); /* Efek hover */
+                }
+            }
+        }
+    }
+}
+
+ /*----------------------------------------------------------
+   Credit Hotdeals End
+------------------------------------------------------------*/ 
+
+
+ /*----------------------------------------------------------
+7. PriceList Hotdeals Start
+------------------------------------------------------------*/ 
+.pricelist-hotdeals {
+    background-color: black;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    h2 {
+        margin: 2rem 2rem;
+        color: var.$text-primary-satoshi;
+        font-weight: bold;
+    }
+    .button-monthly {
+        background-color: gray;
+        display: block;
+        width: 150px;
+        border-radius: 4px;
+        margin-bottom: 0.4rem;
+        padding: 10px;
+    }
+
+    .pricelist-card {
+        height: 100%;
+        border: 2px solid var.$text-primary-satoshi; /* Border kuning */
+        border-radius: 8px;
+        h5 {
+            font-size: 15px;
+            margin: 1rem 0;
+            color: var.$text-primary-satoshi;
+        }
+
+        .pricelist-card-body {
+            height: 100%;
+        }
+    }
+
+    .pricelist-button {
+        a {
+            display: block;
+        }
+    }
+}
+ /*----------------------------------------------------------
+    Credit Hotdeals End
 ------------------------------------------------------------*/ 

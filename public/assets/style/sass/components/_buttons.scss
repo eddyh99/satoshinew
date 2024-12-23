@@ -182,6 +182,62 @@
     box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5); /* blur putih */
 }
 
+.btn-activate {
+    color: white;
+    background-color: black;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    margin-top: 5rem;
+    box-shadow: 0px 8px 8px 0px #e6c17d;
+}
+
+.btn-promo {
+    font-weight: bold;
+    display: inline-block;
+    color: var.$text-primary-satoshi;
+    background-color: black;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    box-shadow: 0px 8px 8px 0px white;
+    margin: 2rem;
+}
+
+.btn-pricelist-white {
+    background-color: rgba(255, 255, 255);
+    margin-top:8px;
+    padding: 4px;
+    border-radius: 5px;
+    color: rgba(189, 160, 105, 1);
+    font-weight: bold;
+}
+
+.btn-pricelist-white-lg {
+    font-size: 25px;
+    background-color: rgba(255, 255, 255);
+    padding: 4px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-pricelist-black {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top:8px;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-pricelist-black-lg {
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 4px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
 
 
 

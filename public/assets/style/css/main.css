@@ -13331,6 +13331,7 @@ p {
   padding: 1rem 0;
 }
 .sharing-hotdeals h2 {
+  font-weight: bold;
   margin: 20px 0;
   color: #BFA573;
 }
@@ -13356,6 +13357,154 @@ p {
 
 /*----------------------------------------------------------
     Sharing Hotdeals End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+5. Why Hotdeals Start
+------------------------------------------------------------*/
+.why-hotdeals {
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(to right, rgb(31, 30, 30), rgb(148, 144, 144));
+  padding: 1rem 0;
+}
+.why-hotdeals h2 {
+  font-weight: bold;
+  color: white;
+  margin: 2rem;
+}
+.why-hotdeals .wrapper-why-hotdeals {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/bg-why-hotdeals.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.why-hotdeals .wrapper-why-hotdeals .row {
+  width: 100%;
+  display: flex; /* Menggunakan Flexbox */
+  justify-content: center; /* Memusatkan row */
+  align-items: stretch; /* Membuat tinggi card seragam */
+  gap: 1rem; /* Menambahkan jarak antar card */
+}
+.why-hotdeals .wrapper-why-hotdeals .col {
+  color: black;
+  flex: 1; /* Membuat kolom fleksibel */
+  width: 100%;
+}
+.why-hotdeals .wrapper-why-hotdeals .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mengatur agar konten tersebar */
+  height: 100%; /* Membuat tinggi card fleksibel */
+  background-color: #BFA573;
+}
+
+/*----------------------------------------------------------
+   Why Hotdeals Start
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+6. Credit Hotdeals Start
+------------------------------------------------------------*/
+.credit-hotdeals {
+  height: 100vh;
+  color: white;
+}
+.credit-hotdeals .credit-timeline {
+  background-color: #BFA573;
+  height: 60%;
+  position: relative; /* Untuk mendukung elemen absolut */
+}
+.credit-hotdeals .credit-timeline .credit-list {
+  color: rgb(255, 228, 64);
+}
+.credit-hotdeals .credit-timeline .credit-list li {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+.credit-hotdeals .credit-timeline .credit-image {
+  position: absolute;
+  top: 0; /* Pastikan gambar mulai dari atas container */
+  right: 0;
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsinya */
+  width: 70%; /* Tetapkan lebar sebagai setengah dari container */
+  object-fit: contain; /* Gambar akan dipasang tanpa terpotong */
+  object-position: top; /* Memastikan bagian atas gambar terlihat */
+  z-index: 1; /* Supaya tetap berada di belakang teks */
+}
+.credit-hotdeals .download-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+  height: 40%;
+  padding: 2rem;
+}
+.credit-hotdeals .download-app .download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.credit-hotdeals .download-app .download-button a img {
+  max-width: 120px; /* Ukuran maksimal tombol */
+  transition: transform 0.3s ease;
+}
+.credit-hotdeals .download-app .download-button a img:hover {
+  transform: scale(1.1); /* Efek hover */
+}
+
+/*----------------------------------------------------------
+   Credit Hotdeals End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+7. PriceList Hotdeals Start
+------------------------------------------------------------*/
+.pricelist-hotdeals {
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  padding: 2rem 0;
+}
+.pricelist-hotdeals h2 {
+  margin: 2rem 2rem;
+  color: #BFA573;
+  font-weight: bold;
+}
+.pricelist-hotdeals .button-monthly {
+  background-color: gray;
+  display: block;
+  width: 150px;
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+  padding: 10px;
+}
+.pricelist-hotdeals .pricelist-card {
+  height: 100%;
+  border: 2px solid #BFA573; /* Border kuning */
+  border-radius: 8px;
+}
+.pricelist-hotdeals .pricelist-card h5 {
+  font-size: 15px;
+  margin: 1rem 0;
+  color: #BFA573;
+}
+.pricelist-hotdeals .pricelist-card .pricelist-card-body {
+  height: 100%;
+}
+.pricelist-hotdeals .pricelist-button a {
+  display: block;
+}
+
+/*----------------------------------------------------------
+    Credit Hotdeals End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
     File Name  : _navbar.scss
@@ -13525,6 +13674,62 @@ p {
   padding: 0 30px;
   font-weight: bold;
   box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5); /* blur putih */
+}
+
+.btn-activate {
+  color: white;
+  background-color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  margin-top: 5rem;
+  box-shadow: 0px 8px 8px 0px #e6c17d;
+}
+
+.btn-promo {
+  font-weight: bold;
+  display: inline-block;
+  color: #BFA573;
+  background-color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  box-shadow: 0px 8px 8px 0px white;
+  margin: 2rem;
+}
+
+.btn-pricelist-white {
+  background-color: rgb(255, 255, 255);
+  margin-top: 8px;
+  padding: 4px;
+  border-radius: 5px;
+  color: rgb(189, 160, 105);
+  font-weight: bold;
+}
+
+.btn-pricelist-white-lg {
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);
+  padding: 4px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-pricelist-black {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 8px;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-pricelist-black-lg {
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
 }
 
 .dropdown-toggle::after {
