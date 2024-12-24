@@ -1,0 +1,17 @@
+CRITICAL - 2024-12-23 07:31:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/secret-formula.php"
+[Method: GET, Route: homepage/secret_formula]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Views/homepage/layout/wrapper.php(4): view()
+ 4 SYSTEMPATH/View/View.php(234): include('/home/mift4hus/Documents/kerjoan/satoshinew/app/Views/homepage/layout/wrapper.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 7 APPPATH/Controllers/Homepage.php(32): view()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Homepage->secret_formula()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/mift4hus/Documents/kerjoan/satoshinew/public/index.php')

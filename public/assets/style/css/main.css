@@ -13507,6 +13507,131 @@ p {
     Credit Hotdeals End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
+    File Name  : _homepage.scss
+    Desc       : File ini merupakan styling untuk Homepage
+
+------------------------------------------------------------*/
+/**
+ * TABLE OF CONTENTS
+ *
+ * //semua//
+ *
+ */
+/*----------------------------------------------------------
+ Binance Start
+------------------------------------------------------------*/
+.binance {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  height: 65vh;
+}
+.binance .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/bg-binance.png");
+  background-size: cover;
+  height: 100%;
+}
+.binance .container h5 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/*----------------------------------------------------------
+ Binance End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+ Divide Start
+------------------------------------------------------------*/
+.divide {
+  color: white;
+  background-color: black;
+  padding: 1rem 0;
+}
+.divide h2 {
+  color: rgb(32, 243, 17);
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.divide .container .divide-text {
+  text-align: start !important;
+}
+.divide .container h3 {
+  color: #BFA573;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/*----------------------------------------------------------
+ Divide End
+------------------------------------------------------------*/
+.secret {
+  height: 100vh;
+  position: relative;
+}
+.secret .secret-content {
+  padding: 2rem 2rem;
+  height: 65%;
+  background-color: rgb(191, 165, 115);
+  position: relative;
+  z-index: 1;
+}
+.secret .secret-content .secret-image {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* Membuat gambar menyesuaikan dengan container */
+  display: block; /* Menghindari space ekstra di sekitar gambar */
+  position: absolute;
+  z-index: 2;
+  transform: translateY(10%);
+  transform: translateX(-10%);
+  left: 0;
+}
+.secret .secret-content h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+.secret .secret-content .secret-text {
+  margin-right: 5rem;
+}
+.secret .secret-content .secret-text p {
+  font-size: 20px;
+}
+.secret .the-signal {
+  height: 35%;
+  background-color: black;
+  color: white;
+  z-index: 0;
+  text-align: center;
+  padding: 2rem 0;
+}
+.secret .the-signal h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #BFA573;
+  margin: 2rem;
+}
+.secret .the-signal p {
+  font-size: 20px;
+}
+.secret .the-signal .the-signal-image {
+  height: 307px;
+  object-fit: contain; /* Membuat gambar menyesuaikan dengan container */
+  display: block; /* Menghindari space ekstra di sekitar gambar */
+  position: absolute;
+  z-index: 2;
+  transform: translateY(20%);
+  right: 0;
+  bottom: 0;
+}
+
+/*----------------------------------------------------------
     File Name  : _navbar.scss
     Desc       : File ini merupakan styling untuk 
                  Component Button yang akan dipakai berulang
@@ -13730,6 +13855,19 @@ p {
   border-radius: 5px;
   color: black;
   font-weight: bold;
+}
+
+.btn-buy-exclusive {
+  background: black;
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 287px;
+  border-radius: 40px;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
 }
 
 .dropdown-toggle::after {

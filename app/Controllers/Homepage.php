@@ -22,4 +22,13 @@ class Homepage extends BaseController
 
         return view('homepage/layout/wrapper', $mdata);
     }
+
+    public function secret_formula() {
+        $mdata = [
+            'title'     => 'Secret Formula - ' . NAMETITLE,
+            'content'   => 'homepage/secret-formula'
+        ];
+
+        return view('homepage/layout/wrapper', $mdata);
+    }
 }
