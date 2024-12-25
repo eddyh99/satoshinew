@@ -103,3 +103,12 @@ $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.
 defined('BASE_URL') || define('BASE_URL',$protocol);
 
 define("NAMETITLE", 'Satoshi Signal');
+define("SATOSHITITLE", 'Satoshi Signal');
+define("URLAPI", 'https://api.pnglobalinternational.com');
+
+// For Email
+define("HOST_MAIL", 'mail.pnglobalinternational.com');
+define("USERNAME_MAIL", 'no-reply@pnglobalinternational.com');
+define("PASS_MAIL", 'Jzg-iF%^HM!x');
+
+
