@@ -1,0 +1,186 @@
+/*----------------------------------------------------------
+    File Name  : _giveaway.scss
+    Desc       : File ini merupakan styling untuk Giveaway Page
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * //semua//
+ *
+ */
+
+ 
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ /*----------------------------------------------------------
+ 1. Banner Giveaway Start
+ ------------------------------------------------------------*/ 
+
+.banner-giveaway {
+    margin-top: 96px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    .banner-giveaway-title {
+        color: var.$text-primary-satoshi;
+        font-weight: bold;
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        line-height: 1;
+        span {
+            font-size: 45px;
+        }
+    }
+
+    span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+ /*----------------------------------------------------------
+    Banner Giveaway End
+------------------------------------------------------------*/ 
+
+
+ /*----------------------------------------------------------
+ 2. Giveaway Start
+ ------------------------------------------------------------*/ 
+
+.giveaway {
+    @include mix.flex-tengah;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 4rem 0;
+
+    .giveaway-card {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.19), rgba(30, 30, 30, 0.19));
+        width: 498px;
+        height: 415px;
+        border-radius: 5px;
+        margin: 1rem;
+        position: relative;
+        .gift-image-1 {
+            bottom: -80px;
+            left: -80px;
+            position: absolute;
+            width: 189;
+            height: 192px;
+        }
+        .gift-image-2 {
+            top: -100px;
+            right: -50px;
+            position: absolute;
+            width: 189;
+            height: 192px;
+        }
+        .giveaway-card-header {
+            text-transform: uppercase;
+            h2 {
+                padding: 2rem 5rem;
+                font-weight: bold;
+                line-height: 45px;
+            }
+        }
+        .giveaway-card-body {
+            font-size: 22px;
+            padding: 0 2rem;
+            line-height: 40px;
+        }
+    }
+}
+
+ /*----------------------------------------------------------
+    Giveaway End
+------------------------------------------------------------*/ 
+
+ /*----------------------------------------------------------
+ 3. Regulation Giveaway Start
+ ------------------------------------------------------------*/ 
+.regulation-giveaway {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    background-size: cover;
+    background-position: right;
+    padding-bottom: 4rem;
+    .wrapper-regulation-giveaway {
+        width: 938px;
+        margin: 0 auto;
+        h2 {
+            margin: 2rem 0;
+        }
+        ul {
+            margin-bottom: 10rem;
+            li {
+                font-size: 20px;
+                list-style-type: disc;
+                list-style-position: outside;
+                margin-bottom: 2.5rem;
+                line-height: 40px;
+            }
+        }
+        .important-notes {
+            @include mix.flex-tengah-vertical;
+            text-align: center;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.19), rgba(102, 102, 102, 0.19), rgba(30, 30, 30, 0.19));
+            border-radius: 5px;
+            height: auto;
+            position: relative;
+            .gift-image {
+                position: absolute;
+                width: auto;
+                height: 134px;
+                top: -70px;
+                left: 5rem;
+            }
+            h2 {
+                padding-top: 2rem;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            ul {
+                margin: 4rem 4rem;
+                margin-top: 0;
+                li {
+                    list-style-type: disc;
+                    list-style-position: inside;
+                    font-size: 20px;
+                    margin-bottom: 1rem;
+                }
+            }
+            .btn-subscribes {
+                position: absolute;
+                background-color: rgba(189, 160, 105, 1);
+                display: block; /* Pastikan elemen memenuhi satu baris penuh */
+                width: 256px; /* Sesuaikan dengan konten */
+                text-align: center; /* Untuk sentralisasi teks */
+                white-space: normal; /* Izinkan teks terputus ke baris berikutnya */
+                word-wrap: break-word; /* Paksa teks panjang untuk terputus */
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 1rem 2rem;
+                border-radius: 40px;
+                bottom: -40px;
+                &:hover {
+                    background-color: var.$bg-primary-satoshi;
+                    color: var.$text-black-satoshi;
+                    box-shadow: 0px 0px 10px 10px #E8D9BD; /* Bayangan seimbang di semua sisi */
+                    font-weight: 700;
+                }
+
+            }
+            
+        }
+    }
+}
+ /*----------------------------------------------------------
+    Regulation Giveaway End
+------------------------------------------------------------*/ 

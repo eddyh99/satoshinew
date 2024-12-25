@@ -31,4 +31,13 @@ class Homepage extends BaseController
 
         return view('homepage/layout/wrapper', $mdata);
     }
+
+    public function giveaway() {
+        $mdata = [
+            'title'     => 'Giveaway - ' . NAMETITLE,
+            'content'   => 'homepage/giveaway'
+        ];
+
+        return view('homepage/layout/wrapper', $mdata);
+    }
 }

@@ -80,56 +80,56 @@
                 </div>
             </div>
             <div class="col-6">
-                    <div class="row row-cols-2 justify-content-center items-align-center">
-                        <div class="col">
-                            <div class="card-buy">
-                                <div class="card-buy-header">
-                                    BUY <span style="color: green;">A</span>
-                                </div>
-                                <div class="card-buy-text">
-                                    Start by purchasing the first quarter of your capital.
-                                </div>
+                <div class="row row-cols-2 justify-content-center items-align-center">
+                    <div class="col">
+                        <div class="card-buy">
+                            <div class="card-buy-header">
+                                BUY <span style="color: green;">A</span>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-buy">
-                                <div class="card-buy-header">
-                                    BUY <span style="color: green;">B</span>
-                                </div>
-                                <div class="card-buy-text">
-                                    Purchase the second quarter of your capital.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-buy">
-                                <div class="card-buy-header">
-                                    BUY <span style="color: green;">C</span>
-                                </div>
-                                <div class="card-buy-text">
-                                    Purchase the third quarter of your capital.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-buy">
-                                <div class="card-buy-header">
-                                    BUY <span style="color: green;">D</span>
-                                </div>
-                                <div class="card-buy-text">
-                                    Complete the purchase with the final quarter of your capital.
-                                </div>
+                            <div class="card-buy-text">
+                                Start by purchasing the first quarter of your capital.
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="card-buy">
+                            <div class="card-buy-header">
+                                BUY <span style="color: green;">B</span>
+                            </div>
+                            <div class="card-buy-text">
+                                Purchase the second quarter of your capital.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-buy">
+                            <div class="card-buy-header">
+                                BUY <span style="color: green;">C</span>
+                            </div>
+                            <div class="card-buy-text">
+                                Purchase the third quarter of your capital.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-buy">
+                            <div class="card-buy-header">
+                                BUY <span style="color: green;">D</span>
+                            </div>
+                            <div class="card-buy-text">
+                                Complete the purchase with the final quarter of your capital.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
 
     </div>
 </div>
-<div class="buy-signals-attention">
-    <span>⚠️ You cannot buy BUY D signal without first buying BUY A, BUY B and  BUY C.</span>
+<div class="signals-attention">
+    <span>⚠️ You cannot buy BUY D signal without first buying BUY A, BUY B and BUY C.</span>
 </div>
 
 <!-- End of Buy Signals -->
@@ -145,64 +145,130 @@
                         <span class="d-block">SIGNALS</span>
                     </div>
                     <div class="card-sell-desc-text">
-                    These single sell signals allow you to close each operation individually while following the inverted order of buying <span style="color: red;">ABCD</span>.
+                        These single sell signals allow you to close each operation individually while following the inverted order of buying <span style="color: red;">ABCD</span>.
                     </div>
                 </div>
             </div>
             <div class="col-6">
-                    <div class="row row-cols-2 justify-content-center items-align-center">
-                        <div class="col">
-                            <div class="card-sell">
-                                <div class="card-sell-header">
-                                    SELL <span style="color: red;">D</span>
-                                </div>
-                                <div class="card-sell-text">
-                                Start to sell the operation bought with the signal BUY D. 
-                                </div>
+                <div class="row row-cols-2 justify-content-center items-align-center">
+                    <div class="col">
+                        <div class="card-sell">
+                            <div class="card-sell-header">
+                                SELL <span style="color: red;">D</span>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-sell">
-                                <div class="card-sell-header">
-                                    SELL <span style="color: red;">C</span>
-                                </div>
-                                <div class="card-sell-text">
-                                Sell the operation bought with the signal BUY C. 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-sell">
-                                <div class="card-sell-header">
-                                    SELL <span style="color: red;">B</span>
-                                </div>
-                                <div class="card-sell-text">
-                                Sell the operation bought with the signal BUY B. 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-sell">
-                                <div class="card-sell-header">
-                                    SELL <span style="color: red;">A</span>
-                                </div>
-                                <div class="card-sell-text">
-                                Complete the purchase with the final quarter bought with the signal BUY A.
-                                </div>
+                            <div class="card-sell-text">
+                                Start to sell the operation bought with the signal BUY D.
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="card-sell">
+                            <div class="card-sell-header">
+                                SELL <span style="color: red;">C</span>
+                            </div>
+                            <div class="card-sell-text">
+                                Sell the operation bought with the signal BUY C.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-sell">
+                            <div class="card-sell-header">
+                                SELL <span style="color: red;">B</span>
+                            </div>
+                            <div class="card-sell-text">
+                                Sell the operation bought with the signal BUY B.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-sell">
+                            <div class="card-sell-header">
+                                SELL <span style="color: red;">A</span>
+                            </div>
+                            <div class="card-sell-text">
+                                Complete the purchase with the final quarter bought with the signal BUY A.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
 
     </div>
 </div>
-<div class="sell-signals-attention">
-    <span> ⚠️ You cannot sell an operation bought with the BUY A signal without <span class="d-block">first selling those bought with BUY B, C, and D</span> </span>
+<div class="signals-attention">
+    <span> ⚠️ You cannot sell an operation bought with the BUY A signal without first selling those bought with BUY B, C, and D</span>
 </div>
 
 <!-- End of Sell Signals -->
+
+<!-- Start of Multiple Sell -->
+<div class="multiple-sell">
+    <div class="multiple-sell-header">
+        <h2>COMBINATION OF MULTIPLE <span class="d-block">SELL <span class="text-black">SIGNALS</span></span></h2>
+    </div>
+    <div class="multiple-sell-content">
+        <ul>
+            <li>If You’ve Bought Up to <span class="text-black">BUY</span><span class="text-green"> D</span>  You Can Execute All Trades Up to <span class="text-black">SELL</span><span class="text-red"> DC</span>
+                <div class="card-sell">
+                    <div class="card-sell-header">
+                        SELL <span class="second-word">DCBA</span>
+                    </div>
+                    <div class="card-sell-text">
+                        Sell all operations ( D, C, B, A) in one operation.
+                    </div>
+                </div>
+                <div class="card-sell">
+                    <div class="card-sell-header">
+                        SELL <span class="second-word">DCB</span>
+                    </div>
+                    <div class="card-sell-text">
+                        Sell the operations associated with BUY B, C, D.
+                    </div>
+                </div>
+                <div class="card-sell">
+                    <div class="card-sell-header">
+                        SELL <span class="second-word">DC</span>
+                    </div>
+                    <div class="card-sell-text">
+                        Sell the operations associated with BUY C and D signals.
+                    </div>
+                </div>
+            </li>
+            <li>If You’ve Bought Up to <span class="text-black">BUY</span> <span class="text-green">C</span> You Can Execute All Trades Up to <span class="text-black">SELL</span> <span class="text-red">C B</span>
+                <div class="card-sell">
+                    <div class="card-sell-header">
+                        SELL <span class="second-word">CBA</span>
+                    </div>
+                    <div class="card-sell-text">
+                        Sell the operations associated with BUY A, B, C signals.
+                    </div>
+                </div>
+                <div class="card-sell">
+                    <div class="card-sell-header">
+                        SELL <span class="second-word">CB</span>
+                    </div>
+                    <div class="card-sell-text">
+                        Sell the operations associated with BUY B, C signals.
+                    </div>
+                </div>
+            </li>
+            <li>If You’ve Bought Up to <span class="text-black">BUY</span> <span class="text-green">B</span> You Can Execute All Trades Up to <span class="text-black">SELL</span> <span class="text-red">B A</span>
+                <div class="card-sell">
+                    <div class="card-sell-header">
+                        SELL <span class="second-word">A</span>
+                    </div>
+                    <div class="card-sell-text">
+                        Sell the operation associated with BUY A and B signals.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- End of Multiple Sell -->
 
 <!-- Start of Secret Formula -->
 <div class="secret-formula">
