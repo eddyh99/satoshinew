@@ -26,8 +26,8 @@
         <div class="row justify-center mt-3">
             <div class="col-2 my-auto">
                 <a class="button-monthly" href="#">1 MONTH</a>
-                <a class="button-monthly" href="#">1 MONTH</a>
-                <a class="button-monthly" href="#">1 MONTH</a>
+                <a class="button-monthly" href="#">3 MONTH</a>
+                <a class="button-monthly" href="#">6 MONTH</a>
                 <a class="button-monthly" href="#">1 YEAR</a>
             </div>
             <div class="col">
@@ -43,19 +43,20 @@
                                 <a class="btn-pricelist-white" href="">250 EURO</a>
                             </div>
                             <div class="col pricelist-button">
-                            <a class="btn-pricelist-black-lg" href="">WEBSITE</a>
+                                <a class="btn-pricelist-black-lg" href="">WEBSITE</a>
                                 <a class="btn-pricelist-black" href="">250 EURO</a>
                                 <a class="btn-pricelist-black" href="">250 EURO</a>
                                 <a class="btn-pricelist-black" href="">250 EURO</a>
                                 <a class="btn-pricelist-black" href="">250 EURO</a>
                             </div>
                         </div>
-                        <a href="" class="btn-promo text-uppercase">GET THE PROMO <span class="d-block">FROM THE WEB</span></a>
+                        <a href="" class="btn-promo text-uppercase">GET THE PROMO <span class="d-block">FROM THE
+                                WEB</span></a>
                     </div>
                 </div>
             </div>
             <div class="col">
-            <div class="pricelist-card">
+                <div class="pricelist-card">
                     <div class="pricelist-card-body mx-4">
                         <h5 class="text-uppercase">If activated your account from app:</h5>
                         <div class="row justify-center">
@@ -65,7 +66,7 @@
                                 <a class="btn-pricelist-black" href="">825 EURO</a>
                             </div>
                             <div class="col pricelist-button">
-                            <a class="btn-pricelist-black-lg text-white" href="">IOS</a>
+                                <a class="btn-pricelist-black-lg text-white" href="">IOS</a>
                                 <a class="btn-pricelist-black" href="">300 EURO</a>
                                 <a class="btn-pricelist-black" href="">825 EURO</a>
                             </div>
@@ -212,7 +213,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 <!-- Enf of Credit -->
 
