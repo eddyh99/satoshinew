@@ -1,0 +1,70 @@
+/*----------------------------------------------------------
+    File Name  : _giveaway.scss
+    Desc       : File ini merupakan styling untuk Giveaway Page
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * //semua//
+ *
+ */
+
+ 
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ /*----------------------------------------------------------
+ 1. Banner Giveaway Start
+ ------------------------------------------------------------*/ 
+
+.banner-giveaway {
+    margin-top: 96px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    .banner-giveaway-title {
+        color: var.$text-primary-satoshi;
+        font-weight: bold;
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        line-height: 1;
+        span {
+            font-size: 45px;
+        }
+    }
+
+    span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+ /*----------------------------------------------------------
+    Banner Giveaway End
+------------------------------------------------------------*/ 
+
+.regulation-giveaway {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../img/145.png');
+    background-size: cover;
+    background-position: right;
+    .wrapper-regulation-giveaway {
+        width: 938px;
+        margin: 0 auto;
+        h2 {
+            margin: 2rem 0;
+        }
+        li {
+            font-size: 20px;
+            list-style-type: disc;
+            list-style-position: outside;
+            margin-bottom: 2.5rem;
+            line-height: 40px;
+        }
+    }
+}

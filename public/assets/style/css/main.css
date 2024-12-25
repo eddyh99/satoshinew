@@ -13767,17 +13767,6 @@ p {
   border-bottom-right-radius: 5px;
 }
 
-.buy-signals-attention {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: white;
-  background-color: black;
-  font-size: 20px;
-  height: 80px;
-}
-
 /*----------------------------------------------------------
     Buy Signals End
 ------------------------------------------------------------*/
@@ -13841,21 +13830,138 @@ p {
   border-bottom-right-radius: 5px;
 }
 
-.sell-signals-attention {
+.signals-attention {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
   background-color: black;
-  font-size: 20px;
-  height: 80px;
+  height: auto;
   text-align: center;
+}
+.signals-attention span {
+  font-size: 20px;
+  width: 800px;
+  margin: 2rem 0;
 }
 
 /*----------------------------------------------------------
     Buy Signals End
 ------------------------------------------------------------*/
+.multiple-sell {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/bg-multiple-sell.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.multiple-sell .multiple-sell-header {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(189, 160, 105));
+  width: 678px;
+  height: 155px;
+  color: red;
+  border-radius: 10px;
+}
+.multiple-sell .multiple-sell-header h2 {
+  font-weight: bold;
+  font-size: 35px;
+}
+.multiple-sell .multiple-sell-content {
+  margin-bottom: 4rem;
+  text-align: center;
+  background-color: rgba(56, 55, 52, 0.8);
+  width: 678px;
+  height: auto;
+  border-radius: 5px;
+  border: 4px solid rgb(189, 160, 105);
+  color: white;
+}
+.multiple-sell .multiple-sell-content ul {
+  margin: 3rem 4rem;
+}
+.multiple-sell .multiple-sell-content ul li {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 2rem;
+}
+.multiple-sell .multiple-sell-content ul .card-sell {
+  margin: 3rem auto;
+}
+
+/*----------------------------------------------------------
+    File Name  : _giveaway.scss
+    Desc       : File ini merupakan styling untuk Giveaway Page
+
+------------------------------------------------------------*/
+/**
+ * TABLE OF CONTENTS
+ *
+ * //semua//
+ *
+ */
+/*----------------------------------------------------------
+1. Banner Giveaway Start
+------------------------------------------------------------*/
+.banner-giveaway {
+  margin-top: 96px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+.banner-giveaway .banner-giveaway-title {
+  color: #BFA573;
+  font-weight: bold;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+.banner-giveaway .banner-giveaway-title span {
+  font-size: 45px;
+}
+.banner-giveaway span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*----------------------------------------------------------
+    Banner Giveaway End
+------------------------------------------------------------*/
+.regulation-giveaway {
+  background-color: black;
+  color: white;
+  padding: 1px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/145.png");
+  background-size: cover;
+  background-position: right;
+}
+.regulation-giveaway .wrapper-regulation-giveaway {
+  width: 938px;
+  margin: 0 auto;
+}
+.regulation-giveaway .wrapper-regulation-giveaway h2 {
+  margin: 2rem 0;
+}
+.regulation-giveaway .wrapper-regulation-giveaway li {
+  font-size: 20px;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-bottom: 2.5rem;
+  line-height: 40px;
+}
+
 /*----------------------------------------------------------
     File Name  : _navbar.scss
     Desc       : File ini merupakan styling untuk 
@@ -14129,6 +14235,14 @@ p {
   color: #BFA573;
 }
 
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
 /*----------------------------------------------------------
 1. Text Color End
 ------------------------------------------------------------*/
@@ -14150,5 +14264,35 @@ p {
  * 1. Input Booking
  *
  */
+.card-sell {
+  height: auto;
+  width: 280px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.card-sell .card-sell-header {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(189, 160, 105));
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-sell .card-sell-header .second-word {
+  color: red; /* Makes the "A" red */
+  font-size: 40px; /* Makes the "A" larger */
+}
+.card-sell .card-sell-text {
+  color: black;
+  height: 120px;
+  background-color: white;
+  font-size: 18px;
+  padding: 1rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-transform: none;
+  font-weight: normal;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+.card-sell {
+    height: auto;
+    width: 280px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    .card-sell-header {
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(189, 160, 105, 1));
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        .second-word {
+            color: red;         /* Makes the "A" red */
+            font-size: 40px;    /* Makes the "A" larger */
+        }
+    }
+    .card-sell-text {
+        color: black;
+        height: 120px;
+        background-color: white;
+        font-size: 18px;
+        padding: 1rem;
+        border-bottom-left-radius: 5px; 
+        border-bottom-right-radius: 5px;
+        text-transform: none;
+        font-weight: normal;
+    }
+}

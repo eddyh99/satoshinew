@@ -45,13 +45,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" aria-current="page" href="<?=BASE_URL?>/homepage/hotdeals">HOT DEAL</a>
+                        <a class="nav-link" aria-current="page" href="<?=BASE_URL?>homepage/hotdeals">HOT DEAL</a>
                     </li>
                     <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" aria-current="page" href="<?=BASE_URL?>/homepage/secret_formula">SECRET FORMULA</a>
+                        <a class="nav-link" aria-current="page" href="<?=BASE_URL?>homepage/secret_formula">SECRET FORMULA</a>
                     </li>
                     <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" aria-current="page" href="<?=BASE_URL?>?type=training">GIVEAWAY</a>
+                        <a class="nav-link" aria-current="page" href="<?=BASE_URL?>homepage/giveaway">GIVEAWAY</a>
                     </li>
                     <li class="nav-item me-0 me-xl-2">
                         <a class="nav-link" href="<?=BASE_URL?>?type=service">CONTACTS</a>
