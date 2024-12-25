@@ -13939,13 +13939,68 @@ p {
 /*----------------------------------------------------------
     Banner Giveaway End
 ------------------------------------------------------------*/
+/*----------------------------------------------------------
+2. Giveaway Start
+------------------------------------------------------------*/
+.giveaway {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  position: relative;
+  padding: 4rem 0;
+}
+.giveaway .giveaway-card {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.19), rgba(30, 30, 30, 0.19));
+  width: 498px;
+  height: 415px;
+  border-radius: 5px;
+  margin: 1rem;
+  position: relative;
+}
+.giveaway .giveaway-card .gift-image-1 {
+  bottom: -80px;
+  left: -80px;
+  position: absolute;
+  width: 189;
+  height: 192px;
+}
+.giveaway .giveaway-card .gift-image-2 {
+  top: -100px;
+  right: -50px;
+  position: absolute;
+  width: 189;
+  height: 192px;
+}
+.giveaway .giveaway-card .giveaway-card-header {
+  text-transform: uppercase;
+}
+.giveaway .giveaway-card .giveaway-card-header h2 {
+  padding: 2rem 5rem;
+  font-weight: bold;
+  line-height: 45px;
+}
+.giveaway .giveaway-card .giveaway-card-body {
+  font-size: 22px;
+  padding: 0 2rem;
+  line-height: 40px;
+}
+
+/*----------------------------------------------------------
+    Giveaway End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+3. Regulation Giveaway Start
+------------------------------------------------------------*/
 .regulation-giveaway {
   background-color: black;
   color: white;
   padding: 1px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/145.png");
   background-size: cover;
   background-position: right;
+  padding-bottom: 4rem;
 }
 .regulation-giveaway .wrapper-regulation-giveaway {
   width: 938px;
@@ -13954,14 +14009,74 @@ p {
 .regulation-giveaway .wrapper-regulation-giveaway h2 {
   margin: 2rem 0;
 }
-.regulation-giveaway .wrapper-regulation-giveaway li {
+.regulation-giveaway .wrapper-regulation-giveaway ul {
+  margin-bottom: 10rem;
+}
+.regulation-giveaway .wrapper-regulation-giveaway ul li {
   font-size: 20px;
   list-style-type: disc;
   list-style-position: outside;
   margin-bottom: 2.5rem;
   line-height: 40px;
 }
+.regulation-giveaway .wrapper-regulation-giveaway .important-notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.19), rgba(102, 102, 102, 0.19), rgba(30, 30, 30, 0.19));
+  border-radius: 5px;
+  height: auto;
+  position: relative;
+}
+.regulation-giveaway .wrapper-regulation-giveaway .important-notes .gift-image {
+  position: absolute;
+  width: auto;
+  height: 134px;
+  top: -70px;
+  left: 5rem;
+}
+.regulation-giveaway .wrapper-regulation-giveaway .important-notes h2 {
+  padding-top: 2rem;
+  font-size: 30px;
+  font-weight: bold;
+}
+.regulation-giveaway .wrapper-regulation-giveaway .important-notes ul {
+  margin: 4rem 4rem;
+  margin-top: 0;
+}
+.regulation-giveaway .wrapper-regulation-giveaway .important-notes ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.regulation-giveaway .wrapper-regulation-giveaway .important-notes .btn-subscribes {
+  position: absolute;
+  background-color: rgb(189, 160, 105);
+  display: block; /* Pastikan elemen memenuhi satu baris penuh */
+  width: 256px; /* Sesuaikan dengan konten */
+  text-align: center; /* Untuk sentralisasi teks */
+  white-space: normal; /* Izinkan teks terputus ke baris berikutnya */
+  word-wrap: break-word; /* Paksa teks panjang untuk terputus */
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  bottom: -40px;
+}
+.regulation-giveaway .wrapper-regulation-giveaway .important-notes .btn-subscribes:hover {
+  background-color: #BFA573;
+  color: #1E1E1E;
+  box-shadow: 0px 0px 10px 10px #E8D9BD; /* Bayangan seimbang di semua sisi */
+  font-weight: 700;
+}
 
+/*----------------------------------------------------------
+    Regulation Giveaway End
+------------------------------------------------------------*/
 /*----------------------------------------------------------
     File Name  : _navbar.scss
     Desc       : File ini merupakan styling untuk 
@@ -14097,11 +14212,12 @@ p {
   width: 220px;
   padding: 1rem 2rem !important;
   border-radius: 40px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.3;
   font-weight: bold;
   margin-top: 3rem;
+  text-transform: uppercase;
 }
 .btn-subscribe:hover {
   background-color: #BFA573;
