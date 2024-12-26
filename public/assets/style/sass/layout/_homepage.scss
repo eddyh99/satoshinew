@@ -129,9 +129,14 @@
         }
 
         h2 {
+            font-size: 35px;
             color: #BFA573;
             font-weight: bold;
             margin-bottom: 12px;
+        }
+
+        h4 {
+            font-size: 25px;
         }
     }
 }
@@ -232,7 +237,12 @@
                     margin-left: 5rem;
                 }
                 h3 {
+                    font-size: 30px;
                     color: var.$text-primary-satoshi;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 35px;
                 }
             }
 
@@ -282,7 +292,13 @@
                 margin-left: 4rem;
 
                 h2 {
+                    font-size: 35px;
+                    line-height: 52px;
                     color: var.$text-primary-satoshi;
+                }
+                p {
+                    font-size: 25px;
+                    line-height: 37px;
                 }
             }
         }
@@ -299,35 +315,42 @@
 ------------------------------------------------------------*/ 
 
 .description-homepage {
+    height: 423px;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/bg-description.jpg');
 
     .row {
-        z-index: 2;
+        // z-index: 2;
         height: 100%;
         width: 100%;
 
         .card {
             background-color: #BFA573;
-            height: 100%;
-            width: 100%;
+            height: 423px;
+            width: 380px;
             border-radius: 5px;
 
             .card-body {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                text-align: center;
+                @include mix.flex-tengah-vertical;
+                justify-content: start;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
                 height: 100%; 
             }
 
             .header {
-                background: linear-gradient(to left top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 40%, #3b230d 100%);
-                border-radius: 10px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                width: 100%;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 80%, rgba(255, 255, 255, 0.7) 100%);
+                border-radius: 5px;
+                padding: 10px 10px;
+                width: 77px;
+                width: 290px;
                 text-align: center;
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 700;
             }
         }
     }
@@ -360,8 +383,22 @@
 
         h2 {
             color: var.$text-primary-satoshi;
-            size: 12;
-            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 35px;
+            line-height: 52px;
+        }
+
+        span {
+            text-transform: capitalize;
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: 600;
         }
     }
 }
@@ -381,29 +418,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
     
     .benefits-card {
-        height: 80%;
+        // height: auto;
+        width: 280px;
         .benefits-card-header {
+            height: 60px;
             text-align: center;
             color: var.$text-primary-satoshi;
             background: linear-gradient(to left, rgb(110, 109, 109), black);
-            font-size: 23px;
-            border-radius: 10px;
+            font-size: 20px;
+            border-radius: 5px;
             font-weight: bold;
+            line-height: 28px;
         }
 
         .benefits-card-body {
             text-align: center;
             margin-top: 10px;
             font-size: 20px;
-            background-color: rgba(0, 0, 0, 0.9);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 85%, rgba(255, 255, 255, 0.4) 100%);
             padding: 12px;
-            height: 100%;
+            height: 345px;
 
-            .benefits-icon {//img
+            .benefits-icon {
                 display: block;
-                margin: 12px auto;
+                height: 85px;
+                width: 85px;
+                margin: 1rem auto;
             }
         }
     }
@@ -411,6 +458,7 @@
     .row {
         display: flex;
         justify-content: center;
+        gap: 3rem;
 
         .col {
             &:nth-child(1), 

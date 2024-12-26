@@ -219,7 +219,7 @@
 <!-- Start of Become -->
 <div class="become-hotdeals">
     <div class="wrapper-become-hotdeals">
-        <h2 class="fs-1">BECOME A SATOSHI SIGNAL AMBASSADOR</h2>
+        <h2 class="text-yellow">BECOME A SATOSHI SIGNAL AMBASSADOR</h2>
         <h5 class="text-white mt-2">Monetize Your Visibility With The Satoshi Signal Referral Program</h5>
         <span class="text-white my-5">
             Are you influencer, a representative, or a professional with wide visivility?

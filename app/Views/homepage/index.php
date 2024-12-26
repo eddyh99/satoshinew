@@ -56,12 +56,12 @@
                 </h3>
                 <p class="text-white my-5 fs-5">
                     Operations of BTC/USDT pair are made by
-                    PN Global skilled brokers (real people, not
-                    algorithms) that analyze the market
+                    PN Global skilled brokers ( <b>real people, not
+                    algorithms</b>) that analyze the market
                     conditions 24/7 to provide you with
                     transparent, reliable signals.
                 </p>
-                <a href="#" class="btn-revolution text-white">BE PART OF THE <span class="d-block">
+                <a href="#" class="btn-revolution text-white text-center">BE PART OF THE <span class="d-block">
                         REVOLUTION!
                     </span>
                 </a>
@@ -84,7 +84,7 @@
         <div class="row justify-content-center">
             <div class="col">
                 <div class="card">
-                    <div class="card-body mx-4 d-flex">
+                    <div class="card-body">
                         <div class="header text-white text-center">REAL-TIME <span class="d-block">NOTIFICATIONS</span>
                         </div>
                         <p class="mx-5 my-5 fs-5">Receive instant notifications of buy and sell prices with precise
@@ -94,7 +94,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body mx-4 d-flex">
+                    <div class="card-body">
                         <div class="header text-white text-center">DETAILED EXPLANATIONS<span class="d-block">FROM
                                 EXPERT BROKERS</span>
                         </div>
@@ -106,7 +106,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body mx-4 d-flex">
+                    <div class="card-body">
                         <div class="header text-white text-center">AUTOMATIC MULTI-<span class="d-block">LANGUAGE
                                 TRANSLATIONS</span>
                         </div>
@@ -128,7 +128,7 @@
             <h2>
                 Forget Slow, Inaccurate, And <span class="d-block">Confusing Signal Rooms.</span>
             </h2>
-            <p class="my-5 fs-4">
+            <p class="my-5">
                 Activate your Satoshi Signal account, <span class="d-block">download the app to your device, and let
                     us</span> <span class="d-block">handle your profits.</span>
             </p>
@@ -193,9 +193,9 @@
 <div class="giveaway-homepage">
     <div class="wrapper-giveaway-homepage">
         <h2>Satoshi Signal Giveaway: Don’t Miss Out on Free USDT!</h2>
-        <p class="mt-3 text-white fs-4 fw-bold">Giveaway esclusivi per premiare la tua fedeltà, il tuo successo, il tuo
-            supporto e la tua condivisione sui social!</p>
-        <p class="mt-3 text-white fs-5">Are you ready to win exclusive prizes in USDT? The Satoshi Signal Giveaways
+        <span class="mt-3 text-white fw-bold">Giveaway esclusivi per premiare la tua fedeltà, il tuo successo, il tuo
+            supporto e la tua condivisione sui social!</span>
+        <p class="mt-4 text-white ">Are you ready to win exclusive prizes in USDT? The Satoshi Signal Giveaways
             reward your support and your commitment! Share your earnings, show the benefits gained through our app and
             invite your friends to participate.
             Join the fun and make your success!</p>
