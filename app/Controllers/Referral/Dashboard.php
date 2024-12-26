@@ -22,7 +22,6 @@ class Dashboard extends BaseController
 
         $url2   = URLAPI . "/v1/referral/commission?id=".$_SESSION["logged_user"]->id;
         $unpaid = satoshiAdmin($url2)->result->message;
-        
         $mdata = [
             'title'     => 'Dashboard - ' . SATOSHITITLE,
             'content'   => 'referral/dashboard/index',

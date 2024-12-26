@@ -1,5 +1,5 @@
 
-<?php if(!empty(session('failed'))) { ?>
+<?php if(!empty(session('success'))) { ?>
 <div class="alert alert-success fade show position-absolute" style="top: 1rem; right: 1rem; width: 30%; z-index: 99999;" role="alert">
     <div class="iq-alert-icon">
         <i class="ri-information-line"></i>
