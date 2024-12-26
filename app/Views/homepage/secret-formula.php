@@ -29,7 +29,8 @@
         <div class="row justify-center align-items-center">
             <div class="col">
                 <h3 class="text-uppercase">The Key to Profitable OPERATIONS</h3>
-                <span class="divide-text fs-5">Your journey to successful trading begins here! By <b>dividing your USDT capital into 4 equal parts</b>, you lay the foundation for a strategy that minimizes risk and ensures optimal returns. This essential step keeps you in control and aligned with the expert guidance of Satoshi Signal.</span>
+                <span class="divide-text fs-5">Your journey to successful trading begins here!</span>
+                <span class="d-block divide-text fs-5">By <b>dividing your USDT capital into 4 equal parts</b>, you lay the foundation for a strategy that minimizes risk and ensures optimal returns. This essential step keeps you in control and aligned with the expert guidance of Satoshi Signal.</span>
             </div>
             <div class="col-5 text-center">
                 <img src="<?= BASE_URL ?>/assets/img/divide-cart.png" alt="">
@@ -154,7 +155,7 @@
                     <div class="col">
                         <div class="card-sell">
                             <div class="card-sell-header">
-                                SELL <span style="color: red;">D</span>
+                                SELL <span class="second-word">D</span>
                             </div>
                             <div class="card-sell-text">
                                 Start to sell the operation bought with the signal BUY D.
@@ -164,7 +165,7 @@
                     <div class="col">
                         <div class="card-sell">
                             <div class="card-sell-header">
-                                SELL <span style="color: red;">C</span>
+                                SELL <span class="second-word">C</span>
                             </div>
                             <div class="card-sell-text">
                                 Sell the operation bought with the signal BUY C.
@@ -174,7 +175,7 @@
                     <div class="col">
                         <div class="card-sell">
                             <div class="card-sell-header">
-                                SELL <span style="color: red;">B</span>
+                                SELL <span class="second-word">B</span>
                             </div>
                             <div class="card-sell-text">
                                 Sell the operation bought with the signal BUY B.
@@ -184,7 +185,7 @@
                     <div class="col">
                         <div class="card-sell">
                             <div class="card-sell-header">
-                                SELL <span style="color: red;">A</span>
+                                SELL <span class="second-word">A</span>
                             </div>
                             <div class="card-sell-text">
                                 Complete the purchase with the final quarter bought with the signal BUY A.

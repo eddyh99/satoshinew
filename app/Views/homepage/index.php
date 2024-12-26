@@ -69,7 +69,7 @@
         </div>
         <div class="col-6">
             <div class="container">
-                <img class="img-revolution" src="<?= BASE_URL ?>assets/img/phone.png" alt="">
+                <img class="img-revolution" src="<?= BASE_URL ?>assets/img/phoness.png" alt="">
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
 <div class="description-homepage">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col">
+            <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="header text-white text-center">REAL-TIME <span class="d-block">NOTIFICATIONS</span>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="header text-white text-center">DETAILED EXPLANATIONS<span class="d-block">FROM
@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="header text-white text-center">AUTOMATIC MULTI-<span class="d-block">LANGUAGE

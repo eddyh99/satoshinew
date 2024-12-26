@@ -36,21 +36,21 @@
                         <h5 class="text-uppercase">If activated your account from website:</h5>
                         <div class="row justify-center">
                             <div class="col pricelist-button">
-                                <a class="btn-pricelist-white-lg" href="">REFFERAL</a>
-                                <a class="btn-pricelist-white" href="">250 EURO</a>
-                                <a class="btn-pricelist-white" href="">250 EURO</a>
-                                <a class="btn-pricelist-white" href="">250 EURO</a>
-                                <a class="btn-pricelist-white" href="">250 EURO</a>
+                                <a class="btn-pricelist-white-lg btn-pricelist-reff" href="#"></a>
+                                <a class="btn-pricelist-white" href="#">250 EURO</a>
+                                <a class="btn-pricelist-white" href="#">250 EURO</a>
+                                <a class="btn-pricelist-white" href="#">250 EURO</a>
+                                <a class="btn-pricelist-white" href="#">250 EURO</a>
                             </div>
                             <div class="col pricelist-button">
-                                <a class="btn-pricelist-black-lg" href="">WEBSITE</a>
-                                <a class="btn-pricelist-black" href="">250 EURO</a>
-                                <a class="btn-pricelist-black" href="">250 EURO</a>
-                                <a class="btn-pricelist-black" href="">250 EURO</a>
-                                <a class="btn-pricelist-black" href="">250 EURO</a>
+                                <a class="btn-pricelist-black-lg btn-pricelist-web" href="#"></a>
+                                <a class="btn-pricelist-black" href="#">250 EURO</a>
+                                <a class="btn-pricelist-black" href="#">250 EURO</a>
+                                <a class="btn-pricelist-black" href="#">250 EURO</a>
+                                <a class="btn-pricelist-black" href="#">250 EURO</a>
                             </div>
                         </div>
-                        <a href="" class="btn-promo text-uppercase">GET THE PROMO <span class="d-block">FROM THE
+                        <a href="#" class="btn-promo text-uppercase">GET THE PROMO <span class="d-block">FROM THE
                                 WEB</span></a>
                     </div>
                 </div>
@@ -61,14 +61,14 @@
                         <h5 class="text-uppercase">If activated your account from app:</h5>
                         <div class="row justify-center">
                             <div class="col pricelist-button">
-                                <a class="btn-pricelist-black-lg text-white" href="">ANDROID</a>
-                                <a class="btn-pricelist-black" href="">300 EURO</a>
-                                <a class="btn-pricelist-black" href="">825 EURO</a>
+                                <a class="btn-pricelist-black-lg btn-pricelist-android" href="#"></a>
+                                <a class="btn-pricelist-black" href="#">300 EURO</a>
+                                <a class="btn-pricelist-black" href="#">825 EURO</a>
                             </div>
                             <div class="col pricelist-button">
-                                <a class="btn-pricelist-black-lg text-white" href="">IOS</a>
-                                <a class="btn-pricelist-black" href="">300 EURO</a>
-                                <a class="btn-pricelist-black" href="">825 EURO</a>
+                                <a class="btn-pricelist-black-lg btn-pricelist-ios" href="#"></a>
+                                <a class="btn-pricelist-black" href="#">300 EURO</a>
+                                <a class="btn-pricelist-black" href="#">825 EURO</a>
                             </div>
                         </div>
                     </div>
