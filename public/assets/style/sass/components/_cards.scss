@@ -4,6 +4,33 @@
     text-align: center;
     margin: auto;
     margin-bottom: 1rem;
+    position: relative;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+    }
+
+    &::before {
+        top: -20px;
+        right: -20px; // Menempatkan gambar di pojok kanan atas
+        width: 50px; // Tentukan lebar gambar
+        height: 50px; // Tentukan tinggi gambar
+        background-image: url('../../img/star-white.png'); // Menambahkan gambar
+        background-size: cover; // Gambar akan menutupi area pseudo-element
+        background-position: center;
+    }
+
+    &::after {
+        bottom: -20px;
+        left: -20px;
+        width: 50px; // Tentukan lebar gambar kedua
+        height: 50px; // Tentukan tinggi gambar kedua
+        background-image: url('../../img/star-primary.png'); // Gambar kedua
+        background-size: cover;
+        background-position: center;
+    }
+    
     .card-sell-header {
         color: black;
         font-weight: bold;

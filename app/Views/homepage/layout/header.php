@@ -43,20 +43,23 @@
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item me-0 me-xl-2">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item me-0 me-xl-4">
                         <a class="nav-link" aria-current="page" href="<?=BASE_URL?>homepage/hotdeals">HOT DEAL</a>
                     </li>
-                    <li class="nav-item me-0 me-xl-2">
+                    <li class="nav-item me-0 me-xl-4">
                         <a class="nav-link" aria-current="page" href="<?=BASE_URL?>homepage/secret_formula">SECRET FORMULA</a>
                     </li>
-                    <li class="nav-item me-0 me-xl-2">
+                    <li class="nav-item me-0 me-xl-4">
                         <a class="nav-link" aria-current="page" href="<?=BASE_URL?>homepage/giveaway">GIVEAWAY</a>
                     </li>
-                    <li class="nav-item me-0 me-xl-2">
+                    <li class="nav-item me-0 me-xl-0">
                         <a class="nav-link" href="<?=BASE_URL?>?type=service">CONTACTS</a>
                     </li>
-                    <li class="nav-item me-0 me-lg-3 d-flex align-items-center justify-content-center">
+                    
+                </ul>
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item me-0 me-lg-4 d-flex align-items-center justify-content-center">
                         <a class="btn-navbar-contactform text-white text-center" href="<?= BASE_URL ?>">START MAKING <span class="d-block">MONEY</span></a>
                     </li>
                     <li class="nav-item mt-2 mt-lg-0 d-flex align-items-center justify-content-center">
@@ -66,4 +69,4 @@
             </div>
         </div>
     </nav>
-    <!-- End of Navbar -->
+    <!-- End of Navbar -->s

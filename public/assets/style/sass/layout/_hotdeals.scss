@@ -41,7 +41,12 @@
     flex-direction: column;
 
     .benefit-activation {
-        background-color: var.$bg-primary-satoshi;
+        background: linear-gradient(
+        to left, /* Arah gradasi dari kanan ke kiri */
+        rgba(189, 160, 105, 1), /* Warna coklat muda di kanan */
+        rgba(255, 255, 255, 1), /* Warna putih di tengah */
+        rgba(189, 160, 105, 1) /* Warna coklat muda di kiri */
+    );
         @include mix.flex-tengah-vertical;
         text-align: center;
         padding: 40px 0;
@@ -174,12 +179,17 @@
         }
 
         .card {
-            width: 100%;
+            // width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between; /* Mengatur agar konten tersebar */
             height: 100%; /* Membuat tinggi card fleksibel */
-            background-color: var.$bg-primary-satoshi;
+            background: linear-gradient(to right, rgba(189, 160, 105, 1) 75%, rgba(255, 255, 255, 1) 100%);
+
+
+
+
+
         }
     }
 }
@@ -256,22 +266,24 @@
 ------------------------------------------------------------*/ 
 .pricelist-hotdeals {
     background-color: black;
-    height: 100vh;
+    height: auto;
     text-align: center;
     color: white;
-    padding: 2rem 0;
+    padding: 4rem 0;
     h2 {
-        margin: 2rem 2rem;
+        // margin: 2rem 2rem;
         color: var.$text-primary-satoshi;
         font-weight: bold;
     }
     .button-monthly {
-        background-color: gray;
+        background-image: url('../../img/btn-monthly.png');
+        background-size: cover;
         display: block;
         width: 150px;
         border-radius: 4px;
         margin-bottom: 0.4rem;
         padding: 10px;
+        font-weight: bold;
     }
 
     .pricelist-card {

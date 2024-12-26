@@ -13,6 +13,7 @@
  */
 
  @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
 
 
  /*----------------------------------------------------------
@@ -44,11 +45,12 @@
 }
 
 .btn-navbar-contactform {
+    width: 175px;
     display: block;
     background-color: var.$bg-primary-satoshi;
     color: var.$text-black-satoshi;
-    padding: 0rem 1.2rem !important;
-    border-radius: 20px;
+    padding: 0.5rem 0 !important;
+    border-radius: 40px;
     font-size: 13px;
     font-weight: 500;
     line-height: 1.3;
@@ -66,8 +68,7 @@
     display: block;
     background-color: var.$bg-white-satoshi;
     color: var.$text-primary-satoshi;
-    padding: 0rem 1.5rem !important;
-    border-radius: 20px;
+    padding: 0.5rem 0 !important;
     font-size: 13px;
     font-weight: 500;
     outline: 2px solid #C5A571;
@@ -165,7 +166,11 @@
 
 
 .btn-refferal {
-    background-color: var.$bg-primary-satoshi;
+    background: linear-gradient(
+        to right, /* Arah gradasi dari kiri ke kanan */
+        rgba(189, 160, 105, 1), /* Warna coklat muda di kiri */
+        rgba(255, 255, 255, 1) /* Warna putih di kanan */
+    );
     color: var.$text-black-satoshi;
     padding: 1rem 2rem !important;
     font-size: 17px;
@@ -173,6 +178,7 @@
     line-height: 1.3;
     font-weight: bold;
     margin-top: 3rem;
+    border-radius: 5px;
 }
 
 .btn-exclusive {
@@ -204,39 +210,45 @@
 }
 
 .btn-pricelist-white {
+    width: 175px;
+    height: 34px;
     background-color: rgba(255, 255, 255);
     margin-top:8px;
-    padding: 4px;
     border-radius: 5px;
     color: rgba(189, 160, 105, 1);
     font-weight: bold;
 }
 
 .btn-pricelist-white-lg {
+    height: 60px;
+    width: 175px;
     font-size: 25px;
     background-color: rgba(255, 255, 255);
-    padding: 4px;
     border-radius: 5px;
     color: black;
     font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: normal;
+    span {
+        font-size: 13px;
+    }
 }
 
 .btn-pricelist-black {
-    background-color: rgba(255, 255, 255, 0.2);
+    width: 175px;
+    height: 34px;
+    background-image: url('../../img/btn-pricelist-black.png');
+    background-size: cover;
     margin-top:8px;
-    padding: 4px;
     border-radius: 5px;
     color: white;
     font-weight: bold;
 }
 
 .btn-pricelist-black-lg {
-    font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 4px;
-    border-radius: 5px;
-    color: black;
-    font-weight: bold;
+    height: 60px;
+    width: 175px;
+    margin-bottom: 1.5rem;
 }
 
 .btn-buy-exclusive {
@@ -262,6 +274,25 @@
     padding: 5px;
 }
 
+.btn-pricelist-web {
+    background-image: url('../../img/btn-website.png');
+    background-size: contain;
+}
+
+.btn-pricelist-reff {
+    background-image: url('../../img/btn-refferal.png');
+    background-size: cover;
+}
+
+.btn-pricelist-ios {
+    background-image: url('../../img/btn-ios.png');
+    background-size: cover;
+}
+
+.btn-pricelist-android {
+    background-image: url('../../img/btn-android.png');
+    background-size: cover;
+}
 
 
 

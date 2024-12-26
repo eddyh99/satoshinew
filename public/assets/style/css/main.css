@@ -12736,6 +12736,7 @@ p {
 1. Navbar Homepage Start
 ------------------------------------------------------------*/
 .navbar {
+  padding: 1rem 0;
   background-color: rgba(9, 9, 9, 0.75);
   position: absolute;
   top: 0;
@@ -12779,7 +12780,7 @@ p {
 }
 .navbar .navbar-nav .nav-item .nav-link {
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 16px;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
   font-weight: 700;
@@ -13063,7 +13064,7 @@ p {
 4. Revolution Homepage
 ------------------------------------------------------------*/
 .revolution-homepage {
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -13071,6 +13072,7 @@ p {
   background-color: black;
 }
 .revolution-homepage .row {
+  margin-top: 5rem;
   width: 100%;
 }
 .revolution-homepage .row .col-6:first-child .revolution-text {
@@ -13086,8 +13088,9 @@ p {
 }
 .revolution-homepage .row .col-6:last-child .img-revolution {
   width: 100%;
-  height: auto;
+  height: 600px;
   object-fit: contain;
+  transform: rotate(7deg);
 }
 
 /*----------------------------------------------------------
@@ -13140,12 +13143,25 @@ p {
   height: 423px;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/bg-description.jpg");
+  position: relative;
+}
+@media (min-width: 375px) {
+  .description-homepage {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .description-homepage {
+    height: 400px;
+  }
 }
 .description-homepage .row {
   height: 100%;
   width: 100%;
 }
 .description-homepage .row .card {
+  position: absolute;
+  z-index: 0;
   background-color: #BFA573;
   height: 423px;
   width: 380px;
@@ -13182,9 +13198,12 @@ p {
   width: 100%;
   height: 100vh;
   background-image: url("../../img/bg-giveaway.png");
-  background-size: cover;
   background-color: black;
   padding-top: 20px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .giveaway-homepage .wrapper-giveaway-homepage {
   width: 50%;
@@ -13235,13 +13254,17 @@ p {
   width: 280px;
 }
 .benefits-homepage .benefits-card .benefits-card-header {
-  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70px;
   text-align: center;
   color: #BFA573;
-  background: linear-gradient(to left, rgb(110, 109, 109), black);
+  background-image: url("../../img/bg-card-benefit.png");
   font-size: 20px;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 28px;
 }
 .benefits-homepage .benefits-card .benefits-card-body {
@@ -13261,7 +13284,7 @@ p {
 .benefits-homepage .row {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 5rem;
 }
 .benefits-homepage .row .col:nth-child(1), .benefits-homepage .row .col:nth-child(3) {
   transform: translateY(20px);
@@ -13305,7 +13328,7 @@ p {
   flex-direction: column;
 }
 .account-activation-hotdeals .benefit-activation {
-  background-color: #BFA573;
+  background: linear-gradient(to left, rgb(189, 160, 105), rgb(255, 255, 255), rgb(189, 160, 105));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13435,12 +13458,11 @@ p {
   width: 100%;
 }
 .why-hotdeals .wrapper-why-hotdeals .card {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Mengatur agar konten tersebar */
   height: 100%; /* Membuat tinggi card fleksibel */
-  background-color: #BFA573;
+  background: linear-gradient(to right, rgb(189, 160, 105) 75%, rgb(255, 255, 255) 100%);
 }
 
 /*----------------------------------------------------------
@@ -13508,23 +13530,24 @@ p {
 ------------------------------------------------------------*/
 .pricelist-hotdeals {
   background-color: black;
-  height: 100vh;
+  height: auto;
   text-align: center;
   color: white;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 .pricelist-hotdeals h2 {
-  margin: 2rem 2rem;
   color: #BFA573;
   font-weight: bold;
 }
 .pricelist-hotdeals .button-monthly {
-  background-color: gray;
+  background-image: url("../../img/btn-monthly.png");
+  background-size: cover;
   display: block;
   width: 150px;
   border-radius: 4px;
   margin-bottom: 0.4rem;
   padding: 10px;
+  font-weight: bold;
 }
 .pricelist-hotdeals .pricelist-card {
   height: 100%;
@@ -13572,7 +13595,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/bg-binance.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/bg-binance.png");
   background-size: cover;
   height: 100%;
 }
@@ -13711,6 +13734,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 4rem;
 }
 .secret-formula .key-points .card {
   width: 754px;
@@ -13790,6 +13814,29 @@ p {
   text-align: center;
   margin: auto;
   margin-bottom: 1rem;
+  position: relative;
+}
+.buy-signals .wrapper-buy-signals .card-buy::before, .buy-signals .wrapper-buy-signals .card-buy::after {
+  content: "";
+  position: absolute;
+}
+.buy-signals .wrapper-buy-signals .card-buy::before {
+  top: -20px;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/star-white.png");
+  background-size: cover;
+  background-position: center;
+}
+.buy-signals .wrapper-buy-signals .card-buy::after {
+  bottom: -20px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/star-primary.png");
+  background-size: cover;
+  background-position: center;
 }
 .buy-signals .wrapper-buy-signals .card-buy .card-buy-header {
   font-weight: bold;
@@ -13823,7 +13870,7 @@ p {
   text-align: center;
 }
 .sell-signals .wrapper-sell-signals .card-sell-desc {
-  height: 148px;
+  height: auto;
   width: 363px;
   text-align: center;
   text-transform: uppercase;
@@ -13846,28 +13893,6 @@ p {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   font-weight: bold;
-}
-.sell-signals .wrapper-sell-signals .card-sell {
-  height: auto;
-  width: 280px;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 1rem;
-}
-.sell-signals .wrapper-sell-signals .card-sell .card-sell-header {
-  font-weight: bold;
-  font-size: 30px;
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(189, 160, 105));
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.sell-signals .wrapper-sell-signals .card-sell .card-sell-text {
-  height: 120px;
-  background-color: white;
-  font-size: 18px;
-  padding: 1rem;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .signals-attention {
@@ -13954,7 +13979,7 @@ p {
 1. Banner Giveaway Start
 ------------------------------------------------------------*/
 .banner-giveaway {
-  margin-top: 96px;
+  margin-top: 85px;
   background-color: black;
   color: white;
   text-align: center;
@@ -14038,8 +14063,6 @@ p {
   background-color: black;
   color: white;
   padding: 1px;
-  background-size: cover;
-  background-position: right;
   padding-bottom: 4rem;
 }
 .regulation-giveaway .wrapper-regulation-giveaway {
@@ -14050,13 +14073,16 @@ p {
   margin: 2rem 0;
 }
 .regulation-giveaway .wrapper-regulation-giveaway ul {
-  margin-bottom: 10rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/145.png");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 8rem;
 }
 .regulation-giveaway .wrapper-regulation-giveaway ul li {
   font-size: 20px;
   list-style-type: disc;
   list-style-position: outside;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.8rem;
   line-height: 40px;
 }
 .regulation-giveaway .wrapper-regulation-giveaway .important-notes {
@@ -14083,8 +14109,10 @@ p {
   font-weight: bold;
 }
 .regulation-giveaway .wrapper-regulation-giveaway .important-notes ul {
+  background-image: none;
   margin: 4rem 4rem;
   margin-top: 0;
+  padding-bottom: 0;
 }
 .regulation-giveaway .wrapper-regulation-giveaway .important-notes ul li {
   list-style-type: disc;
@@ -14157,11 +14185,12 @@ p {
 }
 
 .btn-navbar-contactform {
+  width: 175px;
   display: block;
   background-color: #BFA573;
   color: #1E1E1E;
-  padding: 0rem 1.2rem !important;
-  border-radius: 20px;
+  padding: 0.5rem 0 !important;
+  border-radius: 40px;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.3;
@@ -14178,8 +14207,7 @@ p {
   display: block;
   background-color: #FFFFFF;
   color: #BFA573;
-  padding: 0rem 1.5rem !important;
-  border-radius: 20px;
+  padding: 0.5rem 0 !important;
   font-size: 13px;
   font-weight: 500;
   outline: 2px solid #C5A571;
@@ -14270,7 +14298,7 @@ p {
 1. Buttons Landing page End 
 ------------------------------------------------------------*/
 .btn-refferal {
-  background-color: #BFA573;
+  background: linear-gradient(to right, rgb(189, 160, 105), rgb(255, 255, 255));
   color: #1E1E1E;
   padding: 1rem 2rem !important;
   font-size: 17px;
@@ -14278,6 +14306,7 @@ p {
   line-height: 1.3;
   font-weight: bold;
   margin-top: 3rem;
+  border-radius: 5px;
 }
 
 .btn-exclusive {
@@ -14309,39 +14338,45 @@ p {
 }
 
 .btn-pricelist-white {
+  width: 175px;
+  height: 34px;
   background-color: rgb(255, 255, 255);
   margin-top: 8px;
-  padding: 4px;
   border-radius: 5px;
   color: rgb(189, 160, 105);
   font-weight: bold;
 }
 
 .btn-pricelist-white-lg {
+  height: 60px;
+  width: 175px;
   font-size: 25px;
   background-color: rgb(255, 255, 255);
-  padding: 4px;
   border-radius: 5px;
   color: black;
   font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: normal;
+}
+.btn-pricelist-white-lg span {
+  font-size: 13px;
 }
 
 .btn-pricelist-black {
-  background-color: rgba(255, 255, 255, 0.2);
+  width: 175px;
+  height: 34px;
+  background-image: url("../../img/btn-pricelist-black.png");
+  background-size: cover;
   margin-top: 8px;
-  padding: 4px;
   border-radius: 5px;
   color: white;
   font-weight: bold;
 }
 
 .btn-pricelist-black-lg {
-  font-size: 25px;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 4px;
-  border-radius: 5px;
-  color: black;
-  font-weight: bold;
+  height: 60px;
+  width: 175px;
+  margin-bottom: 1.5rem;
 }
 
 .btn-buy-exclusive {
@@ -14365,6 +14400,26 @@ p {
   font-weight: bold;
   border-radius: 30px;
   padding: 5px;
+}
+
+.btn-pricelist-web {
+  background-image: url("../../img/btn-website.png");
+  background-size: contain;
+}
+
+.btn-pricelist-reff {
+  background-image: url("../../img/btn-refferal.png");
+  background-size: cover;
+}
+
+.btn-pricelist-ios {
+  background-image: url("../../img/btn-ios.png");
+  background-size: cover;
+}
+
+.btn-pricelist-android {
+  background-image: url("../../img/btn-android.png");
+  background-size: cover;
 }
 
 .dropdown-toggle::after {
@@ -14430,6 +14485,29 @@ p {
   text-align: center;
   margin: auto;
   margin-bottom: 1rem;
+  position: relative;
+}
+.card-sell::before, .card-sell::after {
+  content: "";
+  position: absolute;
+}
+.card-sell::before {
+  top: -20px;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/star-white.png");
+  background-size: cover;
+  background-position: center;
+}
+.card-sell::after {
+  bottom: -20px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/star-primary.png");
+  background-size: cover;
+  background-position: center;
 }
 .card-sell .card-sell-header {
   color: black;
