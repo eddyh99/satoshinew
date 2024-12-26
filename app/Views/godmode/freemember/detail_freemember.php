@@ -1,4 +1,4 @@
-<?php if(!empty(session('failed'))) { ?>
+<?php if(!empty(session('success'))) { ?>
 <div class="alert alert-success fade show position-absolute" style="top: 1rem; right: 1rem; width: 30%; z-index: 99999;" role="alert">
     <div class="iq-alert-icon">
         <i class="ri-information-line"></i>
@@ -54,20 +54,10 @@
                             <?php 
                                 } ?>
                         </span>
-                        <!--<button 
-                            id="btnupgrade"
-                            class="upgrade-btn" 
-                            data-toggle="modal" 
-                            data-target="#upgradeModal"
-                            <?= (($member->free_status !='free') ? "" : "disabled")?>
-                        >  
-                            Upgrade
-                        </button>-->
                         <a 
-                            href="<?=BASE_URL?>godmode/dashboard/cancelfree/<?=base64_encode($member->email)?>"
+                            href="<?= ($member->membership != 'expired') ? BASE_URL . 'godmode/freemember/cancelfree/' . base64_encode($member->email) : 'javascript:void(0)' ?>"
                             id="btncancel"
-                            class="upgrade-btn" 
-                            <?= (($member->free_status =='yes') ? "" : "disabled")?>                        >  
+                            class="upgrade-btn <?= ($member->membership == 'expired') ? 'disabled' : '' ?>">  
                             Cancel
                         </a>
                     </div>
@@ -85,15 +75,39 @@
 
                     <!-- Subscription Status -->
                     <div class="label">Subscription Status</div>
-                    <div class="value"><?= $member->membership?></div>
+                    <div class="value">
+                        <?= $member->membership?>
+                        <button 
+                            id="btnupgrade"
+                            class="upgrade-btn" 
+                            data-toggle="modal" 
+                            data-target="#upgradeModal"
+                            <?= (($member->membership =='expired') ? "" : "disabled")?>
+                        >  
+                            Extend
+                        </button>
+                    </div>
 
                     <!-- Subscription Status -->
                     <div class="label">Free Plan Start Date</div>
-                    <div class="value"><?= $member->start_date?></div>
-
+                    <div class="value">
+                        <?php
+                            $dateString = $member->start_date;
+                            $date = new DateTime($dateString);
+                            $formattedDate = $date->format('d F Y');
+                            echo $formattedDate;
+                        ?>
+                    </div>
                     <!-- Subscription Status -->
                     <div class="label">Free Plan End Date</div>
-                    <div class="value"><?= $member->end_date?></div>
+                    <div class="value">
+                         <?php
+                            $dateString = $member->end_date;
+                            $date = new DateTime($dateString);
+                            $formattedDate = $date->format('d F Y');
+                            echo $formattedDate;
+                        ?>
+                    </div>
 
                     <!-- Subscription Plan -->
                     <div class="label">Subscription Plan</div>
@@ -115,6 +129,15 @@
                                 echo "-";
                             }
                         ?>
+                    </div>
+                    <!-- Bonus Member -->
+                    <div class="label">Send Bonus</div>
+                    <div class="d-flex flex-row justify-content-start">
+                        <form id="frmbonus" action="<?=BASE_URL?>godmode/payment/sendbonus?type=free" method="POST" onsubmit="return validate()">
+                            <input type="hidden" name="email" value="<?=$member->email?>">
+                            <input class="me-2" type="number" name="amount" id="bonus" class="form-control"  style="min-width: 28ch;" required>
+                            &nbsp;&nbsp;<button class="btn" style="background-color:#8a6d3b;color:white">Send</button>
+                        </form>
                     </div>
                 </div>
                 <div class="row content-body">
@@ -152,16 +175,16 @@
                 <?php
                     $currentDate = new DateTime();
                     $currentDate->modify('+1 month');
-                    $tgl= $currentDate->format('Y-m-d');
+                    $tgl= $currentDate->format('m/d/Y');
                 ?>
 
-                <form method="POST" action="<?=BASE_URL?>godmode/dashboard/upgrademember">
+                <form method="POST" action="<?=BASE_URL?>godmode/freemember/upgrademember">
                     <input type="hidden" name="email" value="<?=$member->email?>">
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <p>You will upgrade this member to FREE</p>
+                        <p>You will extend this FREE member</p>
                         <h4 class="my-4"><?= $member->email; ?></h4>
                         <input type="text" name="expired" id="expired" value="<?=$tgl ?>" class="form-control text-black">
-                        <button class="btn-modal-upgrade mb-4 mt-4">Upgrade</button>
+                        <button class="btn-modal-upgrade mb-4 mt-4">Extend</button>
                     </div>
                 </form>
             </div>

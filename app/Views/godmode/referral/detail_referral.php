@@ -46,11 +46,14 @@
                             </svg>
                         </a>
                     </div>
-                    <!-- Subscription Status -->
+                    <!-- Bonus Member -->
                     <div class="label">Send Bonus</div>
                     <div class="d-flex flex-row justify-content-start">
-                        <input class="me-2" type="number" name="bonus" id="bonus" class="form-control"  style="min-width: 28ch;">
-                        &nbsp;&nbsp;<button class="btn" style="background-color:#8a6d3b;color:white">Send</button>
+                        <form id="frmbonus" action="<?=BASE_URL?>godmode/payment/sendbonus?type=ref" method="POST" onsubmit="return validate()">
+                            <input type="hidden" name="email" value="<?=$member->email?>">
+                            <input class="me-2" type="number" name="amount" id="bonus" class="form-control"  style="min-width: 28ch;" required>
+                            &nbsp;&nbsp;<button class="btn" style="background-color:#8a6d3b;color:white">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>

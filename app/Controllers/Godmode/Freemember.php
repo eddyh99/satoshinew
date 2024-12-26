@@ -99,5 +99,39 @@ class Freemember extends BaseController
         return view('godmode/layout/admin_wrapper', $mdata);
     }
 
+    public function upgrademember(){
+        // Init Data
+        $mdata = [
+            'email'    => $this->request->getVar('email'),
+            'expired'  => date_format(date_create($this->request->getVar('expired')),"Y-m-d"),
+        ];
+
+        // Proccess Endpoin API
+        $url = URLAPI . "/v1/subscription/upgradefree";
+        $response = satoshiAdmin($url, json_encode($mdata));
+        $result = $response->result;
+        if($result->code != '200') {
+            session()->setFlashdata('failed', "Something Wrong, Please Try Again!");
+            return redirect()->to(BASE_URL . 'godmode/freemember/detailmember/' . base64_encode($mdata['email']));
+        }else{
+            session()->setFlashdata('success', "Success Extended!");
+            return redirect()->to(BASE_URL . 'godmode/freemember/detailmember/' . base64_encode($mdata['email']));
+        }    
+    }
+    
+    public function cancelfree($email){
+        $email  = base64_decode($email);
+
+        $url = URLAPI . "/v1/subscription/cancelfree?email=".$email;
+        $response = satoshiAdmin($url);
+        $result = $response->result;
+        if($result->code != '200') {
+            session()->setFlashdata('failed', "Something Wrong, Please Try Again!");
+            return redirect()->to(BASE_URL . 'godmode/freemember/detailmember/' . base64_encode($email));
+        }else{
+            session()->setFlashdata('success', "Success Cancelled");
+            return redirect()->to(BASE_URL . 'godmode/freemember/detailmember/' . base64_encode($email));
+        }    
+    }
     
 }

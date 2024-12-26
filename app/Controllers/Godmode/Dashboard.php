@@ -137,40 +137,6 @@ class Dashboard extends BaseController
         
     }
     
-    public function upgrademember(){
-        // Init Data
-        $mdata = [
-            'email'    => $this->request->getVar('email'),
-            'expired'  => htmlspecialchars($this->request->getVar('expired')),
-        ];
-
-        // Proccess Endpoin API
-        $url = URLAPI . "/v1/member/upgradefree";
-        $response = satoshiAdmin($url, json_encode($mdata));
-        $result = $response->result;
-        if($result->code != '200') {
-            session()->setFlashdata('failed', "Something Wrong, Please Try Again!");
-            return redirect()->to(BASE_URL . 'godmode/dashboard/detailmember/' . base64_encode('totalmember') . '/' . base64_encode($mdata['email']));
-        }else{
-            session()->setFlashdata('success', "Success Upgraded!");
-            return redirect()->to(BASE_URL . 'godmode/dashboard/detailmember/' . base64_encode('totalmember') . '/' . base64_encode($mdata['email']));
-        }    
-    }
-    
-    public function cancelfree($email){
-        $email  = base64_decode($email);
-
-        $url = URLAPI . "/v1/member/cancelfree?email=".$email;
-        $response = satoshiAdmin($url);
-        $result = $response->result;
-        if($result->code != '200') {
-            session()->setFlashdata('failed', "Something Wrong, Please Try Again!");
-            return redirect()->to(BASE_URL . 'godmode/dashboard/detailmember/' . base64_encode('totalmember') . '/' . base64_encode($email));
-        }else{
-            session()->setFlashdata('success', "Success Cancelled");
-            return redirect()->to(BASE_URL . 'godmode/dashboard/detailmember/' . base64_encode('totalmember') . '/' . base64_encode($email));
-        }    
-    }
     
     public function disabledmember($email){
         $email  = base64_decode($email);
@@ -191,6 +157,21 @@ class Dashboard extends BaseController
         $email  = base64_decode($email);
 
         $url = URLAPI . "/v1/member/enable_member?email=".$email;
+        $response = satoshiAdmin($url);
+        $result = $response->result;
+        if($result->code != '200') {
+            session()->setFlashdata('failed', "Something Wrong, Please Try Again!");
+            return redirect()->to(BASE_URL . 'godmode/dashboard');
+        }else{
+            session()->setFlashdata('success', "Success Disabled Member");
+            return redirect()->to(BASE_URL . 'godmode/dashboard');
+        }
+    }
+
+    public function deletemember($email){
+        $email  = base64_decode($email);
+
+        $url = URLAPI . "/v1/member/delete_member?email=".$email;
         $response = satoshiAdmin($url);
         $result = $response->result;
         if($result->code != '200') {

@@ -1,5 +1,5 @@
 
-<?php if(!empty(session('failed'))) { ?>
+<?php if(!empty(session('success'))) { ?>
 <div class="alert alert-success fade show position-absolute" style="top: 1rem; right: 1rem; width: 30%; z-index: 99999;" role="alert">
     <div class="iq-alert-icon">
         <i class="ri-information-line"></i>
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="<?= BASE_URL?>godmode/dashboard?type=<?=base64_encode("referral_member")?>" class="statistics">
+                    <a href="<?= BASE_URL?>godmode/referral" class="statistics">
                         <div class="iq-card">
                             <div class="iq-card-body">
                                 <div class="d-flex flex-column justify-content-center align-items-start">

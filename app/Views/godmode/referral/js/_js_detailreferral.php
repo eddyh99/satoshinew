@@ -32,4 +32,9 @@
             },
         ],
     });
+    
+    function validate() {
+        return confirm("Are you sure you want to give a bonus to this user?");
+    }
+
  </script>
