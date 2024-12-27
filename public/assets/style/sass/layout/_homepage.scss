@@ -175,36 +175,44 @@
                 width: 150px;
             }
 
-            .logo-text-take-action {
-                text-transform: uppercase;
-                // letter-spacing: 3px;
-                // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-                font-size: 16px;
-                font-weight: 700;
-                text-align: start;
-                color: var.$text-white-satoshi;
-                
-                @include mix.md {
-                    // letter-spacing: 8px;
-                    font-size: 20px;
-                }
-
-                @include mix.xl {
-                    font-size: 30px;
-                }
-
-                @include mix.xl2 {
-                    // padding: 0rem 3rem;
-                    font-size: 40px;
-                }
-
-                &::after {
-                    content: '';
-                    display: block; /* Agar elemen ditampilkan sebagai blok */
-                    width: 60%; /* Lebar garis horizontal 50% */
-                    height: 3px; /* Ketebalan garis */
-                    background-color: var.$text-primary-satoshi; /* Ganti dengan warna yang diinginkan */
-                    margin: 10px 0; /* Jarak atas dan bawah */
+            .container {
+                margin-left: 4rem;
+                margin-top: 4rem;
+                .logo-text-take-action {
+                    text-transform: uppercase;
+                    // letter-spacing: 3px;
+                    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    // font-size: 16px;
+                    font-weight: 700;
+                    text-align: start;
+                    color: var.$text-white-satoshi;
+                    span {
+                        font-size: 30px;
+                        line-height: 50px;
+                    }
+                    
+                    // @include mix.md {
+                    //     // letter-spacing: 8px;
+                    //     font-size: 20px;
+                    // }
+    
+                    // @include mix.xl {
+                    //     font-size: 30px;
+                    // }
+    
+                    // @include mix.xl2 {
+                    //     // padding: 0rem 3rem;
+                    //     font-size: 40px;
+                    // }
+    
+                    &::after {
+                        content: '';
+                        display: block; /* Agar elemen ditampilkan sebagai blok */
+                        width: 400px; /* Lebar garis horizontal 50% */
+                        height: 3px; /* Ketebalan garis */
+                        background-color: var.$text-primary-satoshi; /* Ganti dengan warna yang diinginkan */
+                        margin: 10px 0; /* Jarak atas dan bawah */
+                    }
                 }
             }
         }
@@ -226,16 +234,15 @@
     align-items: center; // Center items vertically
     justify-content: center; // Center items horizontally
     background-color: black; // Set background color
+    position: relative;
 
     .row {
-        margin-top: 5rem;
+        margin: 5rem auto;
         width: 100%; // Ensure the row takes full width
 
-        .col-6 {
-            // Additional styles for columns if needed
-            &:first-child {
+        .col-5 {
                 .revolution-text {
-                    margin-left: 5rem;
+                    padding-left: 5rem;
                 }
                 h3 {
                     font-size: 30px;
@@ -245,17 +252,12 @@
                     font-size: 20px;
                     line-height: 35px;
                 }
-            }
+        }
 
-            &:last-child {
-                // Styles for the second column
-                .img-revolution {
-                    width: 100%; // Make the image take the full width of its container
-                    height: 600px; // Maintain the aspect ratio
-                    object-fit: contain; // Ensure the image is contained within the box
-                    // padding-right: 7rem;
-                    transform: rotate(7deg);
-                }
+        .col-7 {
+            .img-revolution {
+                position: absolute;
+                z-index: 2;
             }
         }
     }
@@ -318,16 +320,16 @@
 ------------------------------------------------------------*/ 
 
 .description-homepage {
+    background-color: black;
     height: 423px;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/bg-description.jpg');
     position: relative;
-    @include mix.xs {
-        height: auto;
-     }
-     @include mix.lg {
-        height: 400px;
-     }
+    // @include mix.xs {
+    //     height: auto;
+    //  }
+    //  @include mix.lg {
+    //     height: 400px;
+    //  }
 
     .row {
         // z-index: 2;
@@ -411,6 +413,12 @@
             text-transform: uppercase;
             font-size: 35px;
             line-height: 52px;
+            span {
+                text-transform: uppercase;
+                font-size: 35px;
+                line-height: 52px;
+                font-weight: normal;
+            }
             // @include mix.lg {
             //     font-size: 30px;
             // }
@@ -446,13 +454,12 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/84.png');
     height: 100vh;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // @include mix.xs {
+    @include mix.flex-tengah-vertical;
+
+    // @include mix.md {
     //     height: auto;
     //  }
-    //  @include mix.lg {
+    //  @include mix.xl2 {
     //     height: 100vh;
     //  }
 
@@ -491,6 +498,27 @@
                 margin: 1rem auto;
             }
         }
+
+        // @include mix.md {
+        //     width: 220px;
+        //     .benefits-card-header {
+        //         font-size: 18px;
+        //     }
+        //     .benefits-card-body {
+        //         height: auto;
+        //         font-size: 18px;
+        //     }
+        // }
+
+        // @include mix.xl2 {
+        //     width: 280px;
+        //     .benefits-card-header {
+        //         font-size: 20px;
+        //     }
+        //     .benefits-card-body {
+        //         font-size: 20px;
+        //     }
+        //  }
     }
 
     .row {
