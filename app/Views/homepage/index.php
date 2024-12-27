@@ -20,8 +20,8 @@
                             class="d-block">constantly and risk-free.</span></p>
                 </div>
                 <div class="d-flex justify-content-center gap-5 mt-5">
-                    <a href="#" class="btn-banner-start text-white text-center">START <span class="d-block">EARNING
-                            TODAY</span></a>
+                    <a href="#" class="btn-banner-start text-center">START TO<span class="d-block">EARN
+                            TODAY!</span></a>
                     <a href="#" class="btn-banner-start btn-banner-unlock text-center">UNLOCK <span
                             class="d-block">EXCLUSIVE SIGNALS!</span></a>
                 </div>
@@ -36,10 +36,10 @@
 <div class="why-homepage">
     <div class="wrapper-why-homepage">
         <div class="logo-banner">
-            <h2>
-                WHY IS SATOSHI SIGNAL IS DIFFERENT?
+            <h2 class="text-uppercase">
+            Why Is Satoshi Signal Different?
             </h2>
-            <h4 class="text-white">Not Just Another Automatic Signal Room… It’s Much More!</h4>
+            <h4 class="text-white">It Is Not Just Another Automatic Signal Room…</h4>
         </div>
     </div>
 </div>
@@ -48,37 +48,33 @@
 <!-- Start of revolution -->
 <div class="revolution-homepage bg-black">
     <div class="row">
-        <div class="col-6">
+        <div class="col-5">
             <div class="revolution-text">
                 <h3>Discover the App That’s <span class="d-block">
                         Revolutionizing Bitcoin Brokerage.
                     </span>
                 </h3>
-                <p class="text-white my-5 fs-5">
+                <p class="text-white my-4 fs-5">
                     Operations of BTC/USDT pair are made by
                     PN Global skilled brokers ( <b>real people, not
                     algorithms</b>) that analyze the market
                     conditions 24/7 to provide you with
                     transparent, reliable signals.
                 </p>
-                <a href="#" class="btn-revolution text-white text-center">BE PART OF THE <span class="d-block">
+                <a href="#" class="btn-banner-start text-center">BE PART OF THE <span class="d-block">
                         REVOLUTION!
                     </span>
                 </a>
             </div>
         </div>
-        <div class="col-6">
-            <div class="container">
+        <div class="col-7">
                 <img class="img-revolution" src="<?= BASE_URL ?>assets/img/phoness.png" alt="">
-            </div>
         </div>
     </div>
 </div>
 <!-- ENd of Revolution -->
 
-<!--  -->
-
-<!--  -->
+<!--  Start of Description  -->
 <div class="description-homepage">
     <div class="container">
         <div class="row justify-content-center">
@@ -119,6 +115,8 @@
         </div>
     </div>
 </div>
+
+<!-- End of Description -->
 
 <!-- Start of Activate Account -->
 
@@ -192,7 +190,7 @@
 
 <div class="giveaway-homepage">
     <div class="wrapper-giveaway-homepage">
-        <h2>Satoshi Signal Giveaway: Don’t Miss Out on Free USDT!</h2>
+        <h2><span translate="no">Satoshi Signal </span>Giveaway: Don’t Miss Out on Free USDT!</h2>
         <span class="mt-3 text-white fw-bold">Giveaway esclusivi per premiare la tua fedeltà, il tuo successo, il tuo
             supporto e la tua condivisione sui social!</span>
         <p class="mt-4 text-white ">Are you ready to win exclusive prizes in USDT? The Satoshi Signal Giveaways
@@ -214,7 +212,7 @@
             <source src="<?= BASE_URL ?>assets/vid/safe-deposit-box.webm" type="video/webm">
         </video>
         <div class="logo-take-action">
-            <div class="container d-flex flex-column align-items-start justify-content-center h-100">
+            <div class="container">
                 <p id="g-text-banner-homepage" class="logo-text-take-action">
                     <span class="line-animation">
                         Take Action Now, Every Minute Counts: <span class="d-block">
@@ -226,7 +224,7 @@
                     </span>
                 </p>
                 <div class="mt-5">
-                    <a href="#" class="btn-take-action text-white text-center">ACTIVATE NOW AND<span
+                    <a href="#" class="btn-banner-start btn-activate text-center">ACTIVATE NOW AND<span
                             class="d-block">GROW YOUR CAPITAL!</span></a>
                 </div>
             </div>

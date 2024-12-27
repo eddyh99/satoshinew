@@ -73,6 +73,16 @@
                 &:hover {
                     font-weight: 700;
                 }
+                
+            }
+            &.nav-giveaway .nav-link {
+                color: rgba(236, 207, 152, 1);
+                text-shadow: 4px 5px 5px yellow; /* Bayangan lebih tebal dan ke bawah */
+            }
+            &.active .nav-link {
+                text-decoration: underline;
+                text-decoration-color: white;
+                font-weight: 900;
             }
         }
     }
