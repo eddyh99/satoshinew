@@ -25,10 +25,10 @@ class Payment extends BaseController
         echo json_encode($result);
     }
 
-    public function detailpayment($email)
+    public function detailpayment($id,$email)
     {
         // Call Get Detail Request
-        $url = URLAPI . "/v1/payment/detailpayment?email=".base64_decode($email);
+        $url = URLAPI . "/v1/payment/detailpayment?email=".base64_decode($email)."&id=".$id;
         $resultPayment = satoshiAdmin($url)->result->message;
         $mdata = [
             'title'     => 'Detail Member - ' . SATOSHITITLE,

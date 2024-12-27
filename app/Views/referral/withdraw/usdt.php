@@ -22,7 +22,7 @@
                         <h4 class="withdraw-title">Available commission to withdraw</h4>
                         <div class="withdraw-amount">$ <?=number_format($unpaid)?></div>
                         </span>
-                        <form action="#" method="POST" class="withdraw-form mt-4">
+                        <form action="<?=BASE_URL?>referral/referral/submitusdt_withdraw" method="POST" class="withdraw-form mt-4">
                             <!-- Amount -->
                             <div class="form-group">
                                 <label for="amount" class="form-label">Amount to withdraw</label>
@@ -32,7 +32,7 @@
                             <!-- Wallet Address -->
                             <div class="form-group">
                                 <label for="wallet-address" class="form-label">Wallet address</label>
-                                <input type="text" id="wallet-address" name="wallet-address" class="form-control" placeholder="xxxxx" />
+                                <input type="text" id="wallet-address" name="wallet-address" class="form-control" placeholder="xxxxx" required/>
                             </div>
                         
                             <!-- Connection -->
