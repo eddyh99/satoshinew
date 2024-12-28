@@ -6,6 +6,15 @@ use App\Controllers\BaseController;
 
 class Referral extends BaseController
 {
+    public function __construct()
+    {
+        $session = session();
+        if(!$session->has('logged_user')){
+            header("Location: ". BASE_URL . 'godmode/auth/signin');
+            exit();
+        }
+    }
+    
     public function index()
     {
         $mdata = [
