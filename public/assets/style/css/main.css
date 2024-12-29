@@ -13074,23 +13074,45 @@ p {
   position: relative;
 }
 .revolution-homepage .row {
-  margin: 5rem auto;
+  margin: 4rem auto;
+  margin-bottom: 2rem;
   width: 100%;
 }
-.revolution-homepage .row .col-5 .revolution-text {
+.revolution-homepage .row .col-lg-5 .revolution-text {
   padding-left: 5rem;
 }
-.revolution-homepage .row .col-5 h3 {
+.revolution-homepage .row .col-lg-5 h3 {
   font-size: 30px;
   color: #BFA573;
 }
-.revolution-homepage .row .col-5 p {
+.revolution-homepage .row .col-lg-5 p {
   font-size: 20px;
   line-height: 35px;
 }
-.revolution-homepage .row .col-7 .img-revolution {
+.revolution-homepage .row .col-lg-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.revolution-homepage .row .col-lg-7 .img-revolution {
   position: absolute;
   z-index: 2;
+  padding: 0 auto;
+}
+@media (min-width: 567px) {
+  .revolution-homepage .row .col-lg-7 .img-revolution {
+    margin-top: 2rem;
+    position: static;
+    width: 70%;
+    z-index: 0;
+  }
+}
+@media (min-width: 992px) {
+  .revolution-homepage .row .col-lg-7 .img-revolution {
+    position: absolute;
+    width: auto;
+    z-index: 2;
+  }
 }
 
 /*----------------------------------------------------------
@@ -13100,13 +13122,10 @@ p {
 5. Activate Account Homepage
 ------------------------------------------------------------*/
 .activate-account-homepage {
-  position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 .activate-account-homepage .wrapper-activate-account-homepage {
-  position: absolute;
   width: 100%;
   height: 100%;
   background-image: url("../../img/82.png");
@@ -13119,7 +13138,6 @@ p {
   text-align: start;
 }
 .activate-account-homepage .wrapper-activate-account-homepage .logo {
-  z-index: 2;
   color: white;
   margin-left: 4rem;
 }
@@ -13141,7 +13159,7 @@ p {
 ------------------------------------------------------------*/
 .description-homepage {
   background-color: black;
-  height: 423px;
+  height: auto;
   width: 100%;
   position: relative;
 }
@@ -13149,13 +13167,33 @@ p {
   height: 100%;
   width: 100%;
 }
+@media (min-width: 567px) {
+  .description-homepage .row {
+    gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .description-homepage .row {
+    gap: 0;
+  }
+}
 .description-homepage .row .card {
-  position: absolute;
   z-index: 0;
   background-color: #BFA573;
   height: 423px;
   width: 380px;
   border-radius: 5px;
+  margin: 0 auto;
+}
+@media (min-width: 567px) {
+  .description-homepage .row .card {
+    position: relative;
+  }
+}
+@media (min-width: 992px) {
+  .description-homepage .row .card {
+    position: relative;
+  }
 }
 .description-homepage .row .card .card-body {
   text-align: center;
@@ -13186,14 +13224,26 @@ p {
 ------------------------------------------------------------*/
 .giveaway-homepage {
   width: 100%;
-  height: 100vh;
   background-image: url("../../img/bg-giveaway.png");
   background-color: black;
   padding-top: 20px;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 567px) {
+  .giveaway-homepage {
+    height: auto;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 992px) {
+  .giveaway-homepage {
+    height: 100vh;
+    background-size: cover;
+  }
 }
 .giveaway-homepage .wrapper-giveaway-homepage {
   width: 50%;
@@ -13243,11 +13293,22 @@ p {
   align-items: center;
   flex-direction: column;
 }
+@media (min-width: 567px) {
+  .benefits-homepage {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .benefits-homepage {
+    height: 100vh;
+  }
+}
 .benefits-homepage h2 {
   font-size: 40px;
   font-weight: bold;
 }
 .benefits-homepage .benefits-card {
+  margin: 0 auto;
   width: 280px;
 }
 .benefits-homepage .benefits-card .benefits-card-header {
@@ -13281,13 +13342,42 @@ p {
 .benefits-homepage .row {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+}
+@media (min-width: 567px) {
+  .benefits-homepage .row {
+    gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .benefits-homepage .row {
+    gap: 5rem;
+  }
 }
 .benefits-homepage .row .col:nth-child(1), .benefits-homepage .row .col:nth-child(3) {
   transform: translateY(20px);
 }
+@media (min-width: 567px) {
+  .benefits-homepage .row .col:nth-child(1), .benefits-homepage .row .col:nth-child(3) {
+    transform: none;
+  }
+}
+@media (min-width: 992px) {
+  .benefits-homepage .row .col:nth-child(1), .benefits-homepage .row .col:nth-child(3) {
+    transform: translateY(20px);
+  }
+}
 .benefits-homepage .row .col:nth-child(2) {
   transform: translateY(-20px);
+}
+@media (min-width: 567px) {
+  .benefits-homepage .row .col:nth-child(2) {
+    transform: none;
+  }
+}
+@media (min-width: 992px) {
+  .benefits-homepage .row .col:nth-child(2) {
+    transform: translateY(-20px);
+  }
 }
 
 /*----------------------------------------------------------

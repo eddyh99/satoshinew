@@ -48,7 +48,7 @@
 <!-- Start of revolution -->
 <div class="revolution-homepage bg-black">
     <div class="row">
-        <div class="col-5">
+        <div class="col-lg-5">
             <div class="revolution-text">
                 <h3>Discover the App That’s <span class="d-block">
                         Revolutionizing Bitcoin Brokerage.
@@ -67,7 +67,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-7">
+        <div class="col-lg-7">
                 <img class="img-revolution" src="<?= BASE_URL ?>assets/img/phoness.png" alt="">
         </div>
     </div>
