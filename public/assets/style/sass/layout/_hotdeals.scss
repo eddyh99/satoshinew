@@ -50,6 +50,12 @@
         @include mix.flex-tengah-vertical;
         text-align: center;
         padding: 40px 0;
+        ul {
+            li {
+                list-style-type: disc;
+                list-style-position: inside;
+            }
+        }
     }
     
     .refferal-program {
@@ -61,6 +67,12 @@
         h2 {
             color: var.$text-primary-satoshi;
             font-weight: bold;
+            font-size: 40px;
+            line-height: 145%;
+        }
+
+        p {
+            font-size: 20px;
         }
     }
 }
@@ -82,19 +94,29 @@
     .wrapper-become-hotdeals {
         @include mix.flex-tengah-vertical;
         text-align: center;
-        height: calc(100% - 10rem);
-        width: calc(100% - 10rem); 
-        margin: 5rem; // Margin di semua sisi
-        background-color: rgba(0, 0, 0, 0.5);
+        height: calc(100% - 7rem);
+        width: calc(100% - 7rem); 
+        background-color: rgba(0, 0, 0, 0.7);
 
         h2 {
             font-weight: bold;
+            font-size: 40px;
+            span {
+                font-size: 40px;
+            }
+        }
+        h5 {
+            font-size: 25px;
+        }
+
+        span {
+            font-size: 20px;
         }
     }
 }
 
  /*----------------------------------------------------------
-  Become Hotdeals StEndart
+  Become Hotdeals End
 ------------------------------------------------------------*/ 
 
  /*----------------------------------------------------------
@@ -102,21 +124,28 @@
 ------------------------------------------------------------*/ 
 
 .sharing-hotdeals {
-    height: 100vh;
     text-align: center;
     background-color: rgba(28, 28, 28, 1);
     padding: 1rem 0;
+    @include mix.sm {
+        height: auto;
+    }
+
+    @include mix.lg {
+        height: 100vh;
+    }
     h2 {
         font-weight: bold;
+        font-size: 25px;
         margin: 20px 0;
         color: var.$text-primary-satoshi;
     }
 
     .wrapper-sharing-hotdeals {
-        margin: 3rem 1rem;
+        margin: 3rem 2rem;
         video {
             width: 100%; /* Video tidak akan lebih besar dari kontainer */
-            height: 100%;
+            height: 95%;
             object-fit: cover;
             display: block; /* Menghapus spasi tambahan di bawah elemen video */
             margin: 0 auto; /* Untuk memusatkan video di dalam kolom */
@@ -126,6 +155,7 @@
             font-size: 20px;
             text-align: start;
             color: var.$text-primary-satoshi;
+            line-height: 30px;
             
             li {
                 list-style-type: disc;
@@ -147,7 +177,12 @@
 .why-hotdeals {
     height: 100vh;
     text-align: center;
-    background: linear-gradient(to right, rgb(31, 30, 30), rgb(148, 144, 144));
+    background: linear-gradient(
+                to right, 
+                rgb(31, 30, 30) 60%, 
+                rgb(70, 68, 68) 80%, 
+                rgb(148, 144, 144) 100%
+                );
     padding: 1rem 0;
 
     h2 {
@@ -270,40 +305,52 @@
     text-align: center;
     color: white;
     padding: 4rem 0;
+
     h2 {
         // margin: 2rem 2rem;
         color: var.$text-primary-satoshi;
         font-weight: bold;
     }
-    .button-monthly {
-        background-image: url('../../img/btn-monthly.png');
-        background-size: cover;
-        display: block;
-        width: 150px;
-        border-radius: 4px;
-        margin-bottom: 0.4rem;
-        padding: 10px;
-        font-weight: bold;
-    }
-
-    .pricelist-card {
-        height: 100%;
-        border: 2px solid var.$text-primary-satoshi; /* Border kuning */
-        border-radius: 8px;
-        h5 {
-            font-size: 15px;
-            margin: 1rem 0;
-            color: var.$text-primary-satoshi;
+    .row {
+        @include mix.sm {
+            gap: 1.5rem;
         }
 
-        .pricelist-card-body {
-            height: 100%;
+        @include mix.lg {
+            gap: 0;
         }
-    }
 
-    .pricelist-button {
-        a {
+        .button-monthly {
+            background-image: url('../../img/btn-monthly.png');
+            background-size: cover;
             display: block;
+            width: 150px;
+            border-radius: 4px;
+            padding: 10px;
+            font-weight: bold;
+            margin: 0.5rem auto;
+        }
+    
+        .pricelist-card {
+            height: 100%;
+            border: 2px solid var.$text-primary-satoshi; /* Border kuning */
+            border-radius: 8px;
+            h5 {
+                font-size: 15px;
+                margin: 1rem 0;
+                color: var.$text-primary-satoshi;
+            }
+    
+            .pricelist-card-body {
+                height: 100%;
+            }
+        }
+    
+        .pricelist-button {
+            margin-bottom: 1rem;
+            a {
+                display: block;
+            }
         }
     }
 }

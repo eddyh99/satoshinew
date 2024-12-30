@@ -12931,9 +12931,9 @@ p {
   text-align: center;
   color: #FFFFFF;
 }
-@media (min-width: 768px) {
+@media (min-width: 567px) {
   .banner-homepage .wrapper-banner-homepage .logo-banner .logo-text-banner {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media (min-width: 1024px) {
@@ -12945,6 +12945,23 @@ p {
   .banner-homepage .wrapper-banner-homepage .logo-banner .logo-text-banner {
     padding: 0rem 3rem;
     font-size: 40px;
+  }
+}
+@media (min-width: 567px) {
+  .banner-homepage .wrapper-banner-homepage .logo-banner .text-description {
+    font-size: 18px;
+    padding: 0 2rem;
+  }
+  .banner-homepage .wrapper-banner-homepage .logo-banner .text-description span {
+    display: inline;
+  }
+}
+@media (min-width: 992px) {
+  .banner-homepage .wrapper-banner-homepage .logo-banner .text-description {
+    font-size: 25px;
+  }
+  .banner-homepage .wrapper-banner-homepage .logo-banner .text-description span {
+    display: block;
   }
 }
 .banner-homepage .wrapper-banner-homepage .logo-banner .logo-text-banner-teamwork {
@@ -13074,8 +13091,8 @@ p {
   position: relative;
 }
 .revolution-homepage .row {
-  margin: 4rem auto;
-  margin-bottom: 2rem;
+  margin: 5rem auto;
+  margin-bottom: 3rem;
   width: 100%;
 }
 .revolution-homepage .row .col-lg-5 .revolution-text {
@@ -13098,6 +13115,7 @@ p {
   position: absolute;
   z-index: 2;
   padding: 0 auto;
+  height: 100%;
 }
 @media (min-width: 567px) {
   .revolution-homepage .row .col-lg-7 .img-revolution {
@@ -13224,7 +13242,6 @@ p {
 ------------------------------------------------------------*/
 .giveaway-homepage {
   width: 100%;
-  background-image: url("../../img/bg-giveaway.png");
   background-color: black;
   padding-top: 20px;
   display: flex;
@@ -13233,14 +13250,15 @@ p {
 }
 @media (min-width: 567px) {
   .giveaway-homepage {
+    background-image: url("../../img/bg-giveaway-portrait.png");
     height: auto;
     background-size: contain;
-    background-position: top;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 992px) {
   .giveaway-homepage {
+    background-image: url("../../img/bg-giveaway.png");
     height: 100vh;
     background-size: cover;
   }
@@ -13342,6 +13360,7 @@ p {
 .benefits-homepage .row {
   display: flex;
   justify-content: center;
+  margin: 4rem 0;
 }
 @media (min-width: 567px) {
   .benefits-homepage .row {
@@ -13423,6 +13442,10 @@ p {
   text-align: center;
   padding: 40px 0;
 }
+.account-activation-hotdeals .benefit-activation ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
 .account-activation-hotdeals .refferal-program {
   background: black;
   display: flex;
@@ -13435,6 +13458,11 @@ p {
 .account-activation-hotdeals .refferal-program h2 {
   color: #BFA573;
   font-weight: bold;
+  font-size: 40px;
+  line-height: 145%;
+}
+.account-activation-hotdeals .refferal-program p {
+  font-size: 20px;
 }
 
 /*----------------------------------------------------------
@@ -13459,38 +13487,57 @@ p {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  height: calc(100% - 10rem);
-  width: calc(100% - 10rem);
-  margin: 5rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: calc(100% - 7rem);
+  width: calc(100% - 7rem);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .become-hotdeals .wrapper-become-hotdeals h2 {
   font-weight: bold;
+  font-size: 40px;
+}
+.become-hotdeals .wrapper-become-hotdeals h2 span {
+  font-size: 40px;
+}
+.become-hotdeals .wrapper-become-hotdeals h5 {
+  font-size: 25px;
+}
+.become-hotdeals .wrapper-become-hotdeals span {
+  font-size: 20px;
 }
 
 /*----------------------------------------------------------
-  Become Hotdeals StEndart
+  Become Hotdeals End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
 4. Sharing Hotdeals Start
 ------------------------------------------------------------*/
 .sharing-hotdeals {
-  height: 100vh;
   text-align: center;
   background-color: rgb(28, 28, 28);
   padding: 1rem 0;
 }
+@media (min-width: 567px) {
+  .sharing-hotdeals {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .sharing-hotdeals {
+    height: 100vh;
+  }
+}
 .sharing-hotdeals h2 {
   font-weight: bold;
+  font-size: 25px;
   margin: 20px 0;
   color: #BFA573;
 }
 .sharing-hotdeals .wrapper-sharing-hotdeals {
-  margin: 3rem 1rem;
+  margin: 3rem 2rem;
 }
 .sharing-hotdeals .wrapper-sharing-hotdeals video {
   width: 100%; /* Video tidak akan lebih besar dari kontainer */
-  height: 100%;
+  height: 95%;
   object-fit: cover;
   display: block; /* Menghapus spasi tambahan di bawah elemen video */
   margin: 0 auto; /* Untuk memusatkan video di dalam kolom */
@@ -13499,6 +13546,7 @@ p {
   font-size: 20px;
   text-align: start;
   color: #BFA573;
+  line-height: 30px;
 }
 .sharing-hotdeals .wrapper-sharing-hotdeals .list-benefits li {
   list-style-type: disc;
@@ -13514,7 +13562,7 @@ p {
 .why-hotdeals {
   height: 100vh;
   text-align: center;
-  background: linear-gradient(to right, rgb(31, 30, 30), rgb(148, 144, 144));
+  background: linear-gradient(to right, rgb(31, 30, 30) 60%, rgb(70, 68, 68) 80%, rgb(148, 144, 144) 100%);
   padding: 1rem 0;
 }
 .why-hotdeals h2 {
@@ -13626,30 +13674,43 @@ p {
   color: #BFA573;
   font-weight: bold;
 }
-.pricelist-hotdeals .button-monthly {
+@media (min-width: 567px) {
+  .pricelist-hotdeals .row {
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .pricelist-hotdeals .row {
+    gap: 0;
+  }
+}
+.pricelist-hotdeals .row .button-monthly {
   background-image: url("../../img/btn-monthly.png");
   background-size: cover;
   display: block;
   width: 150px;
   border-radius: 4px;
-  margin-bottom: 0.4rem;
   padding: 10px;
   font-weight: bold;
+  margin: 0.5rem auto;
 }
-.pricelist-hotdeals .pricelist-card {
+.pricelist-hotdeals .row .pricelist-card {
   height: 100%;
   border: 2px solid #BFA573; /* Border kuning */
   border-radius: 8px;
 }
-.pricelist-hotdeals .pricelist-card h5 {
+.pricelist-hotdeals .row .pricelist-card h5 {
   font-size: 15px;
   margin: 1rem 0;
   color: #BFA573;
 }
-.pricelist-hotdeals .pricelist-card .pricelist-card-body {
+.pricelist-hotdeals .row .pricelist-card .pricelist-card-body {
   height: 100%;
 }
-.pricelist-hotdeals .pricelist-button a {
+.pricelist-hotdeals .row .pricelist-button {
+  margin-bottom: 1rem;
+}
+.pricelist-hotdeals .row .pricelist-button a {
   display: block;
 }
 
@@ -14349,7 +14410,7 @@ p {
 .btn-take-action {
   display: block;
   background-color: #BFA573;
-  color: #1E1E1E;
+  color: white;
   padding: 1rem 1rem !important;
   border-radius: 40px;
   font-size: 17px;
@@ -14357,16 +14418,16 @@ p {
   font-weight: bold;
 }
 .btn-take-action:hover {
-  background-color: #BFA573;
-  color: #1E1E1E;
-  box-shadow: 0px 4px 4px 0px #E8D9BD;
+  background-color: white;
+  color: #BFA573;
+  box-shadow: 0px 0px 10px 10px #BFA573;
   font-weight: 700;
 }
 
 .btn-revolution {
   display: inline-block;
   background-color: #BFA573;
-  color: #1E1E1E;
+  color: white;
   padding: 0.5rem 2rem !important;
   border-radius: 30px;
   font-size: 17px;
@@ -14383,7 +14444,8 @@ p {
 
 .btn-subscribe {
   background-color: #BFA573;
-  color: #1E1E1E;
+  box-shadow: 0px 0px 20px 10px white;
+  color: white;
   width: 220px;
   padding: 1rem 2rem !important;
   border-radius: 40px;
@@ -14395,9 +14457,9 @@ p {
   text-transform: uppercase;
 }
 .btn-subscribe:hover {
-  background-color: #BFA573;
-  color: #1E1E1E;
-  box-shadow: 0px 0px 16px 8px #E8D9BD;
+  background-color: white;
+  color: #BFA573;
+  box-shadow: 0px 0px 20px 10px #BFA573;
   font-weight: 700;
 }
 
@@ -14408,38 +14470,71 @@ p {
   background: linear-gradient(to right, rgb(189, 160, 105), rgb(255, 255, 255));
   color: #1E1E1E;
   padding: 1rem 2rem !important;
-  font-size: 17px;
   font-weight: 500;
-  line-height: 1.3;
   font-weight: bold;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   border-radius: 5px;
+}
+@media (min-width: 567px) {
+  .btn-refferal {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .btn-refferal {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 
 .btn-exclusive {
+  display: block;
+  width: 370px;
   background-color: black;
   color: yellow;
-  padding: 0 30px;
+  padding: 0.5rem 0;
   font-weight: bold;
-  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5); /* blur putih */
+  font-size: 20px;
+  box-shadow: 0 0 20px 14px rgba(255, 255, 255, 0.5); /* blur putih */
+  line-height: 25px;
+}
+.btn-exclusive:hover {
+  color: white;
+  box-shadow: 0px 0px 20px 20px yellow;
 }
 
 .btn-activate {
   width: 357px;
 }
 
+.btn-activate-hotdeals {
+  width: auto;
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+
 .btn-promo {
   font-weight: bold;
   display: inline-block;
-  color: #BFA573;
-  background-color: black;
+  color: white;
+  background-color: #BFA573;
   padding: 0.5rem 2rem;
   border-radius: 30px;
   box-shadow: 0px 8px 8px 0px white;
   margin: 2rem;
 }
+.btn-promo:hover {
+  background-color: white;
+  color: #BFA573;
+  box-shadow: 0px 0px 20px 10px #BFA573;
+  font-weight: 700;
+}
 
 .btn-pricelist-white {
+  display: inline-block;
+  text-align: center;
+  line-height: 34px;
   width: 175px;
   height: 34px;
   background-color: rgb(255, 255, 255);
@@ -14466,6 +14561,7 @@ p {
 
 .btn-pricelist-black {
   width: 175px;
+  line-height: 34px;
   height: 34px;
   background-image: url("../../img/btn-pricelist-black.png");
   background-size: cover;

@@ -54,9 +54,9 @@
                 text-align: center;
                 color: var.$text-white-satoshi;
                 
-                @include mix.md {
+                @include mix.sm {
                     // letter-spacing: 8px;
-                    font-size: 20px;
+                    font-size: 24px;
                 }
 
                 @include mix.xl {
@@ -74,6 +74,23 @@
                 // .line-animation {
                 //     @include mix.animation-reveal;
                 // }
+            }
+
+            .text-description {
+                @include mix.sm {
+                    font-size: 18px;
+                    padding: 0 2rem;
+                    span {
+                        display: inline;
+                    }
+                }
+        
+                @include mix.lg {
+                    font-size: 25px;
+                    span {
+                        display: block;
+                    }
+                }
             }
 
             .logo-text-banner-teamwork {
@@ -228,7 +245,7 @@
 ------------------------------------------------------------*/ 
 
 .revolution-homepage {
-    height: auto; // Full viewport height
+    height: auto;
     width: 100%; // Full width
     display: flex; // Use flexbox for layout
     align-items: center; // Center items vertically
@@ -237,8 +254,8 @@
     position: relative;
 
     .row {
-        margin: 4rem auto;
-        margin-bottom: 2rem;
+        margin: 5rem auto;
+        margin-bottom: 3rem;
         width: 100%; // Ensure the row takes full width
 
         .col-lg-5 {
@@ -261,6 +278,7 @@
                 position: absolute;
                 z-index: 2;
                 padding: 0 auto;
+                height: 100%;
 
                 @include mix.sm {
                     margin-top: 2rem;
@@ -402,19 +420,18 @@
 
 .giveaway-homepage {
     width: 100%;
-    // height: 100vh;
-    background-image: url('../../img/bg-giveaway.png');
     background-color: black;
     padding-top: 20px;
     @include mix.flex-tengah;
     @include mix.sm {
+        background-image: url('../../img/bg-giveaway-portrait.png');
         height: auto;
         background-size: contain;
-        background-position: top;
         background-repeat: no-repeat;
     }
 
     @include mix.lg {
+        background-image: url('../../img/bg-giveaway.png');
         height: 100vh;
         background-size: cover;
     }
@@ -525,6 +542,7 @@
     .row {
         display: flex;
         justify-content: center;
+        margin: 4rem 0;
         @include mix.sm {
             gap: 2rem;
         }
