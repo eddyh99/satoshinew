@@ -130,7 +130,7 @@
                 Activate your Satoshi Signal account, <span class="d-block">download the app to your device, and let
                     us</span> <span class="d-block">handle your profits.</span>
             </p>
-            <a href="#" class="btn-take-action text-white text-center d-inline-block">ACTIVATE YOUR ACCOUNT<span
+            <a href="#" class="btn-take-action text-center d-inline-block">ACTIVATE YOUR ACCOUNT<span
                     class="d-block">AND START EARNING!</span></a>
         </div>
     </div>

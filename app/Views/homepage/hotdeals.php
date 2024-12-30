@@ -104,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn-activate text-uppercase">Activate Your Account <span class="d-block">with a
+        <a href="#" class="btn-banner-start btn-activate-hotdeals text-uppercase">Activate Your Account <span class="d-block">with a
                 Discount!</span></a>
     </div>
 </div>
@@ -121,11 +121,11 @@
                     devices. The platform is optimized to provide a seamless experience on both operating
                     systems.</span></li>
             <li>
-                Your account can be used on only one device at a time, ensuring security and controlled access.</li>
+                Your account <b>can be used on only one device at a time</b>, ensuring security and controlled access.</li>
         </ul>
     </div>
     <div class="refferal-program">
-        <h2 class="fs-2">PASSIVE INCOME WITH <span class="d-block">THE REFERRAL PROGRAM</span></h2>
+        <h2>PASSIVE INCOME WITH <span class="d-block">THE REFERRAL PROGRAM</span></h2>
         <p class="text-white mt-4">Your referral code is automatically generated when you pay for your subscription
             <span class="d-block">(from Web or from the App)</span>
         </p>
@@ -142,14 +142,14 @@
     <h2>SHARING YOUR REFFERAL LINK HAS NEVER BEEN SO REWARDING!</h2>
     <div class="wrapper-sharing-hotdeals">
         <div class="row">
-            <div class="d-none d-lg-block col-1"></div>
+            <!-- <div class="d-none d-lg-block col-1"></div> -->
             <div class="col-12 col-lg-5 order-1 order-lg-0 mt-4 mt-4 mt-lg-0">
                 <video autoplay="" preload="" muted="" loop="" playsinline="">
                     <source src="<?= BASE_URL ?>assets/vid/refferal.webm" type="video/webm">
                 </video>
             </div>
-            <div class="d-none d-lg-block col-1"></div>
-            <div class="col-12 col-lg-5 order-0 order-lg-1 px-5">
+            <!-- <div class="d-none d-lg-block col-1"></div> -->
+            <div class="col-12 col-lg-7 order-0 order-lg-1 px-5">
                 <ul class="list-benefits">
                     <li>$25 for Each Monthly Renewal: <p class="text-white">
                             For every month your referral renews their subscription, you receive $25 ! (Available via
@@ -219,14 +219,14 @@
 <!-- Start of Become -->
 <div class="become-hotdeals">
     <div class="wrapper-become-hotdeals">
-        <h2 class="text-yellow">BECOME A SATOSHI SIGNAL AMBASSADOR</h2>
+        <h2 class="text-yellow">BECOME A <span translate="no">SATOSHI SIGNAL</span> AMBASSADOR</h2>
         <h5 class="text-white mt-2">Monetize Your Visibility With The Satoshi Signal Referral Program</h5>
-        <span class="text-white my-5">
+        <span class="text-white my-4">
             Are you influencer, a representative, or a professional with wide visivility?
             <span class="d-block">Satoshi Signal is the perfect opportunity for you!</span>
             <span class="d-block">With Satoshi Signal, you can turn network into steady earnings!</span>
         </span>
-        <span class="text-white">Apply now to get your refferal, share it, and watch <span class="d-block">your passive
+        <span class="text-white fw-bold mb-2">Apply now to get your refferal, share it, and watch <span class="d-block">your passive
                 income grow effortlessly!</span></span>
 
         <a href="#" class="btn-exclusive mt-4">
