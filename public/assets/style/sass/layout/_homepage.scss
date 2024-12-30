@@ -237,10 +237,11 @@
     position: relative;
 
     .row {
-        margin: 5rem auto;
+        margin: 4rem auto;
+        margin-bottom: 2rem;
         width: 100%; // Ensure the row takes full width
 
-        .col-5 {
+        .col-lg-5 {
                 .revolution-text {
                     padding-left: 5rem;
                 }
@@ -254,10 +255,25 @@
                 }
         }
 
-        .col-7 {
+        .col-lg-7 {
+            @include mix.flex-tengah;
             .img-revolution {
                 position: absolute;
                 z-index: 2;
+                padding: 0 auto;
+
+                @include mix.sm {
+                    margin-top: 2rem;
+                    position: static;
+                    width: 70%;
+                    z-index: 0;
+                }
+
+                @include mix.lg {
+                    position: absolute;
+                    width: auto;
+                    z-index: 2;
+                }
             }
         }
     }
@@ -273,13 +289,14 @@
 ------------------------------------------------------------*/ 
 
 .activate-account-homepage {
-    position: relative;
+    // position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
 
         .wrapper-activate-account-homepage {
-            position: absolute;
+            // position: absolute;
+            // z-index: 1;
             width: 100%;
             height: 100%;
             background-image: url('../../img/82.png');
@@ -292,7 +309,7 @@
             text-align: start;
 
             .logo {
-                z-index: 2;
+                // z-index: 2;
                 color: white;
                 margin-left: 4rem;
 
@@ -321,41 +338,42 @@
 
 .description-homepage {
     background-color: black;
-    height: 423px;
+    height: auto;
     width: 100%;
     position: relative;
-    // @include mix.xs {
-    //     height: auto;
-    //  }
-    //  @include mix.lg {
-    //     height: 400px;
-    //  }
 
     .row {
         // z-index: 2;
         height: 100%;
         width: 100%;
+        @include mix.sm {
+            gap: 2rem;
+        }
+
+        @include mix.lg {
+            gap: 0;
+        }
 
         .card {
-
-            position: absolute;
             z-index: 0;
             background-color: #BFA573;
             height: 423px;
             width: 380px;
             border-radius: 5px;
-            // @include mix.xs {
-            //     margin-top: 1rem;
-            //  }
+            margin: 0 auto;
+
+            @include mix.sm {
+                position: relative;
+            }
+
+            @include mix.lg {
+                position: relative;
+            }
 
             .card-body {
                 text-align: center;
                 @include mix.flex-tengah-vertical;
                 justify-content: start;
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
                 height: 100%; 
             }
 
@@ -384,20 +402,22 @@
 
 .giveaway-homepage {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     background-image: url('../../img/bg-giveaway.png');
     background-color: black;
     padding-top: 20px;
-    background-size: cover;
     @include mix.flex-tengah;
-    // @include mix.xs {
-    //    background-size: contain;
-    //    background-repeat: no-repeat;
-    // }
+    @include mix.sm {
+        height: auto;
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
 
-    // @include mix.xl3 {
-    //     background-size: cover;
-    //  }
+    @include mix.lg {
+        height: 100vh;
+        background-size: cover;
+    }
     
     .wrapper-giveaway-homepage {
         width: 50%;
@@ -456,12 +476,13 @@
     background-size: cover;
     @include mix.flex-tengah-vertical;
 
-    // @include mix.md {
-    //     height: auto;
-    //  }
-    //  @include mix.xl2 {
-    //     height: 100vh;
-    //  }
+    @include mix.sm {
+        height: auto;
+    }
+
+    @include mix.lg {
+        height: 100vh;
+    }
 
     h2 {
         font-size: 40px;
@@ -469,6 +490,7 @@
     }
     
     .benefits-card {
+        margin: 0 auto;
         // height: auto;
         width: 280px;
         .benefits-card-header {
@@ -498,41 +520,41 @@
                 margin: 1rem auto;
             }
         }
-
-        // @include mix.md {
-        //     width: 220px;
-        //     .benefits-card-header {
-        //         font-size: 18px;
-        //     }
-        //     .benefits-card-body {
-        //         height: auto;
-        //         font-size: 18px;
-        //     }
-        // }
-
-        // @include mix.xl2 {
-        //     width: 280px;
-        //     .benefits-card-header {
-        //         font-size: 20px;
-        //     }
-        //     .benefits-card-body {
-        //         font-size: 20px;
-        //     }
-        //  }
     }
 
     .row {
         display: flex;
         justify-content: center;
-        gap: 5rem;
+        @include mix.sm {
+            gap: 2rem;
+        }
+
+        @include mix.lg {
+            gap: 5rem;
+        }
+        // gap: 5rem;
 
         .col {
             &:nth-child(1), 
             &:nth-child(3) {
                 transform: translateY(20px);
+                @include mix.sm {
+                    transform: none;
+                }
+
+                @include mix.lg {
+                    transform: translateY(20px);
+                }
             }
             &:nth-child(2) {
                 transform: translateY(-20px);
+                @include mix.sm {
+                    transform: none;
+                }
+
+                @include mix.lg {
+                    transform: translateY(-20px);
+                }
             }
         }
     }
