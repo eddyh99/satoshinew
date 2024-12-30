@@ -24,13 +24,13 @@
     <h2 class="text-uppercase">Price List</h2>
     <div class="container">
         <div class="row justify-center mt-3">
-            <div class="col-2 my-auto">
+            <div class="col-lg-2 my-auto">
                 <a class="button-monthly" href="#">1 MONTH</a>
                 <a class="button-monthly" href="#">3 MONTH</a>
                 <a class="button-monthly" href="#">6 MONTH</a>
                 <a class="button-monthly" href="#">1 YEAR</a>
             </div>
-            <div class="col">
+            <div class="col-lg-5">
                 <div class="pricelist-card">
                     <div class="pricelist-card-body mx-4">
                         <h5 class="text-uppercase">If activated your account from website:</h5>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-5">
                 <div class="pricelist-card">
                     <div class="pricelist-card-body mx-4">
                         <h5 class="text-uppercase">If activated your account from app:</h5>

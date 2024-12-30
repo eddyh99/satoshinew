@@ -12931,9 +12931,9 @@ p {
   text-align: center;
   color: #FFFFFF;
 }
-@media (min-width: 768px) {
+@media (min-width: 567px) {
   .banner-homepage .wrapper-banner-homepage .logo-banner .logo-text-banner {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media (min-width: 1024px) {
@@ -12945,6 +12945,23 @@ p {
   .banner-homepage .wrapper-banner-homepage .logo-banner .logo-text-banner {
     padding: 0rem 3rem;
     font-size: 40px;
+  }
+}
+@media (min-width: 567px) {
+  .banner-homepage .wrapper-banner-homepage .logo-banner .text-description {
+    font-size: 18px;
+    padding: 0 2rem;
+  }
+  .banner-homepage .wrapper-banner-homepage .logo-banner .text-description span {
+    display: inline;
+  }
+}
+@media (min-width: 992px) {
+  .banner-homepage .wrapper-banner-homepage .logo-banner .text-description {
+    font-size: 25px;
+  }
+  .banner-homepage .wrapper-banner-homepage .logo-banner .text-description span {
+    display: block;
   }
 }
 .banner-homepage .wrapper-banner-homepage .logo-banner .logo-text-banner-teamwork {
@@ -13074,7 +13091,7 @@ p {
   position: relative;
 }
 .revolution-homepage .row {
-  margin: 4rem auto;
+  margin: 5rem auto;
   margin-bottom: 3rem;
   width: 100%;
 }
@@ -13098,6 +13115,7 @@ p {
   position: absolute;
   z-index: 2;
   padding: 0 auto;
+  height: 100%;
 }
 @media (min-width: 567px) {
   .revolution-homepage .row .col-lg-7 .img-revolution {
@@ -13224,7 +13242,6 @@ p {
 ------------------------------------------------------------*/
 .giveaway-homepage {
   width: 100%;
-  background-image: url("../../img/bg-giveaway.png");
   background-color: black;
   padding-top: 20px;
   display: flex;
@@ -13233,14 +13250,15 @@ p {
 }
 @media (min-width: 567px) {
   .giveaway-homepage {
+    background-image: url("../../img/bg-giveaway-portrait.png");
     height: auto;
     background-size: contain;
-    background-position: top;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 992px) {
   .giveaway-homepage {
+    background-image: url("../../img/bg-giveaway.png");
     height: 100vh;
     background-size: cover;
   }
@@ -13342,6 +13360,7 @@ p {
 .benefits-homepage .row {
   display: flex;
   justify-content: center;
+  margin: 4rem 0;
 }
 @media (min-width: 567px) {
   .benefits-homepage .row {
@@ -13493,10 +13512,19 @@ p {
 4. Sharing Hotdeals Start
 ------------------------------------------------------------*/
 .sharing-hotdeals {
-  height: 100vh;
   text-align: center;
   background-color: rgb(28, 28, 28);
   padding: 1rem 0;
+}
+@media (min-width: 567px) {
+  .sharing-hotdeals {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .sharing-hotdeals {
+    height: 100vh;
+  }
 }
 .sharing-hotdeals h2 {
   font-weight: bold;
@@ -13646,30 +13674,43 @@ p {
   color: #BFA573;
   font-weight: bold;
 }
-.pricelist-hotdeals .button-monthly {
+@media (min-width: 567px) {
+  .pricelist-hotdeals .row {
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .pricelist-hotdeals .row {
+    gap: 0;
+  }
+}
+.pricelist-hotdeals .row .button-monthly {
   background-image: url("../../img/btn-monthly.png");
   background-size: cover;
   display: block;
   width: 150px;
   border-radius: 4px;
-  margin-bottom: 0.4rem;
   padding: 10px;
   font-weight: bold;
+  margin: 0.5rem auto;
 }
-.pricelist-hotdeals .pricelist-card {
+.pricelist-hotdeals .row .pricelist-card {
   height: 100%;
   border: 2px solid #BFA573; /* Border kuning */
   border-radius: 8px;
 }
-.pricelist-hotdeals .pricelist-card h5 {
+.pricelist-hotdeals .row .pricelist-card h5 {
   font-size: 15px;
   margin: 1rem 0;
   color: #BFA573;
 }
-.pricelist-hotdeals .pricelist-card .pricelist-card-body {
+.pricelist-hotdeals .row .pricelist-card .pricelist-card-body {
   height: 100%;
 }
-.pricelist-hotdeals .pricelist-button a {
+.pricelist-hotdeals .row .pricelist-button {
+  margin-bottom: 1rem;
+}
+.pricelist-hotdeals .row .pricelist-button a {
   display: block;
 }
 
@@ -14429,12 +14470,22 @@ p {
   background: linear-gradient(to right, rgb(189, 160, 105), rgb(255, 255, 255));
   color: #1E1E1E;
   padding: 1rem 2rem !important;
-  font-size: 25px;
   font-weight: 500;
-  line-height: 35px;
   font-weight: bold;
   margin-top: 1.5rem;
   border-radius: 5px;
+}
+@media (min-width: 567px) {
+  .btn-refferal {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .btn-refferal {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 
 .btn-exclusive {

@@ -124,10 +124,16 @@
 ------------------------------------------------------------*/ 
 
 .sharing-hotdeals {
-    height: 100vh;
     text-align: center;
     background-color: rgba(28, 28, 28, 1);
     padding: 1rem 0;
+    @include mix.sm {
+        height: auto;
+    }
+
+    @include mix.lg {
+        height: 100vh;
+    }
     h2 {
         font-weight: bold;
         font-size: 25px;
@@ -299,40 +305,52 @@
     text-align: center;
     color: white;
     padding: 4rem 0;
+
     h2 {
         // margin: 2rem 2rem;
         color: var.$text-primary-satoshi;
         font-weight: bold;
     }
-    .button-monthly {
-        background-image: url('../../img/btn-monthly.png');
-        background-size: cover;
-        display: block;
-        width: 150px;
-        border-radius: 4px;
-        margin-bottom: 0.4rem;
-        padding: 10px;
-        font-weight: bold;
-    }
-
-    .pricelist-card {
-        height: 100%;
-        border: 2px solid var.$text-primary-satoshi; /* Border kuning */
-        border-radius: 8px;
-        h5 {
-            font-size: 15px;
-            margin: 1rem 0;
-            color: var.$text-primary-satoshi;
+    .row {
+        @include mix.sm {
+            gap: 1.5rem;
         }
 
-        .pricelist-card-body {
-            height: 100%;
+        @include mix.lg {
+            gap: 0;
         }
-    }
 
-    .pricelist-button {
-        a {
+        .button-monthly {
+            background-image: url('../../img/btn-monthly.png');
+            background-size: cover;
             display: block;
+            width: 150px;
+            border-radius: 4px;
+            padding: 10px;
+            font-weight: bold;
+            margin: 0.5rem auto;
+        }
+    
+        .pricelist-card {
+            height: 100%;
+            border: 2px solid var.$text-primary-satoshi; /* Border kuning */
+            border-radius: 8px;
+            h5 {
+                font-size: 15px;
+                margin: 1rem 0;
+                color: var.$text-primary-satoshi;
+            }
+    
+            .pricelist-card-body {
+                height: 100%;
+            }
+        }
+    
+        .pricelist-button {
+            margin-bottom: 1rem;
+            a {
+                display: block;
+            }
         }
     }
 }

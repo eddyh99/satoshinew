@@ -15,9 +15,8 @@
                     </span>
                 </p>
                 <div class="text-white">
-                    <h3>The Only App That Links You to Professional Brokers:</h3>
-                    <p class="fs-4">We analyze the market 24/7 to provide buy and sell signals, helping you earn <span
-                            class="d-block">constantly and risk-free.</span></p>
+                    <h3 class="text-description fw-bold">The Only App That Links You to Professional Brokers:</h3>
+                    <p class="text-description">We analyze the market 24/7 to provide buy and sell signals, helping you earn <span>constantly and risk-free.</span></p>
                 </div>
                 <div class="d-flex justify-content-center gap-5 mt-5">
                     <a href="#" class="btn-banner-start text-center">START TO<span class="d-block">EARN
@@ -140,8 +139,8 @@
 
 <!-- Start of Benefits -->
 <div class="benefits-homepage">
-    <h2 class="text-white my-5">LIFE-CHANGING BENEFITS</h2>
-    <div class="container d-flex justify-content-center mt-4">
+    <h2 class="text-white mt-5">LIFE-CHANGING BENEFITS</h2>
+    <div class="d-flex justify-content-center">
         <div class="row">
             <div class="col">
                 <div class="benefits-card text-white">
