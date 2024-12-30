@@ -125,9 +125,9 @@
         </ul>
     </div>
     <div class="refferal-program">
-        <h2>PASSIVE INCOME WITH <span class="d-block">THE REFERRAL PROGRAM</span></h2>
+        <h2>PASSIVE INCOME WITH <span>THE REFERRAL PROGRAM</span></h2>
         <p class="text-white mt-4">Your referral code is automatically generated when you pay for your subscription
-            <span class="d-block">(from Web or from the App)</span>
+            <span>(from Web or from the App)</span>
         </p>
         <a class="btn-refferal" href="#">EARN $25 FOR EVERY SUBSRIPTION <span class="d-block">MONTH RENEWED THROUGH YOUR
                 REFERRAL!</span>
@@ -179,7 +179,7 @@
 <!-- Start of Credit -->
 <div class="credit-hotdeals">
     <div class="credit-timeline">
-        <div class="ms-5">
+        <div class="mx-5 py-4">
             <h2 class="text-uppercase pt-3 fw-bold">Credit Timelines</h2>
             <p class="mt-5">All the activations made between September 1st and 30th will be credited to
                 <span class="d-block">your referral balance on November 15th.</span>
