@@ -49,7 +49,6 @@
                 text-transform: uppercase;
                 // letter-spacing: 3px;
                 // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-                font-size: 16px;
                 font-weight: 700;
                 text-align: center;
                 color: var.$text-white-satoshi;
@@ -77,12 +76,16 @@
             }
 
             .text-description {
-                @include mix.sm {
-                    font-size: 18px;
-                    padding: 0 2rem;
+                @include mix.xs {
+                    font-size: 12px;
+                    padding: 0 5rem;
                     span {
                         display: inline;
                     }
+                }
+                @include mix.sm {
+                    font-size: 18px;
+                    padding: 0 2rem;
                 }
         
                 @include mix.lg {
@@ -104,6 +107,28 @@
                 // .line-animation {
                 //     @include mix.animation-reveal;
                 // }
+            }
+
+            .banner-button {
+                @include mix.flex-tengah;
+                gap: 5rem;
+
+                @include mix.xs {
+                    display: block;
+                    margin-top: 0;
+                    a {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                    }
+                }
+
+                @include mix.sm {
+                    display: flex;
+                    margin-top: 5rem;
+                    a {
+                        margin: 0;
+                    }
+                }
             }
         }
     }
@@ -183,18 +208,21 @@
         }
 
         .logo-take-action {
-            // @include mix.flex-tengah-vertical;
             z-index: 2;
             width: 100%;
 
-            img {
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-                width: 150px;
-            }
-
-            .container {
+            @include mix.xs {
+                margin: auto 0;
+                margin-left: 1rem;
+                }
+            @include mix.sm {
+                margin: 0 0;
                 margin-left: 4rem;
                 margin-top: 4rem;
+
+                }
+
+            // .wrap {
                 .logo-text-take-action {
                     text-transform: uppercase;
                     // letter-spacing: 3px;
@@ -204,18 +232,18 @@
                     text-align: start;
                     color: var.$text-white-satoshi;
                     span {
-                        font-size: 30px;
-                        line-height: 50px;
+                        // font-size: 30px;
+                        @include mix.xs {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+        
+                        @include mix.sm {
+                            font-size: 30px;
+                            line-height: 50px;
+                        }
                     }
                     
-                    // @include mix.md {
-                    //     // letter-spacing: 8px;
-                    //     font-size: 20px;
-                    // }
-    
-                    // @include mix.xl {
-                    //     font-size: 30px;
-                    // }
     
                     // @include mix.xl2 {
                     //     // padding: 0rem 3rem;
@@ -225,12 +253,28 @@
                     &::after {
                         content: '';
                         display: block; /* Agar elemen ditampilkan sebagai blok */
-                        width: 400px; /* Lebar garis horizontal 50% */
+                        // width: 400px; /* Lebar garis horizontal 50% */
                         height: 3px; /* Ketebalan garis */
                         background-color: var.$text-primary-satoshi; /* Ganti dengan warna yang diinginkan */
                         margin: 10px 0; /* Jarak atas dan bawah */
+
+                        @include mix.xs {
+                            width: 200px;
+                        }
+                        @include mix.sm {
+                            width: 400px;
+                        }
                     }
+                // }
+
+            .btn-activate {
+                @include mix.xs {
+                    width: 200px;
                 }
+                @include mix.sm {
+                    width: 357px;
+                }
+            }
             }
         }
     }
@@ -260,7 +304,12 @@
 
         .col-lg-5 {
                 .revolution-text {
-                    padding-left: 5rem;
+                    @include mix.xs {
+                        padding-left: 2rem;
+                    }
+                    @include mix.sm {
+                        padding-left: 4rem;
+                    }
                 }
                 h3 {
                     font-size: 30px;
@@ -280,12 +329,19 @@
                 padding: 0 auto;
                 height: 100%;
 
-                @include mix.sm {
+                @include mix.xs {
                     margin-top: 2rem;
                     position: static;
                     width: 70%;
                     z-index: 0;
                 }
+
+                // @include mix.sm {
+                //     margin-top: 2rem;
+                //     position: static;
+                //     width: 70%;
+                //     z-index: 0;
+                // }
 
                 @include mix.lg {
                     position: absolute;
@@ -329,7 +385,14 @@
             .logo {
                 // z-index: 2;
                 color: white;
-                margin-left: 4rem;
+                @include mix.xs {
+                    margin: 0 1.5rem;
+                }
+
+                @include mix.sm {
+                    margin: 0 0;
+                    margin-left: 4rem
+                }
 
                 h2 {
                     font-size: 35px;
@@ -361,10 +424,9 @@
     position: relative;
 
     .row {
-        // z-index: 2;
-        height: 100%;
         width: 100%;
-        @include mix.sm {
+        margin: 0;
+        @include mix.xs {
             gap: 2rem;
         }
 
@@ -372,39 +434,43 @@
             gap: 0;
         }
 
-        .card {
-            z-index: 0;
-            background-color: #BFA573;
-            height: 423px;
-            width: 380px;
-            border-radius: 5px;
+        .col-lg-4 {
             margin: 0 auto;
-
-            @include mix.sm {
-                position: relative;
-            }
-
-            @include mix.lg {
-                position: relative;
-            }
-
-            .card-body {
-                text-align: center;
-                @include mix.flex-tengah-vertical;
-                justify-content: start;
-                height: 100%; 
-            }
-
-            .header {
-                background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 80%, rgba(255, 255, 255, 0.7) 100%);
+            .card {
+                z-index: 0;
+                background-color: #BFA573;
                 border-radius: 5px;
-                padding: 10px 10px;
-                width: 77px;
-                width: 290px;
-                text-align: center;
-                font-size: 18px;
-                line-height: 26px;
-                font-weight: 700;
+                margin: 0 auto;
+                position: relative;
+    
+                @include mix.xs {
+                    width: 330px;
+                    height: auto;
+                }
+    
+                @include mix.sm {
+                    width: 380px;
+                    height: 423px;
+                }
+    
+                .card-body {
+                    text-align: center;
+                    @include mix.flex-tengah-vertical;
+                    justify-content: start;
+                    height: 100%; 
+                }
+    
+                .header {
+                    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 80%, rgba(255, 255, 255, 0.7) 100%);
+                    border-radius: 5px;
+                    padding: 10px 10px;
+                    width: 77px;
+                    width: 290px;
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -437,13 +503,21 @@
     }
     
     .wrapper-giveaway-homepage {
-        width: 50%;
+        // width: 50%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
         margin: 50px auto;
         align-items: center;
+
+        @include mix.xs {
+            width: 80%;
+        }
+
+        @include mix.sm {
+            width: 50%;
+        }
 
         h2 {
             color: var.$text-primary-satoshi;
@@ -493,7 +567,7 @@
     background-size: cover;
     @include mix.flex-tengah-vertical;
 
-    @include mix.sm {
+    @include mix.xs {
         height: auto;
     }
 
@@ -504,6 +578,7 @@
     h2 {
         font-size: 40px;
         font-weight: bold;
+        text-align: center;
     }
     
     .benefits-card {
@@ -543,7 +618,7 @@
         display: flex;
         justify-content: center;
         margin: 4rem 0;
-        @include mix.sm {
+        @include mix.xs {
             gap: 2rem;
         }
 
@@ -556,7 +631,7 @@
             &:nth-child(1), 
             &:nth-child(3) {
                 transform: translateY(20px);
-                @include mix.sm {
+                @include mix.xs {
                     transform: none;
                 }
 
@@ -566,7 +641,7 @@
             }
             &:nth-child(2) {
                 transform: translateY(-20px);
-                @include mix.sm {
+                @include mix.xs {
                     transform: none;
                 }
 

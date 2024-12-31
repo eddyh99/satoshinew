@@ -18,7 +18,7 @@
                     <h3 class="text-description fw-bold">The Only App That Links You to Professional Brokers:</h3>
                     <p class="text-description">We analyze the market 24/7 to provide buy and sell signals, helping you earn <span>constantly and risk-free.</span></p>
                 </div>
-                <div class="d-flex justify-content-center gap-5 mt-5">
+                <div class="banner-button">
                     <a href="#" class="btn-banner-start text-center">START TO<span class="d-block">EARN
                             TODAY!</span></a>
                     <a href="#" class="btn-banner-start btn-banner-unlock text-center">UNLOCK <span
@@ -75,8 +75,8 @@
 
 <!--  Start of Description  -->
 <div class="description-homepage">
-    <div class="container">
-        <div class="row justify-content-center">
+    <!-- <div class="containers"> -->
+        <div class="row">
             <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body">
@@ -112,7 +112,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </div>
 
 <!-- End of Description -->
@@ -211,7 +211,7 @@
             <source src="<?= BASE_URL ?>assets/vid/safe-deposit-box.webm" type="video/webm">
         </video>
         <div class="logo-take-action">
-            <div class="container">
+            <!-- <div class="wrap"> -->
                 <p id="g-text-banner-homepage" class="logo-text-take-action">
                     <span class="line-animation">
                         Take Action Now, Every Minute Counts: <span class="d-block">
@@ -226,7 +226,7 @@
                     <a href="#" class="btn-banner-start btn-activate text-center">ACTIVATE NOW AND<span
                             class="d-block">GROW YOUR CAPITAL!</span></a>
                 </div>
-            </div>
+            <!-- </div> -->
 
         </div>
     </div>
