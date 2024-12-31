@@ -19,7 +19,7 @@
  ------------------------------------------------------------*/ 
 
 .banner-giveaway {
-    margin-top: 85px;
+    margin-top: 60px;
     background-color: black;
     color: white;
     text-align: center;
@@ -56,42 +56,86 @@
     text-align: center;
     background-color: black;
     color: white;
-    position: relative;
-    padding: 4rem 0;
+    width: 100%;
 
-    .giveaway-card {
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.19), rgba(30, 30, 30, 0.19));
-        width: 498px;
-        height: 415px;
-        border-radius: 5px;
-        margin: 1rem;
-        position: relative;
-        .gift-image-1 {
-            bottom: -80px;
-            left: -80px;
-            position: absolute;
-            width: 189;
-            height: 192px;
-        }
-        .gift-image-2 {
-            top: -100px;
-            right: -50px;
-            position: absolute;
-            width: 189;
-            height: 192px;
-        }
-        .giveaway-card-header {
-            text-transform: uppercase;
-            h2 {
-                padding: 2rem 5rem;
-                font-weight: bold;
-                line-height: 45px;
+    @include mix.sm {
+        padding-top: 2rem;
+    }
+    @include mix.lg {
+        padding-top: 0;
+    }
+
+    .row {
+        width: 100%;
+        .col-lg-6 {
+            width: auto;
+            .giveaway-card {
+                background: linear-gradient(to right, rgba(255, 255, 255, 0.19), rgba(30, 30, 30, 0.19));
+                border-radius: 5px;
+                
+                margin: 1rem 0;
+                position: relative;
+    
+                @include mix.sm {
+                    width: 468px;
+                    height: auto;
+                }
+                @include mix.lg {
+                    width: 498px;
+                    height: 415px;
+                }
+                .gift-image-1 {
+        
+        
+                    @include mix.sm {
+                        top: -100px;
+                        right: -30px;
+                        width: 139px;
+                        height: 142px;
+                    }
+                    @include mix.lg {
+                        top: auto;
+                        right: auto;
+                        bottom: -80px;
+                        left: -80px;
+                        width: 189px;
+                        height: 192px;
+                    }
+                    position: absolute;
+                }
+                .gift-image-2 {
+                    @include mix.sm {
+                        bottom: -80px;
+                        left: -30px;
+                        width: 139px;
+                        height: 142px;
+                    }
+                    @include mix.lg {
+                        bottom: auto;
+                        left: auto;
+                        top: -100px;
+                        right: -50px;
+                        width: 189px;
+                        height: 192px;
+                    }
+                    position: absolute;
+                    z-index: 5;
+                }
+                .giveaway-card-header {
+                    h2 {
+                        text-transform: uppercase;
+                        padding: 2rem 0;
+                        font-weight: bold;
+                        line-height: 45px;
+                    }
+                }
+                .giveaway-card-body {
+                    font-size: 22px;
+                    padding: 0 2rem;
+                    padding-bottom: 2rem;
+                    line-height: 40px;
+                }
             }
-        }
-        .giveaway-card-body {
-            font-size: 22px;
-            padding: 0 2rem;
-            line-height: 40px;
         }
     }
 }
@@ -107,15 +151,25 @@
     background-color: black;
     color: white;
     padding: 1px;
-    padding-bottom: 4rem;
+    padding: 4rem 0;
     .wrapper-regulation-giveaway {
-        width: 938px;
-        margin: 0 auto;
+        
+        @include mix.sm {
+           width: auto;
+           margin: 0 3rem;
+        }
+
+        @include mix.lg {
+            width: 940px;
+            margin: 0 auto;
+        }
+
         h2 {
+            font-weight: bold;
             margin: 2rem 0;
         }
         ul {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../img/145.png');
+            // background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../img/145.png');
             background-position: center;
             background-size: cover;
             padding-bottom: 8rem;
@@ -158,26 +212,9 @@
                     margin-bottom: 1rem;
                 }
             }
-            .btn-subscribes {
+            .btn-subscribe {
                 position: absolute;
-                background-color: rgba(189, 160, 105, 1);
-                display: block; /* Pastikan elemen memenuhi satu baris penuh */
-                width: 256px; /* Sesuaikan dengan konten */
-                text-align: center; /* Untuk sentralisasi teks */
-                white-space: normal; /* Izinkan teks terputus ke baris berikutnya */
-                word-wrap: break-word; /* Paksa teks panjang untuk terputus */
-                text-transform: uppercase;
-                font-size: 18px;
-                font-weight: bold;
-                padding: 1rem 2rem;
-                border-radius: 40px;
                 bottom: -40px;
-                &:hover {
-                    background-color: var.$bg-primary-satoshi;
-                    color: var.$text-black-satoshi;
-                    box-shadow: 0px 0px 10px 10px #E8D9BD; /* Bayangan seimbang di semua sisi */
-                    font-weight: 700;
-                }
     
             }
             
