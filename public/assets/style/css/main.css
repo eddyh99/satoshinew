@@ -13774,6 +13774,12 @@ p {
   font-weight: bold;
   font-size: 35px;
 }
+.binance .container a {
+  color: white;
+}
+.binance .container a:hover {
+  color: yellow;
+}
 
 /*----------------------------------------------------------
  Binance End
@@ -13808,8 +13814,17 @@ p {
     Secret start
 ------------------------------------------------------------*/
 .secret {
-  height: 100vh;
   position: relative;
+}
+@media (min-width: 567px) {
+  .secret {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .secret {
+    height: 100vh;
+  }
 }
 .secret .secret-content {
   padding: 2rem 2rem;
@@ -13824,11 +13839,20 @@ p {
   max-width: 100%;
   object-fit: contain; /* Membuat gambar menyesuaikan dengan container */
   display: block; /* Menghindari space ekstra di sekitar gambar */
-  position: absolute;
   z-index: 2;
-  transform: translateY(10%);
-  transform: translateX(-10%);
-  left: 0;
+}
+@media (min-width: 567px) {
+  .secret .secret-content .secret-image {
+    position: static;
+  }
+}
+@media (min-width: 992px) {
+  .secret .secret-content .secret-image {
+    position: absolute;
+    transform: translateY(10%);
+    transform: translateX(-10%);
+    left: 0;
+  }
 }
 .secret .secret-content h2 {
   font-weight: bold;
@@ -13860,12 +13884,21 @@ p {
 .secret .the-signal .the-signal-image {
   height: 307px;
   object-fit: contain; /* Membuat gambar menyesuaikan dengan container */
-  display: block; /* Menghindari space ekstra di sekitar gambar */
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   transform: translateY(35%);
   right: 0;
   bottom: 0;
+}
+@media (min-width: 567px) {
+  .secret .the-signal .the-signal-image {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .secret .the-signal .the-signal-image {
+    display: block;
+  }
 }
 
 /*----------------------------------------------------------
@@ -13879,37 +13912,55 @@ p {
   text-align: center;
 }
 .secret-formula .container .secret-formula-image {
-  width: 540px;
+  height: 340px;
+  width: 100%;
+  object-fit: cover;
 }
-.secret-formula .container .col {
+.secret-formula .container .col-lg-6 {
   text-align: justify;
   margin-top: 3rem;
 }
 .secret-formula .container h4 {
   font-size: 25px;
   color: #BFA573;
-}
-.secret-formula .container span {
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 .secret-formula .container p {
   font-size: 18px;
   color: white;
-  margin-top: 1.5rem;
+}
+@media (min-width: 567px) {
+  .secret-formula .container p {
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .secret-formula .container p {
+    padding-right: 3rem;
+  }
+}
+.secret-formula .container p span {
+  font-weight: normal;
 }
 .secret-formula .key-points {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 4rem;
 }
 .secret-formula .key-points .card {
-  width: 754px;
+  margin: 3rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.41), rgba(255, 255, 255, 0.369));
+}
+@media (min-width: 567px) {
+  .secret-formula .key-points .card {
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  .secret-formula .key-points .card {
+    width: 754px;
+  }
 }
 .secret-formula .key-points .card .card-header {
   display: flex;
@@ -13925,7 +13976,7 @@ p {
 .secret-formula .key-points .card .card-body {
   color: white;
   margin: 0 5rem;
-  height: 463px;
+  height: auto;
 }
 .secret-formula .key-points .card .card-body ul li {
   font-size: 25px;
@@ -13949,17 +14000,36 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 607px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/bg-buy-signals.jpeg");
   background-size: cover;
   text-align: center;
 }
+@media (min-width: 567px) {
+  .buy-signals {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .buy-signals {
+    height: 607px;
+  }
+}
 .buy-signals .wrapper-buy-signals .card-buy-desc {
-  height: 148px;
+  height: auto;
   width: 363px;
   text-align: center;
   text-transform: uppercase;
-  margin-left: auto;
+}
+@media (min-width: 567px) {
+  .buy-signals .wrapper-buy-signals .card-buy-desc {
+    margin: 2rem auto;
+  }
+}
+@media (min-width: 992px) {
+  .buy-signals .wrapper-buy-signals .card-buy-desc {
+    margin: 0;
+    margin-left: auto;
+  }
 }
 .buy-signals .wrapper-buy-signals .card-buy-desc .card-buy-desc-header {
   color: white;
@@ -14035,17 +14105,36 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 607px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/bg-sell-signals.jpeg");
   background-size: cover;
   text-align: center;
+}
+@media (min-width: 567px) {
+  .sell-signals {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .sell-signals {
+    height: 607px;
+  }
 }
 .sell-signals .wrapper-sell-signals .card-sell-desc {
   height: auto;
   width: 363px;
   text-align: center;
   text-transform: uppercase;
-  margin-left: auto;
+}
+@media (min-width: 567px) {
+  .sell-signals .wrapper-sell-signals .card-sell-desc {
+    margin: 2rem auto;
+  }
+}
+@media (min-width: 992px) {
+  .sell-signals .wrapper-sell-signals .card-sell-desc {
+    margin: 0;
+    margin-left: auto;
+  }
 }
 .sell-signals .wrapper-sell-signals .card-sell-desc .card-sell-desc-header {
   color: white;
@@ -14078,7 +14167,7 @@ p {
 }
 .signals-attention span {
   font-size: 20px;
-  width: 800px;
+  width: auto;
   margin: 2rem 0;
 }
 
@@ -14101,10 +14190,20 @@ p {
   align-items: center;
   text-align: center;
   background: linear-gradient(to right, rgb(255, 255, 255), rgb(189, 160, 105));
-  width: 678px;
   height: 155px;
   color: red;
   border-radius: 10px;
+  padding: 0 1.5rem;
+}
+@media (min-width: 567px) {
+  .multiple-sell .multiple-sell-header {
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  .multiple-sell .multiple-sell-header {
+    width: 678px;
+  }
 }
 .multiple-sell .multiple-sell-header h2 {
   font-weight: bold;
@@ -14114,11 +14213,20 @@ p {
   margin-bottom: 4rem;
   text-align: center;
   background-color: rgba(56, 55, 52, 0.8);
-  width: 678px;
   height: auto;
   border-radius: 5px;
   border: 4px solid rgb(189, 160, 105);
   color: white;
+}
+@media (min-width: 567px) {
+  .multiple-sell .multiple-sell-content {
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  .multiple-sell .multiple-sell-content {
+    width: 678px;
+  }
 }
 .multiple-sell .multiple-sell-content ul {
   margin: 3rem 4rem;
@@ -14603,14 +14711,20 @@ p {
 .btn-buy-exclusive {
   background: black;
   display: block;
-  color: white;
+  color: #BFA573;
   font-size: 20px;
   text-transform: uppercase;
   width: 287px;
   border-radius: 40px;
+  box-shadow: 0px 8px 8px 0px white;
   text-align: center;
   padding: 0.5rem;
   margin-top: 1rem;
+}
+.btn-buy-exclusive:hover {
+  color: white;
+  box-shadow: 0px 0px 20px 10px white;
+  font-weight: 700;
 }
 
 .btn-start-formula {
@@ -14619,8 +14733,15 @@ p {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 40px;
   padding: 5px;
+  box-shadow: 0px 4px 4px 0px white;
+  line-height: 25px;
+}
+.btn-start-formula:hover {
+  background-color: white;
+  box-shadow: 0px 0px 10px 10px #BFA573;
+  font-weight: 700;
 }
 
 .btn-pricelist-web {
