@@ -1,8 +1,9 @@
-<div class="d-flex justify-content-center">
-    <div class="col-12 col-sm-8 col-lg-8 col-xl-6">
-         
-        <div class="container" style="margin-bottom: 8rem;">
-            <div class="app-container py-5 mt-5">
+<!-- Page Content  -->
+<div class="content-page mb-5">
+    <div class="container-fluid">
+        <div class="row content-body justify-content-center">
+            <div class="col-12 col-sm-8 col-lg-8 col-xl-6">
+
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 recive-bank d-flex align-items-center flex-column text-center">
                         <!-- Notifications -->
