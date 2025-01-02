@@ -21,8 +21,11 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     
-    <!-- Telephone Code -->
-    <script src="<?= BASE_URL?>assets/libs/intl-tel-input-master/build/js/intlTelInput.js"></script>
+    <?php
+    if (isset($extra)) {
+        echo view(@$extra);
+    }
+    ?>
 
 </body>
 </html>
