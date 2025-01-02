@@ -13507,7 +13507,7 @@ p {
 }
 .service-homepage .wrapper-big-title {
   width: 100%;
-  background-color: #000000;
+  background-color: #141312;
 }
 .service-homepage .wrapper-big-title h1 {
   padding: 1rem;
@@ -13542,9 +13542,18 @@ p {
 2. Account Activation Hotdeals Start
 ------------------------------------------------------------*/
 .account-activation-hotdeals {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 375px) {
+  .account-activation-hotdeals {
+    height: auto;
+  }
+}
+@media (min-width: 567px) {
+  .account-activation-hotdeals {
+    height: 100vh;
+  }
 }
 .account-activation-hotdeals .benefit-activation {
   background: linear-gradient(to left, rgb(189, 160, 105), rgb(255, 255, 255), rgb(189, 160, 105));
@@ -13572,8 +13581,19 @@ p {
 .account-activation-hotdeals .refferal-program h2 {
   color: #BFA573;
   font-weight: bold;
-  font-size: 40px;
   line-height: 145%;
+}
+@media (min-width: 375px) {
+  .account-activation-hotdeals .refferal-program h2 {
+    font-size: 30px;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 567px) {
+  .account-activation-hotdeals .refferal-program h2 {
+    font-size: 40px;
+    margin-top: 0;
+  }
 }
 @media (min-width: 567px) {
   .account-activation-hotdeals .refferal-program span {
@@ -13611,16 +13631,44 @@ p {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  height: calc(100% - 7rem);
-  width: calc(100% - 7rem);
   background-color: rgba(0, 0, 0, 0.7);
+}
+@media (min-width: 375px) {
+  .become-hotdeals .wrapper-become-hotdeals {
+    height: calc(100% - 2rem);
+    width: calc(100% - 2rem);
+  }
+}
+@media (min-width: 567px) {
+  .become-hotdeals .wrapper-become-hotdeals {
+    height: calc(100% - 7rem);
+    width: calc(100% - 7rem);
+  }
 }
 .become-hotdeals .wrapper-become-hotdeals h2 {
   font-weight: bold;
-  font-size: 40px;
 }
-.become-hotdeals .wrapper-become-hotdeals h2 span {
-  font-size: 40px;
+@media (min-width: 375px) {
+  .become-hotdeals .wrapper-become-hotdeals h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 567px) {
+  .become-hotdeals .wrapper-become-hotdeals h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 375px) {
+  .become-hotdeals .wrapper-become-hotdeals h2 span {
+    font-size: 30px;
+    display: block;
+  }
+}
+@media (min-width: 567px) {
+  .become-hotdeals .wrapper-become-hotdeals h2 span {
+    font-size: 40px;
+    display: inline;
+  }
 }
 .become-hotdeals .wrapper-become-hotdeals h5 {
   font-size: 25px;
@@ -13715,6 +13763,28 @@ p {
   flex: 1; /* Membuat kolom fleksibel */
   width: 100%;
 }
+@media (min-width: 375px) {
+  .why-hotdeals .wrapper-why-hotdeals .exclusive-content {
+    margin: 0 2rem;
+  }
+}
+@media (min-width: 567px) {
+  .why-hotdeals .wrapper-why-hotdeals .exclusive-content {
+    margin: 0;
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 375px) {
+  .why-hotdeals .wrapper-why-hotdeals .refferal-bonus {
+    margin: 0 2rem;
+  }
+}
+@media (min-width: 567px) {
+  .why-hotdeals .wrapper-why-hotdeals .refferal-bonus {
+    margin: 0;
+    margin-right: 3rem;
+  }
+}
 .why-hotdeals .wrapper-why-hotdeals .card {
   display: flex;
   flex-direction: column;
@@ -13756,7 +13826,7 @@ p {
   object-position: top; /* Memastikan bagian atas gambar terlihat */
   z-index: 1; /* Supaya tetap berada di belakang teks */
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .credit-hotdeals .credit-timeline .credit-image {
     opacity: 0.2;
   }
@@ -13781,6 +13851,16 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+@media (min-width: 375px) {
+  .credit-hotdeals .download-app .download-button {
+    flex-direction: column;
+  }
+}
+@media (min-width: 567px) {
+  .credit-hotdeals .download-app .download-button {
+    flex-direction: row;
+  }
 }
 .credit-hotdeals .download-app .download-button a img {
   max-width: 120px; /* Ukuran maksimal tombol */
@@ -13807,7 +13887,7 @@ p {
   color: #BFA573;
   font-weight: bold;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .pricelist-hotdeals .row {
     gap: 1.5rem;
   }
@@ -13843,10 +13923,8 @@ p {
 .pricelist-hotdeals .row .pricelist-card .pricelist-card-body {
   height: 100%;
 }
-.pricelist-hotdeals .row .pricelist-button {
-  margin-bottom: 1rem;
-}
 .pricelist-hotdeals .row .pricelist-button a {
+  margin: 0.5rem auto;
   display: block;
 }
 
@@ -14003,7 +14081,7 @@ p {
   right: 0;
   bottom: 0;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .secret .the-signal .the-signal-image {
     display: none;
   }
@@ -14088,8 +14166,17 @@ p {
 }
 .secret-formula .key-points .card .card-body {
   color: white;
-  margin: 0 5rem;
   height: auto;
+}
+@media (min-width: 375px) {
+  .secret-formula .key-points .card .card-body {
+    margin: 0 2rem;
+  }
+}
+@media (min-width: 567px) {
+  .secret-formula .key-points .card .card-body {
+    margin: 0 5rem;
+  }
 }
 .secret-formula .key-points .card .card-body ul li {
   font-size: 25px;
@@ -14117,7 +14204,7 @@ p {
   background-size: cover;
   text-align: center;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .buy-signals {
     height: auto;
   }
@@ -14129,13 +14216,18 @@ p {
 }
 .buy-signals .wrapper-buy-signals .card-buy-desc {
   height: auto;
-  width: 363px;
   text-align: center;
   text-transform: uppercase;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .buy-signals .wrapper-buy-signals .card-buy-desc {
     margin: 2rem auto;
+    width: auto;
+  }
+}
+@media (min-width: 567px) {
+  .buy-signals .wrapper-buy-signals .card-buy-desc {
+    width: 363px;
   }
 }
 @media (min-width: 992px) {
@@ -14164,11 +14256,20 @@ p {
 }
 .buy-signals .wrapper-buy-signals .card-buy {
   height: auto;
-  width: 280px;
   text-align: center;
   margin: auto;
   margin-bottom: 1rem;
   position: relative;
+}
+@media (min-width: 375px) {
+  .buy-signals .wrapper-buy-signals .card-buy {
+    width: 250px;
+  }
+}
+@media (min-width: 567px) {
+  .buy-signals .wrapper-buy-signals .card-buy {
+    width: 280px;
+  }
 }
 .buy-signals .wrapper-buy-signals .card-buy::before, .buy-signals .wrapper-buy-signals .card-buy::after {
   content: "";
@@ -14212,7 +14313,7 @@ p {
     Buy Signals End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
-    Buy Signals start
+    sell Signals start
 ------------------------------------------------------------*/
 .sell-signals {
   display: flex;
@@ -14222,7 +14323,7 @@ p {
   background-size: cover;
   text-align: center;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .sell-signals {
     height: auto;
   }
@@ -14234,13 +14335,18 @@ p {
 }
 .sell-signals .wrapper-sell-signals .card-sell-desc {
   height: auto;
-  width: 363px;
   text-align: center;
   text-transform: uppercase;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .sell-signals .wrapper-sell-signals .card-sell-desc {
     margin: 2rem auto;
+    width: auto;
+  }
+}
+@media (min-width: 567px) {
+  .sell-signals .wrapper-sell-signals .card-sell-desc {
+    width: 363px;
   }
 }
 @media (min-width: 992px) {
@@ -14285,7 +14391,7 @@ p {
 }
 
 /*----------------------------------------------------------
-    Buy Signals End
+    sell Signals End
 ------------------------------------------------------------*/
 .multiple-sell {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/bg-multiple-sell.jpeg");
@@ -14296,6 +14402,7 @@ p {
   flex-direction: column;
 }
 .multiple-sell .multiple-sell-header {
+  margin: 0 1rem;
   margin-top: 4rem;
   margin-bottom: 2rem;
   display: flex;
@@ -14308,7 +14415,7 @@ p {
   border-radius: 10px;
   padding: 0 1.5rem;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .multiple-sell .multiple-sell-header {
     width: auto;
   }
@@ -14331,9 +14438,9 @@ p {
   border: 4px solid rgb(189, 160, 105);
   color: white;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .multiple-sell .multiple-sell-content {
-    width: auto;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -14583,7 +14690,6 @@ p {
 ------------------------------------------------------------*/
 .satoshi-register {
   background-color: #141312;
-  margin-top: 2rem;
   padding: 4rem 0rem;
 }
 .satoshi-register .bg-satoshi-register {
@@ -14804,10 +14910,14 @@ p {
   margin-top: 1.5rem;
   border-radius: 5px;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .btn-refferal {
     font-size: 15px;
     line-height: 25px;
+    margin-bottom: 2rem;
+  }
+  .btn-refferal span {
+    display: inline;
   }
 }
 @media (min-width: 992px) {
@@ -14815,18 +14925,30 @@ p {
     font-size: 25px;
     line-height: 35px;
   }
+  .btn-refferal span {
+    display: block;
+  }
 }
 
 .btn-exclusive {
   display: block;
-  width: 370px;
   background-color: black;
   color: yellow;
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
   font-weight: bold;
   font-size: 20px;
   box-shadow: 0 0 20px 14px rgba(255, 255, 255, 0.5); /* blur putih */
   line-height: 25px;
+}
+@media (min-width: 375px) {
+  .btn-exclusive {
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  .btn-exclusive {
+    width: 370px;
+  }
 }
 .btn-exclusive:hover {
   color: white;
@@ -14927,15 +15049,24 @@ p {
 
 .btn-start-formula {
   background-color: rgb(189, 160, 105);
-  width: 413px;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 40px;
-  padding: 5px;
+  padding: 0.5rem 2rem;
   box-shadow: 0px 4px 4px 0px white;
   line-height: 25px;
   margin-bottom: 2rem;
+}
+@media (min-width: 375px) {
+  .btn-start-formula {
+    width: auto;
+  }
+}
+@media (min-width: 567px) {
+  .btn-start-formula {
+    width: 413px;
+  }
 }
 .btn-start-formula:hover {
   background-color: white;
@@ -15055,11 +15186,20 @@ p {
  */
 .card-sell {
   height: auto;
-  width: 280px;
   text-align: center;
   margin: auto;
   margin-bottom: 1rem;
   position: relative;
+}
+@media (min-width: 375px) {
+  .card-sell {
+    width: 250px;
+  }
+}
+@media (min-width: 567px) {
+  .card-sell {
+    width: 280px;
+  }
 }
 .card-sell::before, .card-sell::after {
   content: "";

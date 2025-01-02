@@ -67,8 +67,7 @@
                             </div>
                             <div class="col pricelist-button">
                                 <a class="btn-pricelist-black-lg btn-pricelist-ios" href="#"></a>
-                                <a class="btn-pricelist-black" href="#">300 EURO</a>
-                                <a class="btn-pricelist-black" href="#">825 EURO</a>
+                                <a class="btn-pricelist-black" href="#">Coming Soon</a>
                             </div>
                         </div>
                     </div>
@@ -85,7 +84,7 @@
             website?</span></h2>
     <div class="wrapper-why-hotdeals">
         <div class="row justify-content-center">
-            <div class="col ms-5">
+            <div class="col exclusive-content">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title text-white fs-4 fw-bold">EXCLUSIVE CONTENT</h5>
@@ -94,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col me-5">
+            <div class="col refferal-bonus">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title text-white fs-4 fw-bold">REFFERAL BONUS</h5>
@@ -129,7 +128,7 @@
         <p class="text-white mt-4">Your referral code is automatically generated when you pay for your subscription
             <span>(from Web or from the App)</span>
         </p>
-        <a class="btn-refferal" href="#">EARN $25 FOR EVERY SUBSRIPTION <span class="d-block">MONTH RENEWED THROUGH YOUR
+        <a class="btn-refferal" href="#">EARN $25 FOR EVERY SUBSRIPTION <span>MONTH RENEWED THROUGH YOUR
                 REFERRAL!</span>
         </a>
     </div>

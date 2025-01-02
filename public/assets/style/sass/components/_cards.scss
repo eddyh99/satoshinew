@@ -1,10 +1,20 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+
 .card-sell {
     height: auto;
-    width: 280px;
     text-align: center;
     margin: auto;
     margin-bottom: 1rem;
     position: relative;
+    @include mix.xs {
+        width: 250px;
+    }
+
+    @include mix.sm {
+        width: 280px;
+    }
 
     &::before, &::after {
         content: '';
