@@ -1,4 +1,4 @@
-<div class="contact wrapper" style="margin-top: 96px;">
+<div class="contact wrapper" style="margin-top: 60px;">
     <div class="row">
         <div class="col-12">  
             <div class="d-flex justify-content-center">

@@ -1,0 +1,56 @@
+.satoshi-register {
+    background-color: #141312;
+    margin-top: 2rem;
+    padding: 4rem 0rem;
+
+    .bg-satoshi-register {
+        background-color: #BFA573;
+        border-radius: 10px;
+        padding: 4rem;
+
+        .register-form {
+            .form-control {
+                background-color: #FFFFFF;
+            }
+        }
+
+        .form-group-pass {
+            .icon-pass-login {
+                font-size: 18px;
+                position: absolute;
+                display: block;
+                right: 20px;
+                bottom: 10px;
+            }
+        }
+
+    }
+}
+
+.satoshi-activation {
+    .otp-area {
+        .inputs {
+            input {
+                width: 80px !important;
+                height: 80px !important;
+                background-color: #D9D9D9 !important;
+
+                &:focus {
+                    box-shadow: none;
+                    border: 3px solid #C5A571;
+                }
+            }
+        }
+    }
+}
+
+.satoshi-register-payment {
+    margin: 5rem 0rem;
+
+    .summary-box {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: start;
+        border-radius: 5px;
+    }
+}

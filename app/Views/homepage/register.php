@@ -1,5 +1,5 @@
 <!-- Start of Satoshi Price -->
-<section id="bg-satoshi-price">
+<!-- <section id="bg-satoshi-price">
     <div class="container">
         <div class="row">
             <div class="col-8">
@@ -10,17 +10,17 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End of Satoshi Price -->
 
 <!-- Start of Pricing -->
-<section  class="service-homepage">
+<!-- <section  class="service-homepage">
     <div class="wrapper-big-title">
         <h1 class="fw-bold text-uppercase">
             Pricing
         </h1>
     </div>
-</section>
+</section> -->
 
 <!--<section class="satoshi-pricing">
     <div class="container-fluid">
