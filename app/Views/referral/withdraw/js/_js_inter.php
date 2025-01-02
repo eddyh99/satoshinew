@@ -27,6 +27,7 @@
 /* Form Group */
 .withdraw-form .form-group {
     margin-bottom: 1.5rem;
+    width: 400px;
 }
 
 /* Input Fields */

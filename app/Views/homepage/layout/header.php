@@ -60,10 +60,10 @@
                 </ul>
                 <ul class="navbar-nav mx-auto">
                 <li class="nav-item me-0 me-lg-4 d-flex align-items-center justify-content-center">
-                        <a class="btn-navbar-contactform text-center" href="<?= BASE_URL ?>">START MAKING <span class="d-block">MONEY</span></a>
+                        <a class="btn-navbar-contactform text-center" href="<?= BASE_URL ?>homepage/register">START MAKING <span class="d-block">MONEY</span></a>
                     </li>
                     <li class="nav-item mt-2 mt-lg-0 d-flex align-items-center justify-content-center">
-                        <a class="btn-navbar-referral btn-navbar-contactform text-center" href="<?= BASE_URL ?>homepage/contactreferral">LOGIN WITH <span class="d-block">REFERRAL</span></a>
+                        <a class="btn-navbar-referral btn-navbar-contactform text-center" href="<?= BASE_URL ?>referral/auth/signin">LOGIN WITH <span class="d-block">REFERRAL</span></a>
                     </li>
                 </ul>
             </div>

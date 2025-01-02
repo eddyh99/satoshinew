@@ -7,14 +7,14 @@
                 <p class="text-center text-white">SATOSHI SIGNAL OFFERS TWO TYPES OF GIVEAWAY:</p>
             </div>
             <div class="col-12">
-                <div class="row text-center">
+                <div class="row text-center d-flex justify-content-center">
                     <!-- Giveaway 1 -->
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-5 mb-4">
                         <a href="<?=BASE_URL?>referral/referral/giveaway1" class="text-decoration-none">
                             <div id="leftcorner" class="card giveaway-card p-4">
                                 <div>
                                     <h5>GIVEAWAY 1</h5>
-                                    <p>"REFERRAL SUCCESS"</p>
+                                    <h4>"REFERRAL SUCCESS"</h4>
                                     <p>Make a Reel by tagging Satoshi Signal Instagram page where you show: how many subscribers you have achieved by sharing your Referral Link and the earnings you have obtained.</p>
                                 </div>
                             </div>
@@ -23,12 +23,12 @@
                     </div>
             
                     <!-- Giveaway 2 -->
-                    <div class="col-md-6 mb-4 mt-2">
+                    <div class="col-md-5 mb-4 m-sm-t-2">
                         <a href="<?=BASE_URL?>referral/referral/giveaway2" class="text-decoration-none">
                             <div  id="rightcorner" class="card giveaway-card p-4">
                                 <div>
                                     <h5>GIVEAWAY 2</h5>
-                                    <p>"SIGNAL SUCCESS"</p>
+                                    <h4>"SIGNAL SUCCESS"</h4>
                                     <p>Make a Reel by tagging Satoshi Signal Instagram page where you show: the earnings, percentages and benefits that you have obtained with the app of Satoshi Signal.</p>
                                 </div>
                             </div>

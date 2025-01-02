@@ -20,7 +20,7 @@
 
 
 .withdraw-form .form-group {
-    width: 100%;
+    width: 400px;
     margin-bottom: 1.5rem;
 }
 
