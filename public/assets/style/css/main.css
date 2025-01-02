@@ -12864,13 +12864,22 @@ p {
 ------------------------------------------------------------*/
 .footer {
   background-color: black;
+  width: 100%;
 }
 .footer .logo-footer {
+  width: 100%;
   display: flex; /* Gunakan flex untuk logo */
   justify-content: center; /* Pusatkan logo secara horizontal */
   align-items: center; /* Pusatkan logo secara vertikal */
   flex-direction: column; /* Logo dalam satu kolom */
   gap: 10px; /* Jarak antar logo */
+}
+.footer .logo-footer .footer-group {
+  width: 100%;
+}
+.footer .logo-footer .footer-group .row {
+  width: 100%;
+  height: auto;
 }
 
 /*----------------------------------------------------------
@@ -13950,7 +13959,7 @@ p {
   color: white;
   text-align: center;
   padding: 1rem 0;
-  height: 65vh;
+  height: auto;
 }
 .binance .container {
   display: flex;
@@ -13959,7 +13968,8 @@ p {
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/bg-binance.png");
   background-size: cover;
-  height: 100%;
+  height: auto;
+  padding: 5rem 1rem;
 }
 .binance .container h5 {
   font-weight: bold;
@@ -14515,9 +14525,9 @@ p {
   color: white;
   width: 100%;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .giveaway {
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
 }
 @media (min-width: 992px) {
@@ -14534,13 +14544,18 @@ p {
 .giveaway .row .col-lg-6 .giveaway-card {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.19), rgba(30, 30, 30, 0.19));
   border-radius: 5px;
-  margin: 1rem 0;
+  margin: 1rem auto;
   position: relative;
+}
+@media (min-width: 375px) {
+  .giveaway .row .col-lg-6 .giveaway-card {
+    width: 90%;
+    height: auto;
+  }
 }
 @media (min-width: 567px) {
   .giveaway .row .col-lg-6 .giveaway-card {
     width: 468px;
-    height: auto;
   }
 }
 @media (min-width: 992px) {
@@ -14552,7 +14567,7 @@ p {
 .giveaway .row .col-lg-6 .giveaway-card .gift-image-1 {
   position: absolute;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .giveaway .row .col-lg-6 .giveaway-card .gift-image-1 {
     top: -100px;
     right: -30px;
@@ -14574,7 +14589,7 @@ p {
   position: absolute;
   z-index: 5;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .giveaway .row .col-lg-6 .giveaway-card .gift-image-2 {
     bottom: -80px;
     left: -30px;
@@ -14617,7 +14632,7 @@ p {
   padding: 1px;
   padding: 4rem 0;
 }
-@media (min-width: 567px) {
+@media (min-width: 375px) {
   .regulation-giveaway .wrapper-regulation-giveaway {
     width: auto;
     margin: 0 3rem;
@@ -14670,9 +14685,19 @@ p {
 }
 .regulation-giveaway .wrapper-regulation-giveaway .important-notes ul {
   background-image: none;
-  margin: 4rem 4rem;
-  margin-top: 0;
   padding-bottom: 0;
+}
+@media (min-width: 375px) {
+  .regulation-giveaway .wrapper-regulation-giveaway .important-notes ul {
+    margin: 4rem 1rem;
+    margin-top: 0;
+  }
+}
+@media (min-width: 567px) {
+  .regulation-giveaway .wrapper-regulation-giveaway .important-notes ul {
+    margin: 4rem 4rem;
+    margin-top: 0;
+  }
 }
 .regulation-giveaway .wrapper-regulation-giveaway .important-notes ul li {
   list-style-type: disc;
@@ -15125,6 +15150,24 @@ p {
 .plan-btn span {
   color: #000000;
   font-weight: 700;
+}
+
+.btn-mif {
+  display: block;
+  background-image: url("../../img/btn-mif.png");
+  background-size: cover;
+}
+@media (min-width: 375px) {
+  .btn-mif {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media (min-width: 567px) {
+  .btn-mif {
+    width: 300px;
+    height: 80px;
+  }
 }
 
 .dropdown-toggle::after {
