@@ -24,12 +24,23 @@
 
 .footer {
     background-color: black;
+    width: 100%;
+
 
     .logo-footer {
+        width: 100%;
         display: flex; /* Gunakan flex untuk logo */
         justify-content: center; /* Pusatkan logo secara horizontal */
         align-items: center; /* Pusatkan logo secara vertikal */
         flex-direction: column; /* Logo dalam satu kolom */
         gap: 10px; /* Jarak antar logo */
+
+        .footer-group {
+            width: 100%;
+            .row {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 }

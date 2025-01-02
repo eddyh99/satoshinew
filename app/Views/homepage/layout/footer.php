@@ -1,13 +1,27 @@
 <!-- Start of Footer -->
     <section class="footer">
-    <div class="container">
-        <h3 class="text-center text-white py-5">Service Provided by:</h3>
+    <!-- <div class="container"> -->
+        <h3 class="text-center text-white py-5 mx-0">Service Provided by:</h3>
         <div class="logo-footer">
-            <img class="img-fluid mt-2" src="<?= BASE_URL ?>assets/img/logo-pnglobal.png" alt="logo" style="max-width: 15%;">
-            <img class="img-fluid" src="<?= BASE_URL ?>assets/img/logo-footer.png" alt="logo" style="max-width: 70%;">
+            <div class="footer-group">
+                <div class="row">
+                    <div class="col-5">
+
+                    </div>
+                    <div class="col-2">
+                        <img class="img-fluid mt-2" src="<?= BASE_URL ?>assets/img/logo-pnglobal.png" alt="logo">
+                    </div>
+                    <div class="col-5 d-flex justify-content-end align-items-center">
+                        <a class="btn-mif" href="https://moneyindustrialfactory.io/"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container pb-4">
+                <img class="img-fluid" src="<?= BASE_URL ?>assets/img/logo-footer.png" alt="logo" style="max-width: 100%;">
+                <footer class="text-white">© 2024 PN Global LLC. All rights reserved.</footer>
+            </div>
         </div>
-        <footer class="text-white">© 2024 PN Global LLC. All rights reserved.</footer>
-    </div>
+    <!-- </div> -->
     </section>
     <!-- End of Footer -->
     

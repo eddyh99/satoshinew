@@ -36,9 +36,16 @@
 2. Account Activation Hotdeals Start
 ------------------------------------------------------------*/ 
 .account-activation-hotdeals {
-    height: 100vh;
     display: flex;
     flex-direction: column;
+
+    @include mix.xs {
+        height: auto;
+    }
+
+    @include mix.sm {
+        height: 100vh;
+    }
 
     .benefit-activation {
         background: linear-gradient(
@@ -68,8 +75,17 @@
         h2 {
             color: var.$text-primary-satoshi;
             font-weight: bold;
-            font-size: 40px;
             line-height: 145%;
+
+            @include mix.xs {
+                font-size: 30px;
+                margin-top: 2rem;
+            }
+
+            @include mix.sm {
+                font-size: 40px;
+                margin-top: 0;
+            }
         }
         span {
             @include mix.sm {
@@ -103,15 +119,38 @@
     .wrapper-become-hotdeals {
         @include mix.flex-tengah-vertical;
         text-align: center;
-        height: calc(100% - 7rem);
-        width: calc(100% - 7rem); 
         background-color: rgba(0, 0, 0, 0.7);
+
+        @include mix.xs {
+            height: calc(100% - 2rem);
+            width: calc(100% - 2rem); 
+        }
+
+        @include mix.sm {
+            height: calc(100% - 7rem);
+            width: calc(100% - 7rem); 
+        }
 
         h2 {
             font-weight: bold;
-            font-size: 40px;
-            span {
+            @include mix.xs {
+                font-size: 30px;
+            }
+
+            @include mix.sm {
                 font-size: 40px;
+            }
+
+            span {
+                @include mix.xs {
+                    font-size: 30px;
+                    display: block;
+                }
+
+                @include mix.sm {
+                    font-size: 40px;
+                    display: inline;
+                }
             }
         }
         h5 {
@@ -221,6 +260,27 @@
             width: 100%;
         }
 
+        .exclusive-content {
+            @include mix.xs {
+                margin: 0 2rem;
+            }
+            @include mix.sm {
+                margin: 0;
+                margin-left: 3rem;
+            }
+        }
+
+        .refferal-bonus {
+            @include mix.xs {
+                margin: 0 2rem;
+            }
+
+            @include mix.sm {
+                margin: 0;
+                margin-right: 3rem;
+            }
+        }
+
         .card {
             // width: 100%;
             display: flex;
@@ -228,11 +288,6 @@
             justify-content: space-between; /* Mengatur agar konten tersebar */
             height: 100%; /* Membuat tinggi card fleksibel */
             background: linear-gradient(to right, rgba(189, 160, 105, 1) 75%, rgba(255, 255, 255, 1) 100%);
-
-
-
-
-
         }
     }
 }
@@ -274,7 +329,7 @@
             object-position: top; /* Memastikan bagian atas gambar terlihat */
             z-index: 1; /* Supaya tetap berada di belakang teks */
             
-            @include mix.sm {
+            @include mix.xs {
                 opacity: 0.2;
             }
             @include mix.lg {
@@ -294,6 +349,14 @@
         .download-button {
             @include mix.flex-tengah;
             gap: 2rem;
+
+            @include mix.xs {
+                flex-direction: column;
+            }
+
+            @include mix.sm {
+                flex-direction: row;
+            }
 
             a img {
                 max-width: 120px; /* Ukuran maksimal tombol */
@@ -328,7 +391,7 @@
         font-weight: bold;
     }
     .row {
-        @include mix.sm {
+        @include mix.xs {
             gap: 1.5rem;
         }
 
@@ -366,8 +429,8 @@
         }
     
         .pricelist-button {
-            margin-bottom: 1rem;
             a {
+                margin: 0.5rem auto;
                 display: block;
             }
         }

@@ -58,8 +58,8 @@
     color: white;
     width: 100%;
 
-    @include mix.sm {
-        padding-top: 2rem;
+    @include mix.xs {
+        padding-top: 3rem;
     }
     @include mix.lg {
         padding-top: 0;
@@ -73,12 +73,16 @@
                 background: linear-gradient(to right, rgba(255, 255, 255, 0.19), rgba(30, 30, 30, 0.19));
                 border-radius: 5px;
                 
-                margin: 1rem 0;
+                margin: 1rem auto;
                 position: relative;
+
+                @include mix.xs {
+                    width: 90%;
+                    height: auto;
+                }
     
                 @include mix.sm {
                     width: 468px;
-                    height: auto;
                 }
                 @include mix.lg {
                     width: 498px;
@@ -87,7 +91,7 @@
                 .gift-image-1 {
         
         
-                    @include mix.sm {
+                    @include mix.xs {
                         top: -100px;
                         right: -30px;
                         width: 139px;
@@ -104,7 +108,7 @@
                     position: absolute;
                 }
                 .gift-image-2 {
-                    @include mix.sm {
+                    @include mix.xs {
                         bottom: -80px;
                         left: -30px;
                         width: 139px;
@@ -154,7 +158,7 @@
     padding: 4rem 0;
     .wrapper-regulation-giveaway {
         
-        @include mix.sm {
+        @include mix.xs {
            width: auto;
            margin: 0 3rem;
         }
@@ -202,9 +206,17 @@
             }
             ul {
                 background-image: none;
-                margin: 4rem 4rem;
-                margin-top: 0;
                 padding-bottom: 0;
+                @include mix.xs {
+                    margin: 4rem 1rem;
+                    margin-top: 0;
+                }
+                
+                @include mix.sm {
+                    margin: 4rem 4rem;
+                    margin-top: 0;
+                }
+
                 li {
                     list-style-type: disc;
                     list-style-position: inside;
