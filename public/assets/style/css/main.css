@@ -13495,9 +13495,15 @@ p {
 /*----------------------------------------------------------
    Benefits  Homepage end
 ------------------------------------------------------------*/
-.service-homepage {
-  overflow-x: hidden;
-  padding: 2rem 0 0 0;
+@media (min-width: 375px) {
+  .service-homepage {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .service-homepage {
+    margin-top: 5rem;
+  }
 }
 .service-homepage .wrapper-big-title {
   width: 100%;
