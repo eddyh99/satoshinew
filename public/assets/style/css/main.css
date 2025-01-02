@@ -13495,6 +13495,20 @@ p {
 /*----------------------------------------------------------
    Benefits  Homepage end
 ------------------------------------------------------------*/
+.service-homepage {
+  overflow-x: hidden;
+  padding: 2rem 0 0 0;
+}
+.service-homepage .wrapper-big-title {
+  width: 100%;
+  background-color: #000000;
+}
+.service-homepage .wrapper-big-title h1 {
+  padding: 1rem;
+  color: #BFA573;
+  text-align: center;
+}
+
 /*----------------------------------------------------------
     File Name  : _hotdeals.scss
     Desc       : File ini merupakan styling untuk hotdelas page
@@ -14561,6 +14575,27 @@ p {
 /*----------------------------------------------------------
     Regulation Giveaway End
 ------------------------------------------------------------*/
+.satoshi-register {
+  background-color: #141312;
+  margin-top: 2rem;
+  padding: 4rem 0rem;
+}
+.satoshi-register .bg-satoshi-register {
+  background-color: #BFA573;
+  border-radius: 10px;
+  padding: 4rem;
+}
+.satoshi-register .bg-satoshi-register .register-form .form-control {
+  background-color: #FFFFFF;
+}
+.satoshi-register .bg-satoshi-register .form-group-pass .icon-pass-login {
+  font-size: 18px;
+  position: absolute;
+  display: block;
+  right: 20px;
+  bottom: 10px;
+}
+
 /*----------------------------------------------------------
     File Name  : _navbar.scss
     Desc       : File ini merupakan styling untuk 
@@ -14900,6 +14935,15 @@ p {
 .btn-pricelist-android {
   background-image: url("../../img/btn-android.png");
   background-size: cover;
+}
+
+.btn-satoshi-price-register {
+  background-color: #C5A571;
+  color: #000000;
+  font-weight: 900;
+  -webkit-text-stroke: 0.3px #ECCF98;
+  font-weight: 800;
+  font-size: 22px;
 }
 
 .dropdown-toggle::after {

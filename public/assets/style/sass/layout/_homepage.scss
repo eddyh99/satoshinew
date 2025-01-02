@@ -656,3 +656,19 @@
 /*----------------------------------------------------------
    Benefits  Homepage end
 ------------------------------------------------------------*/ 
+
+.service-homepage {
+    overflow-x: hidden;
+    padding: 2rem 0 0 0; 
+
+    .wrapper-big-title {
+        width: 100%;
+        background-color: #000000;
+
+        h1 {
+            padding: 1rem;
+            color: var.$text-primary-satoshi;
+            text-align: center;
+        }
+    }
+}

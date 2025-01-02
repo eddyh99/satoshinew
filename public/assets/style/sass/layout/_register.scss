@@ -1,0 +1,28 @@
+.satoshi-register {
+    background-color: #141312;
+    margin-top: 2rem;
+    padding: 4rem 0rem;
+
+    .bg-satoshi-register {
+        background-color: #BFA573;
+        border-radius: 10px;
+        padding: 4rem;
+
+        .register-form {
+            .form-control {
+                background-color: #FFFFFF;
+            }
+        }
+
+        .form-group-pass {
+            .icon-pass-login {
+                font-size: 18px;
+                position: absolute;
+                display: block;
+                right: 20px;
+                bottom: 10px;
+            }
+        }
+
+    }
+}
