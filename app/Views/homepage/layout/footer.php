@@ -24,6 +24,8 @@
     <!-- </div> -->
     </section>
     <!-- End of Footer -->
+
+    <a href="#top" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
     
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -37,6 +39,9 @@
     
     <!-- Telephone Code -->
     <script src="<?= BASE_URL?>assets/libs/intl-tel-input-master/build/js/intlTelInput.js"></script>
+
+    <!-- Custom General Javascript -->
+    <script src="<?= BASE_URL ?>assets/js/script.js"></script>
 
 </body>
 </html>

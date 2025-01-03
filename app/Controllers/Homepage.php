@@ -453,4 +453,13 @@ class Homepage extends BaseController
             // Log or use the email
         log_message('info', json_encode($mdata));
     }
+
+    public function contactreferral() {
+        $mdata = [
+            'title'     => 'Activation Successful - ' . NAMETITLE,
+            'content'   => 'homepage/contact/contactreferral',
+        ];
+
+        return view('homepage/layout/wrapper-contactus', $mdata);
+    }
 }
