@@ -9,7 +9,6 @@
                             $type = strtolower(trim($type)); // Convert to lowercase and remove extra spaces
                         
                             $backgroundStyle = ($type !== "buy") ? 'background-color:red !important;' : '';
-                            
                         ?>
                     <div class="box-insturctions d-flex align-items-center justify-content-between" style="<?= $backgroundStyle ?>">
                         <h5 style="color:white !important;"><?= @$order?></h5>
@@ -172,6 +171,51 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <p class="instructions">USE 25% OF YOUR TOTAL CAPITAL FOR EACH TIME YOU OPEN AN ORDER.</p>
+                <div class="container mt-5">
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+                      <div class="capital-container">
+                        <div class="row">
+                          <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center">
+                            <h5>Total Capital</h5>
+                            <div class="capital-input d-flex align-items-center">
+                              <button onclick="changeValue(-1000)" id="decreaseButton">-</button>
+                              <input type="number" id="totalCapital" value="10000" readonly>
+                              <button onclick="changeValue(1000)" id="increaseButton">+</button>
+                            </div>
+                          </div>
+                          <div class="col-md-8 mt-2 mt-lg-0">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td>BUY A</td>
+                                  <td class="price" id="buyA">2500</td>
+                                </tr>
+                                <tr>
+                                  <td>BUY B</td>
+                                  <td class="price"  id="buyB">2500</td>
+                                </tr>
+                                <tr>
+                                  <td>BUY C</td>
+                                  <td class="price" id="buyC">2500</td>
+                                </tr>
+                                <tr>
+                                  <td>BUY D</td>
+                                  <td class="price" id="buyD">2500</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="text-center mt-3">
+                          <button class="save-btn" id="saveButton" onclick="saveCapital()" disabled>Save</button>
+                          <p class="saved-message" id="savedMessage" style="display:none;">Value saved and locked!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>

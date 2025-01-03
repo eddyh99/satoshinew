@@ -43,10 +43,11 @@
         }
         
         .confirm-button:disabled {
-            border: 3px solid #B48B3D;
-            background-color: #A0A0A0; /* Change to your preferred background color */
+            border: 1px solid #B48B3D;
+            background-color: #18140C; /* Change to your preferred background color */
             color: #fff; /* Change to your preferred text color */
             cursor: not-allowed; /* Optional: Indicates the button is not clickable */
+            border-radius: 5px;
             opacity: 0.7; /* Optional: Makes the button appear visually distinct */
         }
 </style>

@@ -46,7 +46,7 @@ class Homepage extends BaseController
         $mdata = [
             'title'     => 'Register - ' . NAMETITLE,
             'content'   => 'homepage/register',
-            'extra'     => 'homepage/service/js/_js_satoshi_price',
+            'extra'     => 'homepage/js/_js_satoshi_price',
             'navoption' => true,
         ];
 
@@ -286,7 +286,7 @@ class Homepage extends BaseController
 
 
         $price_id="";
-        if($getprice == 250){
+        if($getprice == 275){
             if(!empty($result->id_referral)){
                 $price_id=$rprice[0]->stripe_id_ref;
             }else{
@@ -294,7 +294,7 @@ class Homepage extends BaseController
             }
             $mdata['amount'] = $getprice - $discount['1m'];
             $mdata['period'] = 30;
-        }else if($getprice == 600){
+        }else if($getprice == 750){
             if(!empty($result->id_referral)){
                 $price_id=$rprice[1]->stripe_id_ref;
             }else{
@@ -302,7 +302,7 @@ class Homepage extends BaseController
             }
             $mdata['amount'] = $getprice - $discount['3m'];
             $mdata['period'] = 30 * 3;
-        }else if($getprice == 1050){
+        }else if($getprice == 1350){
             if(!empty($result->id_referral)){
                 $price_id=$rprice[2]->stripe_id_ref;
             }else{
@@ -310,7 +310,7 @@ class Homepage extends BaseController
             }
             $mdata['amount'] = $getprice - $discount['6m'];
             $mdata['period'] = 30 * 6;
-        }else if($getprice == 1800){
+        }else if($getprice == 2400){
             if(!empty($result->id_referral)){
                 $price_id=$rprice[3]->stripe_id_ref;
             }else{
@@ -347,8 +347,8 @@ class Homepage extends BaseController
             $paymentIntent = $subscription->latest_invoice->payment_intent;
             if ($paymentIntent->status === 'succeeded') {
                 // Subscription payment successful
-                session()->setFlashdata('successPayment', 'Thank you for subscribing');
-                header("Location: " . BASE_URL . "homepage/register");
+                session()->setFlashdata('success', 'Thank you for subscribing');
+                header("Location: " . BASE_URL . "referral/auth/signin");
                 exit();
             } else {
                 throw new Exception("Subscription payment failed. Status: " . $paymentIntent->status);

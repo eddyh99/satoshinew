@@ -301,7 +301,9 @@ class Signal extends BaseController
             'buy_d'     => $buy_d,
             'sell_d'    => $sell_d,
             'order'     => $order,
-            'lastdate'  => $lastdate
+            'lastdate'  => $lastdate,
+            'sell_empty' => empty($sell_a) ? 'true':'false',
+            'buy_not_empty' => !empty($but_a) ? 'true':'false'
         ];
 
         return view('widget/layout/wrapper', $mdata);
