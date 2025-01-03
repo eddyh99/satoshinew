@@ -19,9 +19,9 @@
                     <p class="text-description">We analyze the market 24/7 to provide buy and sell signals, helping you earn <span>constantly and risk-free.</span></p>
                 </div>
                 <div class="banner-button">
-                    <a href="#" class="btn-banner-start text-center">START TO<span class="d-block">EARN
+                    <a href="<?=BASE_URL?>/homepage/register" class="btn-banner-start text-center">START TO<span class="d-block">EARN
                             TODAY!</span></a>
-                    <a href="#" class="btn-banner-start btn-banner-unlock text-center">UNLOCK <span
+                    <a href="<?=BASE_URL?>/homepage/register" class="btn-banner-start btn-banner-unlock text-center">UNLOCK <span
                             class="d-block">EXCLUSIVE SIGNALS!</span></a>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                     conditions 24/7 to provide you with
                     transparent, reliable signals.
                 </p>
-                <a href="#" class="btn-banner-start text-center">BE PART OF THE <span class="d-block">
+                <a href="<?=BASE_URL?>/homepage/register" class="btn-banner-start text-center">BE PART OF THE <span class="d-block">
                         REVOLUTION!
                     </span>
                 </a>
@@ -129,7 +129,7 @@
                 Activate your Satoshi Signal account, <span class="d-block">download the app to your device, and let
                     us</span> <span class="d-block">handle your profits.</span>
             </p>
-            <a href="#" class="btn-take-action text-center d-inline-block">ACTIVATE YOUR ACCOUNT<span
+            <a href="<?=BASE_URL?>/homepage/register" class="btn-take-action text-center d-inline-block">ACTIVATE YOUR ACCOUNT<span
                     class="d-block">AND START EARNING!</span></a>
         </div>
     </div>
@@ -197,7 +197,7 @@
             invite your friends to participate.
             Join the fun and make your success!</p>
 
-        <a class="btn-subscribe" href="#">SUBSCRIBE AND WIN USDT!</a>
+        <a class="btn-subscribe" href="<?=BASE_URL?>/homepage/giveaway">SUBSCRIBE AND WIN USDT!</a>
     </div>
 
 </div>
